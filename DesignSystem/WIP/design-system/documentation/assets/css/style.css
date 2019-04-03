@@ -1,0 +1,1607 @@
+/*------------------------------------------------------------------
+
+version 2.0
+
+[Table of contents]
+1. Global CSS        	
+2. Menu CSS
+3. Home Page (index.html) CSS
+4. About Page CSS
+5. Blog Page CSS
+6. Single Post (single.html) CSS
+7. Portfolio Page CSS
+8. Portfolio Single Post (single-portfolio.html) CSS       
+9. Contact Page CSS
+10. Footer CSS
+11. Responsive CSS
+-------------------------------------------------------------------*/
+
+
+/* ===================================
+    1. Global CSS
+====================================== */
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; 	
+    line-height: 25px;
+    font-weight: 400;	    
+    color: #6c6c6c;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+body a
+{
+    text-decoration: none;
+    color: #000000;    
+    transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+}
+
+body a:hover
+{
+    color: #acacac;
+}
+
+body img
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+::-moz-selection 
+{ 
+    background-color: #fef271; 
+}
+
+::selection 
+{ 
+    background-color: #fef271; 
+}
+
+.doc-loader 
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;	
+    background-color: #fff;
+}
+
+.site-content
+{
+    width: calc(100% - 100px);
+    margin-top: 160px;
+    margin-left: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    transition: margin .3s .4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.open .site-content 
+{
+    margin-left: 650px;
+}
+
+.done .site-content 
+{
+    transition-delay: 0s !important;
+}
+
+.content-left
+{
+    float: left;
+    width: 30%;
+    position: relative;
+}
+
+.content-left-holder
+{
+    position: fixed;    
+}
+
+.content-right
+{
+    float: right;
+    width: 70%;    
+    position: relative;
+}
+
+.content-right-holder
+{
+    width: 700px;    
+    max-width: 95%;
+}
+
+.welcome-content
+{
+    width: 200px;   
+    padding-left: 85px;
+    position: relative;
+}
+
+.welcome-image
+{
+    position: absolute;
+    top: -120px;
+    left: -30px;
+    z-index: -1;
+    max-width: none;
+    max-height: none;
+    transition: all 0s ease;
+}
+
+.site-logo
+{
+    padding: 0;
+}
+
+.site-logo img
+{
+    width: 145px;
+    height: 250px;
+    margin-bottom: 100px;    
+}
+
+.site-description
+{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.page h1.entry-title
+{    
+    font-family: 'Montserrat', sans-serif, Arial;
+    font-size: 24px;
+    line-height: 38px;
+    padding: 0;
+}
+
+
+/* ===================================
+    2. Menu CSS
+====================================== */
+
+#header-main-menu
+{
+    font-family: 'Montserrat', sans-serif, Arial;
+    padding-left: 50px;
+    padding-top: 150px;    
+}
+
+.main-menu.sm-clean
+{
+    background-color: transparent;
+    display: inline-block;
+}
+
+.sm-clean a
+{
+    position: relative;
+}
+
+.sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active      
+{    
+    color: #ffffff;
+    padding: 5px 0;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.sm-clean a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 6px;
+    background-color: #8bd2ff;
+    transition: width .3s;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    z-index: -1;
+}
+
+.main-menu.sm-clean .sub-menu li a:after
+{
+    height: 3px;
+    bottom: 20px;
+}
+
+.sm-clean a.current:after, .sm-clean a:hover:after, .sm-clean a:focus:after, .sm-clean a:active:after, 
+.sm-clean a.highlighted:after, .sm-clean ul a:hover:after, .sm-clean ul a:focus:after, 
+.sm-clean ul a:active:after, .sm-clean ul a.highlighted:after
+{
+    width: 100%;
+}
+
+.sm-clean a span.sub-arrow
+{
+    color: #8bd2ff;
+}
+
+.main-menu.sm-clean .sub-menu li a
+{
+    color: #848484;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu-left-part
+{
+    width: 450px;
+    position: fixed;
+    background-color: #000;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 998;
+    top: 0;
+    left: -550px;
+    transition: .3s .4s left cubic-bezier(0.22, 0.61, 0.36, 1);
+    padding-left: 100px;
+    background-image: url(images/background_02.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.menu-left-part.open
+{
+    left: 0;          
+}
+
+.menu-left-part.done
+{
+    transition-delay: 0s !important;
+}
+
+.menu-right-part
+{
+    position: fixed;
+    width: 100px;
+    left: 0px;
+    top: 0;
+    z-index: 999;
+    transition: 0.2s left cubic-bezier(0.22, 0.61, 0.36, 1), 0s 0.2s background linear;
+}
+
+.menu-right-part.open
+{             
+    left: -100px; 
+}
+
+.menu-right-part.open a
+{
+    color: black;
+}
+
+.menu-right-part.open.done
+{             
+    left: 0; 
+}
+
+.menu-right-part.done
+{
+    left: -100px;
+}
+
+.logo-holder
+{
+    line-height: 0;
+    font-size: 0;
+}
+
+.logo-holder img
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+#toggle
+{
+    height: 60px;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 122px;
+    transition: margin-top .3s .4s ease;
+}
+
+#toggle:hover
+{
+    cursor: pointer;
+}
+
+#toggle:before, #toggle:after
+{
+    content: '';
+    height: 3px;
+    width: 30px;
+    background: #000000;
+    left: 36px;
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    top: 48px;
+}
+
+#toggle:before
+{
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0px);
+    width: 21px;
+    margin-left: 9px;
+}
+
+#toggle:hover:before
+{
+    margin-left: 0;
+}
+
+#toggle.on:before
+{
+    -webkit-transform: rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);
+    transform: rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);   
+    background-color: #fff;
+    margin-left: 0;
+    width: 26px;
+}
+
+#toggle.on:after
+{
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    background-color: #fff;
+    width: 26px;
+}
+
+#toggle:after
+{
+    -webkit-transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 8px, 0);
+}
+
+#toggle .menu-line
+{
+    width: 13px;
+    height: 3px;
+    background: #000000;
+    left: 36px;
+    position: absolute;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    top: 48px;
+    margin-left: 17px;
+}
+
+#toggle:hover .menu-line
+{
+    margin-left: 0;
+}
+
+#toggle.on .menu-line
+{
+    opacity: 0;
+}
+
+
+
+/* ===================================
+    3. Home Page (index.html) CSS
+====================================== */
+
+.carousel-cell 
+{
+    margin-right: 50px;
+}
+
+.carousel-cell .post-num 
+{
+    color: #a6a6a6;
+    padding-top: 25px;
+}
+
+.carousel-cell h3.entry-title 
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0;
+    font-weight: 700;    
+}
+
+.carousel-cell .cat-links 
+{
+    color: #000000;
+}
+
+.carousel-cell .cat-links:before 
+{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+    vertical-align: 5px;
+    margin-right: 5px;
+}
+
+.flickity-prev-next-button.next
+{
+    background-image: url('images/arrow_right@2x.png');
+    background-size: 35px 20px;
+    width: 35px;
+    height: 20px;
+    transition: transform .3s ease;
+}
+
+.flickity-prev-next-button.previous
+{
+    background-image: url('images/arrow_left@2x.png');
+    background-size: 35px 20px;
+    width: 35px;
+    height: 20px;
+    transition: transform .3s ease;
+}
+
+.flickity-prev-next-button.next:hover 
+{
+    transform: translateX(10px);
+}
+
+.flickity-prev-next-button.previous:hover 
+{
+    transform: translateX(-10px);
+}
+
+.carousel-slider img
+{    
+    max-width: none;
+    max-height: none;
+}
+
+.flickity-prev-next-button.next
+{
+    right: auto;
+    left: -60px;
+    z-index: 2;
+    bottom: 95px;
+    top: auto;
+}
+
+.flickity-prev-next-button.previous
+{
+    right: auto;
+    left: -110px;
+    z-index: 2;
+    bottom: 95px;
+    top: auto;
+}
+
+.flickity-prev-next-button
+{
+    background-color: transparent !important;
+}
+
+.flickity-prev-next-button:focus 
+{
+    outline: none;
+    box-shadow: none;
+}
+
+.flickity-prev-next-button svg
+{
+    display: none !important;
+}
+
+/* ===================================
+    4. About Page CSS
+====================================== */
+
+.header-page-content
+{
+    padding-bottom: 50px;
+}
+
+h3.about-name
+{
+    font-family: 'Montserrat', sans-serif, Arial;
+    font-size: 24px;
+    line-height: 38px;
+    padding: 0;
+}
+
+.about-position
+{
+    letter-spacing: 4px;
+}
+
+.progress_bar 
+{
+    margin-bottom: 15px;
+}
+
+.progress_bar_field_holder 
+{
+    height: 4px;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: #d5d5d5;
+    max-width: 500px;
+}
+
+.progress_bar_title
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000;
+}
+
+.progress_bar_field_perecent 
+{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+ul.services-list li:after       
+{   
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 60px;
+}
+
+.services-wrapper
+{
+    float: left;
+    width: 46%;
+    text-align: right;
+}
+
+.service-info
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+}
+
+.service-title
+{
+    display: block;
+    font-size: 11px;
+    line-height: 17px;    
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.services-content
+{
+    font-size: 14px;
+    line-height: 28px;    
+    float: right;
+    width: 46%;
+}
+
+.services-role
+{
+    color: #000;
+    font-size: 34px;
+    line-height: 34px;    
+    font-weight: 700;
+}
+
+.services-line
+{
+    width: 40px;
+    border-top: 5px solid #000;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+
+/* ===================================
+    5. Blog Page CSS
+====================================== */
+
+.blog-item-holder 
+{
+    padding-bottom: 100px;
+}
+
+.blog-item-holder:last-child
+{
+    padding-bottom: 0;
+}
+
+.blog-item-holder h2.entry-title 
+{
+    font-family: 'Montserrat', sans-serif, Arial;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+.blog-item-holder .item-text
+{        
+    position: relative;
+    margin-top: -135px;
+}
+
+.blog-item-holder .item-info 
+{
+    background-color: #fff;
+    padding: 15px 0 10px 35px;
+    width: 285px;
+}
+
+.item-info:after 
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.blog-item-holder .item-info-left 
+{
+    width: 50%;
+    float: left;
+}
+
+.blog-item-holder .item-info-right 
+{
+    width: 50%;
+    float: right;
+}
+
+.blog-item-holder .item-info-left ul:first-of-type, .blog-item-holder .item-info-right ul:first-of-type
+{
+    padding-bottom: 20px;
+}
+
+.item-info-title 
+{
+    color: #000;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.read-more
+{
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+a.read-more:after 
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #8bd2ff;
+    transition: width .3s;
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    z-index: -1;
+}
+
+a.read-more:hover 
+{
+    color: #000;
+}
+
+a.read-more:hover:after 
+{
+    width: 100%;
+}
+
+
+/* ===================================
+    6. Single Post (single.html) CSS
+====================================== */
+
+.single .entry-holder 
+{
+    float: right;
+    width: 500px;
+}
+
+.single-post h1.entry-title
+{
+    font-family: 'Montserrat', sans-serif, Arial;
+    margin-bottom: 30px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.post-info
+{
+    float: left;
+    width: 100px;
+    padding-right: 100px;
+}
+
+.post-info .post-num
+{
+    font-size: 80px;
+    line-height: 100%;
+    margin-top: 20px;
+    color: #000;
+}
+
+.post-info .post-num span 
+{
+    letter-spacing: -25px;
+}
+
+.post-info .post-num .separator
+{
+    color: #dbdbdb;
+    vertical-align: -20px;
+    font-size: 50px;
+}
+
+.post-info .post-num .total-posts 
+{
+    color: #dbdbdb;
+    vertical-align: -40px;
+    margin-left: 0px;
+    font-size: 50px;
+}
+
+.single-post .item-info-text
+{
+    padding-bottom: 25px;
+}
+
+
+
+/* ===================================
+    7. Portfolio Page CSS
+====================================== */
+
+.category-filter 
+{
+    position: absolute;
+    right: 15px;
+    top: -20px;
+    z-index: 5;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.category-filter-icon 
+{
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    float: right;
+    transition: width .3s ease;
+}
+
+.category-filter:hover .category-filter-icon
+{
+    width: 24px;
+}
+
+.category-filter-icon:after 
+{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 3px;
+    background-color: #000;
+    transform: translate(-5px,8px);
+    transition: transform .3s ease;
+}
+
+.category-filter:hover .category-filter-icon:after
+{
+    transform: translate(4px,8px);
+}
+
+.category-filter-icon:before 
+{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 3px;
+    background-color: #000;
+    transform: translate(10px,11px);
+    transition: transform .3s ease;
+}
+
+.category-filter:hover .category-filter-icon:before
+{
+    transform: translate(14px,11px);
+}
+
+.category-filter-list 
+{
+    background-color: #000;
+    padding: 24px 20px;
+    width: 110px;
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #fff;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.category-filter-list .button.is-checked
+{
+    color: #8bd2ff;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition 
+{
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+.portfolio-wrapper 
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid 
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;    
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.grid-item 
+{
+    float: left;
+    font-size: 0;
+    line-height: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 15px solid white;
+    overflow: hidden;
+}
+
+.grid-item img 
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    border-radius: 2px;
+    transition: transform .3s ease;
+}
+
+.grid-item a:first-of-type:hover img
+{
+    transform: translateY(20px);
+}
+
+.grid-sizer, .grid-item 
+{    
+    width: 33.333%;
+    width: calc(100%/3);
+}
+
+.grid-item.p_two_third
+{ 
+    width: 66.666%;
+    width: calc(100%/3*2);
+}
+
+.grid-item.p_one
+{
+    width: 100%;
+}
+
+.portfolio-text-holder
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    font-size: 20px;
+    background-color: white;    
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform .3s ease;
+}
+
+.grid-item a:first-of-type:hover .portfolio-text-holder 
+{
+    transform: translateY(0);
+}
+
+.portfolio-text
+{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.grid-item a:hover
+{
+    color: #000;
+}
+
+.portfolio-cat
+{
+    line-height: 25px;
+    font-size: 12px;
+    color: #000;
+}
+
+.portfolio-cat:before 
+{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+    vertical-align: 4px;
+    margin-right: 5px;
+}
+
+
+/* ===================================
+    8. Portfolio Single Post (single-portfolio.html) CSS
+====================================== */
+
+.single-portfolio h1.entry-title 
+{
+    font-size: 24px;
+    line-height: 38px;
+    padding-top: 0;
+}
+
+.single-nav 
+{
+    padding-bottom: 60px;
+    padding-top: 10px;
+}
+
+.single .nav-previous 
+{
+    float: left;
+}
+
+.single .nav-previous a img
+{
+    transition: transform .3s ease;
+    width: 35px;
+    height: 20px;
+}
+
+.single .nav-previous a img:hover
+{
+    transform: translate(-10px);
+}
+
+.single .nav-next 
+{
+    float: left;
+    margin-left: 30px;
+}
+
+.single .nav-next a img
+{
+    transition: transform .3s ease;
+    width: 35px;
+    height: 20px;
+}
+
+.single .nav-next a img:hover
+{
+    transform: translate(10px);
+}
+
+.single-portfolio .item-info-text 
+{
+    padding-bottom: 25px;
+}
+
+.single-portfolio .single-nav.mob
+{
+    display: none;
+    text-align: center;
+}
+
+
+
+/* ===================================
+    9. Contact Page CSS
+====================================== */
+
+.contact-form
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea
+{
+    border: 0;
+    border-bottom: 2px solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin: 20px 0;
+    height: 28px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    line-height: 25px;
+}
+
+.contact-form input[name="your-name"]
+{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.contact-form textarea
+{
+    height: 150px;
+}
+
+.contact-form input[type=submit]
+{	
+    display: inline-block;
+    border: 2px solid;
+    text-align: center;
+    padding: 20px 0px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 15px;
+    transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}
+.contact-form input[type=submit]:hover
+{
+    color: #0697ae;
+}
+
+.contact-form input[type=text]::-webkit-input-placeholder, .contact-form input[type=email]::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder
+{
+    font-family: 'Roboto', sans-serif;
+    color: #404040;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;    
+}
+.contact-form input[type=text]::-moz-placeholder, .contact-form input[type=email]::-moz-placeholder, .contact-form textarea::-moz-placeholder
+{
+    font-family: 'Roboto', sans-serif;
+    color: #404040;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 1;    
+}
+.contact-form input[type=text]:-ms-input-placeholder, .contact-form input[type=email]:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder
+{
+    font-family: 'Roboto', sans-serif;
+    color: #404040;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;    
+}
+.contact-form input[type=text]:-moz-placeholder, .contact-form input[type=email]:-moz-placeholder, .contact-form textarea:-moz-placeholder
+{
+    font-family: 'Roboto', sans-serif;
+    color: #404040;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 1;    
+}
+
+
+
+/* ===================================
+    10. Footer CSS
+====================================== */
+
+.footer-info
+{
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 30px;
+    color: #494949;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.footer-info a
+{
+    color: #494949;
+}
+
+.footer-social a 
+{
+    font-size: 19px;
+    color: #fff;
+    margin-left: 84px;
+}
+
+.footer-social a:first-child 
+{
+    margin-left: 0;
+}
+
+.footer-text 
+{
+    margin-top: 10px;
+}
+
+
+/* ===================================
+    11. Responsive CSS
+====================================== */
+
+@media screen and (max-width: 1440px) {
+
+    #toggle
+    {
+        margin-top: 44px;
+    }
+
+    .site-content
+    {
+        margin-top: 80px;
+    }
+
+    .home .site-content
+    {
+        padding-bottom: 0;
+    }
+
+    .content-right
+    {
+        width: 65%;
+    }        
+}
+
+@media screen and (max-width: 1366px) {
+
+    .carousel-cell img
+    {
+        max-height: 460px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{    
+    .site-content
+    {     
+        padding-bottom: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .site-content
+    {
+        padding-bottom: 50px !important;
+    }
+
+    .menu-right-part
+    {
+        position: absolute;
+    }
+
+    .menu-right-part.open 
+    {    
+        position: fixed;
+    }
+
+    .content-left
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .content-left-holder
+    {
+        position: relative;
+    }
+
+    .content-right 
+    {        
+        width: 95%;
+        float: none;
+        margin: 0 auto;        
+    }
+
+    .content-right-holder
+    {            
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .welcome-content
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .welcome-image
+    {
+        display: none;
+    }
+
+    .site-logo
+    {
+        display: inline-block;
+    }
+
+    .site-description
+    {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 40px;
+        text-align: left;
+        padding-left: 80px;
+        max-width: 200px;
+    }   
+
+    .flickity-prev-next-button.next
+    {
+        right: 20px;
+        left: auto;    
+        top: -40px;
+    }
+
+    .flickity-prev-next-button.previous
+    {
+        right: 75px;
+        left: auto;     
+        top: -40px;
+    }
+
+    .progress_bar_field_holder
+    {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px)
+{    
+
+    body.done
+    {
+        overflow: hidden;
+    }
+
+    #toggle 
+    {
+        margin-top: 5px;
+    }
+
+    .site-content
+    {
+        margin-top: 45px;
+    }
+
+    .open .site-content
+    {
+        margin-left: 0;
+    }
+
+    #header-main-menu
+    {
+        padding-left: 0;
+        padding-top: 85px;
+    }   
+
+    .carousel-cell
+    {
+        margin-right: 25px;
+    }    
+
+    .footer-info
+    {
+        padding-left: 0;
+    }
+
+    .menu-right-part
+    {
+        margin-left: -25px;
+    }
+
+    menu-right-part.open.done 
+    {
+        left: -25px;
+    }
+
+    .menu-left-part
+    {
+        width: 100%;
+        left: -120%;
+        left: calc(-100% - 100px);
+    }
+
+    .site-logo 
+    {
+        display: block;
+    }
+
+    .site-logo img
+    {
+        margin: 0 auto;
+    }
+
+    .site-description
+    {
+        display: block;
+        padding-bottom: 45px;
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .home .site-description
+    {
+        padding-bottom: 100px;
+    }
+
+    .carousel-cell img
+    {
+        max-height: 215px;
+    }
+
+    .one_half, .one_third, .one_fourth, .two_third, .three_fourth
+    {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .member-wrapper .text-right
+    {
+        text-align: center;
+    }
+
+    .services-wrapper 
+    {
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .services-content
+    {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-line
+    {
+        margin-right: auto;    
+        padding-bottom: 25px;
+    }
+
+    .category-filter-list 
+    {
+        line-height: 30px;
+    }
+
+    .grid-sizer, .grid-item, .grid-item.p_two_third
+    {
+        width: 50%;
+    }
+
+    .blog-item-holder 
+    {
+        padding-bottom: 65px;
+    }
+
+    .blog-item-holder .item-text
+    {
+        margin-top: 0;
+    }    
+
+    .blog-item-holder .item-info 
+    {    
+        padding: 25px 0 20px 0;
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .blog-item-holder .item-info-left ul:first-of-type, .blog-item-holder .item-info-right ul:first-of-type
+    {
+        padding-bottom: 10px;
+    }
+
+    .blog-item-holder h2.entry-title 
+    {    
+        font-size: 26px;
+        line-height: 32px;    
+        padding-top: 0;
+    }
+
+    .header-page-content
+    {
+        padding-bottom: 20px;
+    }
+
+    .single-post .post-info 
+    {
+        text-align: center;
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .post-info .post-num
+    {        
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .post-info .post-num span 
+    {
+        letter-spacing: -15px;
+    }
+
+    .post-info .post-num .separator
+    {   
+        font-size: 35px;
+        vertical-align: -10px;    
+    }
+
+    .post-info .post-num .total-posts
+    {
+        font-size: 35px;
+        vertical-align: -30px;
+    }
+
+    .single-post .item-info-left 
+    {
+        display: inline-block;
+        padding-right: 35px;
+    }
+
+    .single-post .item-info-right 
+    {
+        display: inline-block;
+    }
+
+    .single-post .item-info-text
+    {
+        padding-bottom: 10px;
+    }
+
+    .single-nav 
+    {
+        padding-bottom: 35px;
+        padding-top: 40px;
+    }
+
+    .single .nav-previous, .single .nav-next 
+    {
+        display: inline-block;
+        float: none;
+    }
+
+    .single .entry-holder 
+    {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+
+    .single .entry-content
+    {
+        text-align: justify;
+    }
+
+    blockquote.inline-blockquote 
+    {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-top: 30px;
+        font-size: 19px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .single-portfolio .post-info
+    {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .single-portfolio .single-nav
+    {
+        display: none;
+    }
+
+    .single-portfolio .single-nav.mob
+    {
+        display: block;
+    }
+
+    .single-portfolio .item-info 
+    {
+        text-align: center;
+    }
+
+    .single-portfolio .item-info ul 
+    {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .single-portfolio .item-info ul:last-of-type
+    {
+        margin-right: 0;
+    }
+
+    .footer-social a 
+    {    
+        margin-left: 40px;
+    }    
+
+}
+
+@media screen and (max-width: 630px)
+{    
+    .grid-sizer, .grid-item, .grid-item.p_two_third
+    {
+        width: 100%;
+    }
+}

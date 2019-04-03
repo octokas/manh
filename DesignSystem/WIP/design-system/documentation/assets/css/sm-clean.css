@@ -21,13 +21,13 @@
 .sm-clean a span.sub-arrow {
     position: absolute;
     top: 50%;
-    margin-top: -17px;
+    margin-top: -24px;
     left: auto;
-    right: -45px;
-    width: 34px;
-    height: 34px;
+    right: -54px;
+    width: 54px;
+    height: 54px;
     overflow: hidden;
-    font: bold 16px/34px monospace !important;
+    font: bold 16px/54px monospace !important;
     text-align: center;
     text-shadow: none;
     -webkit-border-radius: 5px;

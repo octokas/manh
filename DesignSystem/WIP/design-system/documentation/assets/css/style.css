@@ -144,9 +144,10 @@ body img
 
 .site-logo img
 {
-    width: 145px;
-    height: 250px;
-    margin-bottom: 100px;    
+    width: 100%;
+    height: auto;
+    margin-bottom: 36px; 
+    max-width: 354px;   
 }
 
 .site-description
@@ -228,16 +229,16 @@ body img
 
 .main-menu.sm-clean .sub-menu li a
 {
-    color: #848484;
-    text-transform: uppercase;
-    font-size: 14px;
+    color: #EFEFEF;
+    /* text-transform: uppercase; */
+    font-size: 1.3em;
 }
 
 .menu-left-part
 {
     width: 450px;
     position: fixed;
-    background-color: #000;
+    background-color: #01447b;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -246,7 +247,7 @@ body img
     left: -550px;
     transition: .3s .4s left cubic-bezier(0.22, 0.61, 0.36, 1);
     padding-left: 100px;
-    background-image: url(images/background_02.png);
+    background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -438,7 +439,7 @@ body img
 
 .flickity-prev-next-button.next
 {
-    background-image: url('images/arrow_right@2x.png');
+    background-image: url('../images/arrow_right@2x.png');
     background-size: 35px 20px;
     width: 35px;
     height: 20px;
@@ -447,7 +448,7 @@ body img
 
 .flickity-prev-next-button.previous
 {
-    background-image: url('images/arrow_left@2x.png');
+    background-image: url('../images/arrow_left@2x.png');
     background-size: 35px 20px;
     width: 35px;
     height: 20px;
@@ -475,7 +476,7 @@ body img
     right: auto;
     left: -60px;
     z-index: 2;
-    bottom: 95px;
+    /* bottom: 95px; */
     top: auto;
 }
 
@@ -484,7 +485,7 @@ body img
     right: auto;
     left: -110px;
     z-index: 2;
-    bottom: 95px;
+    /* bottom: 95px; */
     top: auto;
 }
 
@@ -1149,7 +1150,7 @@ a.read-more:hover:after
     margin-top: 100px;
     padding-left: 50px;
     padding-right: 30px;
-    color: #494949;
+    color: #EFEFEF;
     font-size: 12px;
     line-height: 25px;
 }

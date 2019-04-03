@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MANH - Design System</title>
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Plugin Css-->
+        <link rel="stylesheet" href="../plugins/magnific-popup/css/magnific-popup.css" />
+        <link rel="stylesheet" href="../plugins/jquery-datatables-editable/dataTables.bootstrap4.min.css" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+        <!-- your custom css -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left logoContainer">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/MANH.png" alt="Manhattan Associates Logo" class="manhLogo">
+                        <span class="nav-label">MANH</span>
+                    </a>
+                </div>
+                
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <nav class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+
+                            <li>
+                                <a href="index.html">
+                                    <i class="ion-md-speedometer"></i> <span> Getting Started </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="javascript: void(0);"><img src="assets/images/atomIcon.png" class="iconSize"> <span> Atoms </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="ui-typography.html">Typography</a></li>
+                                    <li><a href="ui-buttons.html">Buttons</a></li>
+                                    <li><a href="ui-ionicons.html">Ion Icons</a></li>
+                                    <li><a href="forms-elements.html">Form Field Elements</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><img src="assets/images/molecule.png" class="iconSize"> <span> Molecules/UI Elements </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="ui-app-header.html">App Headers & Footers</a></li>
+                                    <li><a href="ui-sweet-alert.html">Alerts & Toasts</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><img src="assets/images/organism.png" class="iconSize"> <span> Organisms/Components </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="ui-cards.html">Cards</a></li>
+                                    <li><a href="tlm2020-table.html">TLM 2020 Table</a></li>
+                                    <li><a href="tlm2020-radio-table.html">TLM 2020 Table Radio</a></li>
+                                    <li><a href="ui-modals.html">Modals</a></li>
+                                    <li><a href="l4_view.html">L4 View</a></li>
+                                    <li><a href="l4_add.html">L4 Add</a></li>
+                                    <li><a href="l4_edit.html">L4 Edit</a></li>
+                                    <li><a href="l4_validation.html">L4 Validation</a></li>
+                                    <!--<li><a href="l4-search-related-modal.html">l4 Search Related</a></li>
+                                    <li><a href="lookup_modal.html">Basic Lookup Modal</a></li>
+                                    <li><a href="advanced-lookup_modal.html">Advanced Lookup Modal</a></li>-->
+                                    <li>
+                                        <a href="https://marvelapp.com/311f5hh/screen/47082035/handoff" target="_blank">L4 Calendar</a>
+                                    </li>
+                                    <li><a href="ui-warning-modal.html">Warning Modal</a></li>
+                                    <li><a href="ui-confirmation-modal.html">Confirmation Modal</a></li>
+                                    <li><a href="tracking-message.html">Message Tracking</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><i class="ion-md-copy"></i>  <span> Pages </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="pages-login.html" target="_blank">Login</a></li>
+                                    <li><a href="pages-logout.html" target="_blank">Logout</a></li>
+                                    <li>
+                                        <a href="http://tlm-rd-dev.us.manh.com/ux/2020LCC/homepage.html" target="_blank">LCC 2020 Homepage</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </nav>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title float-left">TLM 2020 Table</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                        <h4 class="m-t-0 header-title mb-0">Table</h4>
+                                    </div>
+
+                                    <!-- Tabs Begin -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" href="#demo" role="tab" data-toggle="tab">Demo</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#getCode" role="tab" data-toggle="tab">Get Code</a>
+                                      </li>
+                                    </ul>
+                                    <!-- Tabs End -->
+
+
+                                    <div class="card-body greyBG pt-0">
+
+                                        <div class="tab-content pt-0">
+
+                                            <div role="tabpanel" class="tab-pane active" id="demo">
+
+                                                <section class="toggleHeaader">
+                                                    <div class="tableBttnWraper">
+                                                        <div>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Select All</button>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Add Record</button>
+                                                        </div>
+
+                                                        <div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt">Related Links <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--<div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt"> Export <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+
+                                                    <div>
+                                                        <button class="btn waves-effect waves-light bgTransparent"><a href="http://tlm-rd-dev.us.manh.com/ux/manhDesignSystem/ui-system/tlm2020-table.html"><img src="assets/images/Grid-active.svg"></a></button>
+
+                                                        <button class="btn waves-effect waves-light bgTransparent"><a href="http://tlm-rd-dev.us.manh.com/ux/manhDesignSystem/ui-system/ui-cards.html"><img src="assets/images/Card-inactive.svg"></a></button>
+                                                    </div>
+                                                </section>
+
+                                                <div class="displayHeader">
+                                                    <div tabindex="0" class="onclick-menu ml-Auto"> Display <i class="ion ion-ios-arrow-down downDropArrow"></i>
+                                                        <ul class="onclick-menu-content">
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <hr>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div style="overflow-x:auto;">
+                                                    <table class="table table-borderless table-striped add-edit-table mt-0" id="datatable-editable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th nowrap class="fixedCheckbox"></th>
+                                                                <th nowrap>Order ID <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Priority <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Fulfillment Status <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Total Units <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Ship Via <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Pickup Early Date <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Pickup Late Date <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Delivery Early Date <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Delivery Late Date <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Origin Facility <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Origin City <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Destination Facility <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                                <th nowrap>Destination City <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="gradeX">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td>222ADDD30069</td>
+                                                                <td>P2</td>
+                                                                <td>Released</td>
+                                                                <td>50</td>
+                                                                <td>333_WAVE</td>
+                                                                <td>30 June 2018 10:00</td>
+                                                                <td>30 June 2018 18:00</td>
+                                                                <td>30 June 2018 10:00</td>
+                                                                <td>30 June 2018 12:00</td>
+                                                                <td><a href="javascript:;" class="tableLink">01</a></td>
+                                                                <td>Atlanta</td>
+                                                                <td>02110</td>
+                                                                <td>Boston</td>
+                                                            </tr>
+                                                            <tr class="gradeC">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td> 
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <!--<td class="actions actionWraper">
+                                                                    <a href="#" class="actionBttnsL" data-toggle="tooltip" data-placement="top" title="Details" data-original-title="Details"><img src="assets/images/details.svg"></a>
+                                                                    <a href="#" class="bX" data-toggle="tooltip" data-placement="top" title="Edit" data-original-title="Edit"><img src="assets/images/tableEdit.svg" class="mX"></a>
+                                                                    <a href="#" class="actionBttnsR" data-toggle="tooltip" data-placement="top" title="Delete" data-original-title="Delete"><img src="assets/images/tableDelete.svg"></a>
+                                                                </td>-->
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td> 
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="gradeA">
+                                                                <td><input type="checkbox" name="select row"></td>
+                                                                <td><a href="javascript:;" class="tableLink"></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane codeArea" id="getCode">
+
+                                                <p class="codeWraperTxt">/*==== HTML ====*/</p>
+                                                <p>&lt;section class"toggleHeaader"&gt;
+                                                    <p class="mx-0">&lt;div class="tableBttnWraper"&gt;</p>
+                                                        <p class="mx-0">&lt;div&gt;</p>
+                                                            <p class="mx-0">
+                                                                &lt;button class="btn bgTransparent mr-3"&gt;Select All&lt;/button&gt;
+                                                            </p>
+                                                            <p class="mx-0">
+                                                                &lt;button class="btn bgTransparent mr-3"&gt;Add Record&lt;/button&gt;
+                                                            </p>
+                                                        <p>&lt;/div&gt;</p>
+
+                                                        <p class="mx-0">&lt;div class="displayHeader"&gt;</p>
+
+                                                            <p class="mx-0">&lt;div tabindex="0" class="onclick-menu whiteTxt"&gt; Display &lt;i class="ion ion-ios-arrow-down downDropArrow"&gt;&lt;/i&gt;</p>
+
+                                                                <p class="mx-0">&lt;ul class="onclick-menu-content"&gt;</p>
+                                                                    <p class="mx-0">&lt;li&gt;&lt;input type="checkbox"&gt; Label&lt;/li&gt;</p>
+                                                                    
+                                                                    <p class="mx-0">&lt;li&gt;&lt;input type="checkbox"&gt; Label&lt;/li&gt;</p>
+
+                                                                    <p class="mx-0">&lt;li&gt;&lt;input type="checkbox"&gt; Label&lt;/li&gt;</p>
+                                                                <p class="mx-0">&lt;/ul&gt;</p>
+                                                            <p class="mx-0">&lt;/div&gt;</p>
+
+                                                        <p class="mx-0">&lt;/div&gt;</p>
+                                                    <p>&lt;/div&gt;</p>
+
+                                                    <p class="mx-0">&lt;table class="table"&gt;</p>
+                                                        <p class="mx-0">&lt;thead&gt;</p>
+
+                                                            <p class="mx-0">&lt;tr&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;&lt;input type="checkbox" title="Select All" name="select all"&gt;&lt;/th&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;Label&lt;/th&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;Label&lt;/th&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;Label&lt;/th&gt;</p>
+                                                            <p class="mx-0">&lt;/tr&gt;</p>
+
+                                                            <p>&lt;tr&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;&lt;input type="checkbox" name="select row"&gt;&lt;/td&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;Label&lt;/td&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;Label&lt;/td&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;Label&lt;/td&gt;</p>
+                                                                <p class="mx-0">/*==== <em>Table Action Buttons Start</em> ****IMPORTANT**** (Add only when a single row is selected) ====*/</p>
+                                                                <p class="mx-0">&lt;td class="actions actionWraper"&gt;</p>
+                                                                    <p class="mx-0">&lt;a href="#" class="actionBttnsL" title="Details"&gt;&lt;img src="assets/images/details.svg"&gt;&lt;/a&gt;</p>
+                                                                    <p class="mx-0">&lt;a href="#" class="bX" title="Edit"&gt;&lt;img src="assets/images/tableEdit.svg"&gt;&lt;/a&gt;</p>
+                                                                    <p class="mx-0">&lt;a href="#" class="actionBttnsR" title="Delete"&gt;&lt;img src="assets/images/tableDelete.svg"&gt;&lt;/a&gt;</p>
+                                                                <p class="mx-0">&lt;/td&gt;</p>
+                                                                <p class="mx-0">/*==== <em>Table Action Buttons End</em> ====*/</p>
+                                                            <p class="mx-0">&lt;/tr&gt;</p>
+
+                                                        <p class="mx-0">&lt;/thead&gt;</p>
+                                                    <p>&lt;/table&gt;</p>
+
+                                                <p>&lt;/section&gt;</p>
+
+                                                <hr>
+
+                                                <p class="codeWraperTxt">/*==== App Header Styles CSS ====*/</p>
+                                                  <p class="mx-0">
+                                                    .toggleHeaader {
+                                                    <ul class="list-unstyled m-l-15 mx-0">
+                                                      <li>margin-top: 5px;</li>
+                                                      <li>display: flex;</li>
+                                                      <li>align-items: center;</li>
+                                                      <li>justify-content: space-between;</li>
+                                                    </ul>
+                                                    }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .tableBttnWraper {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>display: flex;</li>
+                                                        <li>align-items: center;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .bgTransparent {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>padding-left: 0px;</li>
+                                                        <li>padding-right: 0px;</li>
+                                                        <li>background-color: transparent;</li>
+                                                        <li>font-size: 12px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .displayHeader {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-top: .5rem;</li>
+                                                        <li>padding: 5px 15px 10px 15px;</li>
+                                                        <li>display: flex;</li>
+                                                        <li>background-color: #fff;</li>
+                                                        <li>border-top-right-radius: 4px;</li>
+                                                        <li>border-top-left-radius: 4px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .mr-3 {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-right: 3rem;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .actionWraper {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>padding: 5px 10px !important;</li>
+                                                        <li>background-color: #fff;</li>
+                                                        <li>display: flex;</li>
+                                                        <li>justify-content: space-between;</li>
+                                                        <li>-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);</li>
+                                                        <li>-moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);</li>
+                                                        <li>box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);</li>
+                                                        <li>position: absolute;</li>
+                                                        <li>right: 20px;</li>
+                                                        <li>z-index: 1;</li>
+                                                     </ul>
+                                                    } 
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .actionBttnsL {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-right: 5px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .actionBttnsR {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-left: 5px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .bX {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>border-right: 1px solid #CAD3DF;</li>
+                                                        <li>border-left: 1px solid #CAD3DF;</li>
+                                                     </ul>
+                                                    } 
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .table {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>background-color: #fbfbfc;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .table td {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>color: #4A4A4A;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .table thead th {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>border-bottom: none;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .selectedRow {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>background-color: #91BFF3;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .whiteTxt {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>color: #fff;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: page -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                        <h4 class="m-t-0 header-title mb-0">Single Select Table</h4>
+                                    </div>
+
+                                    <!-- Tabs Begin -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" href="#demo" role="tab" data-toggle="tab">Demo</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#getCode" role="tab" data-toggle="tab">Get Code</a>
+                                      </li>
+                                    </ul>
+                                    <!-- Tabs End -->
+
+
+                                    <div class="card-body greyBG pt-0">
+
+                                        <div class="tab-content pt-0">
+
+                                            <div role="tabpanel" class="tab-pane active" id="demo">
+
+                                                <section class="toggleHeaader">
+                                                    <div class="tableBttnWraper">
+                                                        <div>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Select All</button>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Add Record</button>
+                                                        </div>
+
+                                                        <div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt">Related Links <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--<div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt"> Export <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+
+                                                    <div>
+                                                        <button class="btn waves-effect waves-light bgTransparent"><img src="assets/images/Grid-active.svg" class="deselectImg"></button>
+
+                                                        <button class="btn waves-effect waves-light bgTransparent"><img src="assets/images/Card-inactive.svg" class="deselectImg"></button>
+                                                    </div>
+                                                </section>
+
+                                                <div class="displayHeader">
+                                                    <div tabindex="0" class="onclick-menu ml-Auto"> Display <i class="ion ion-ios-arrow-down downDropArrow"></i>
+                                                        <ul class="onclick-menu-content">
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <li><input type="checkbox" checked> Label</li>
+                                                            <hr>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                            <li><input type="checkbox"> Label</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <table class="table table-borderless table-striped add-edit-table mt-0" id="datatable-editable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><input type="checkbox" title="Select All" name="select all"></th>
+                                                            <th>Carrier Code <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>Mode <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>SL <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>Rating Level <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>Equipment <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>PL <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>Preference Bonus <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>Secondary Carrier <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                            <th>Rate <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="gradeX">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">HJBT</a></td>
+                                                            <td>TL</td>
+                                                            <td>TL</td>
+                                                            <td>Shipment</td>
+                                                            <td>53FT</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>2.93 USD/Mile</td>
+                                                        </tr>
+                                                        <tr class="gradeC">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">SWFT</a></td>
+                                                            <td>TL</td>
+                                                            <td>TL</td>
+                                                            <td>Shipment</td>
+                                                            <td>53FT</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>2.96 USD/Mile</td>
+                                                        </tr>
+                                                        <tr class="gradeA selectedRow">
+                                                            <td><input type="checkbox" name="select row" checked></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td> 
+                                                            <td>PCL</td>
+                                                            <td>FDE1D</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                            <td class="actions actionWraper">
+                                                                <a href="#" class="actionBttnsL" data-toggle="tooltip" data-placement="top" title="Details" data-original-title="Details"><img src="assets/images/details.svg"></a>
+                                                                <a href="#" class="bX" data-toggle="tooltip" data-placement="top" title="Edit" data-original-title="Edit"><img src="assets/images/tableEdit.svg" class="mX"></a>
+                                                                <a href="#" class="actionBttnsR" data-toggle="tooltip" data-placement="top" title="Delete" data-original-title="Delete"><img src="assets/images/tableDelete.svg"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td> 
+                                                            <td>PCL</td>
+                                                            <td>FDE1D</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>AIR</td>
+                                                            <td>FDE1D</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>PCL</td>
+                                                            <td>FFON</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>PCL</td>
+                                                            <td>FDEGND</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>AIR</td>
+                                                            <td>FPON</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>PCL</td>
+                                                            <td>FDE1D</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>PCL</td>
+                                                            <td>FDE1D</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>PCL</td>
+                                                            <td>FDE1D</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr class="gradeA">
+                                                            <td><input type="checkbox" name="select row"></td>
+                                                            <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                            <td>PCL</td>
+                                                            <td>FDE1D</td>
+                                                            <td>Case</td>
+                                                            <td>ALL</td>
+                                                            <td>ALL</td>
+                                                            <td>0.0</td>
+                                                            <td>ALL</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane codeArea" id="getCode">
+
+                                                <p class="codeWraperTxt">/*==== HTML ====*/</p>
+                                                <p>&lt;section class"toggleHeaader"&gt;
+                                                    <p class="mx-0">&lt;div class="tableBttnWraper"&gt;</p>
+                                                        <p class="mx-0">&lt;div&gt;</p>
+                                                            <p class="mx-0">
+                                                                &lt;button class="btn bgTransparent mr-3"&gt;Select All&lt;/button&gt;
+                                                            </p>
+                                                            <p class="mx-0">
+                                                                &lt;button class="btn bgTransparent mr-3"&gt;Add Record&lt;/button&gt;
+                                                            </p>
+                                                        <p>&lt;/div&gt;</p>
+
+                                                        <p class="mx-0">&lt;div class="displayHeader"&gt;</p>
+
+                                                            <p class="mx-0">&lt;div tabindex="0" class="onclick-menu whiteTxt"&gt; Display &lt;i class="ion ion-ios-arrow-down downDropArrow"&gt;&lt;/i&gt;</p>
+
+                                                                <p class="mx-0">&lt;ul class="onclick-menu-content"&gt;</p>
+                                                                    <p class="mx-0">&lt;li&gt;&lt;input type="checkbox"&gt; Label&lt;/li&gt;</p>
+                                                                    
+                                                                    <p class="mx-0">&lt;li&gt;&lt;input type="checkbox"&gt; Label&lt;/li&gt;</p>
+
+                                                                    <p class="mx-0">&lt;li&gt;&lt;input type="checkbox"&gt; Label&lt;/li&gt;</p>
+                                                                <p class="mx-0">&lt;/ul&gt;</p>
+                                                            <p class="mx-0">&lt;/div&gt;</p>
+
+                                                        <p class="mx-0">&lt;/div&gt;</p>
+                                                    <p>&lt;/div&gt;</p>
+
+                                                    <p class="mx-0">&lt;table class="table"&gt;</p>
+                                                        <p class="mx-0">&lt;thead&gt;</p>
+
+                                                            <p class="mx-0">&lt;tr&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;&lt;input type="checkbox" title="Select All" name="select all"&gt;&lt;/th&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;Label&lt;/th&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;Label&lt;/th&gt;</p>
+                                                                <p class="mx-0">&lt;th&gt;Label&lt;/th&gt;</p>
+                                                            <p class="mx-0">&lt;/tr&gt;</p>
+
+                                                            <p>&lt;tr&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;&lt;input type="checkbox" name="select row"&gt;&lt;/td&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;Label&lt;/td&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;Label&lt;/td&gt;</p>
+                                                                <p class="mx-0">&lt;td&gt;Label&lt;/td&gt;</p>
+                                                                <p class="mx-0">/*==== <em>Table Action Buttons Start</em> ****IMPORTANT**** (Add only when a single row is selected) ====*/</p>
+                                                                <p class="mx-0">&lt;td class="actions actionWraper"&gt;</p>
+                                                                    <p class="mx-0">&lt;a href="#" class="actionBttnsL" title="Details"&gt;&lt;img src="assets/images/details.svg"&gt;&lt;/a&gt;</p>
+                                                                    <p class="mx-0">&lt;a href="#" class="bX" title="Edit"&gt;&lt;img src="assets/images/tableEdit.svg"&gt;&lt;/a&gt;</p>
+                                                                    <p class="mx-0">&lt;a href="#" class="actionBttnsR" title="Delete"&gt;&lt;img src="assets/images/tableDelete.svg"&gt;&lt;/a&gt;</p>
+                                                                <p class="mx-0">&lt;/td&gt;</p>
+                                                                <p class="mx-0">/*==== <em>Table Action Buttons End</em> ====*/</p>
+                                                            <p class="mx-0">&lt;/tr&gt;</p>
+
+                                                        <p class="mx-0">&lt;/thead&gt;</p>
+                                                    <p>&lt;/table&gt;</p>
+
+                                                <p>&lt;/section&gt;</p>
+
+                                                <hr>
+
+                                                <p class="codeWraperTxt">/*==== App Header Styles CSS ====*/</p>
+                                                  <p class="mx-0">
+                                                    .toggleHeaader {
+                                                    <ul class="list-unstyled m-l-15 mx-0">
+                                                      <li>margin-top: 5px;</li>
+                                                      <li>display: flex;</li>
+                                                      <li>align-items: center;</li>
+                                                      <li>justify-content: space-between;</li>
+                                                    </ul>
+                                                    }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .tableBttnWraper {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>display: flex;</li>
+                                                        <li>align-items: center;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .bgTransparent {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>padding-left: 0px;</li>
+                                                        <li>padding-right: 0px;</li>
+                                                        <li>background-color: transparent;</li>
+                                                        <li>font-size: 12px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .displayHeader {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-top: .5rem;</li>
+                                                        <li>padding: 5px 15px 10px 15px;</li>
+                                                        <li>display: flex;</li>
+                                                        <li>background-color: #fff;</li>
+                                                        <li>border-top-right-radius: 4px;</li>
+                                                        <li>border-top-left-radius: 4px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .mr-3 {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-right: 3rem;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .actionWraper {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>padding: 5px 10px !important;</li>
+                                                        <li>background-color: #fff;</li>
+                                                        <li>display: flex;</li>
+                                                        <li>justify-content: space-between;</li>
+                                                        <li>-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);</li>
+                                                        <li>-moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);</li>
+                                                        <li>box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);</li>
+                                                        <li>position: absolute;</li>
+                                                        <li>right: 20px;</li>
+                                                        <li>z-index: 1;</li>
+                                                     </ul>
+                                                    } 
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .actionBttnsL {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-right: 5px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .actionBttnsR {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>margin-left: 5px;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .bX {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>border-right: 1px solid #CAD3DF;</li>
+                                                        <li>border-left: 1px solid #CAD3DF;</li>
+                                                     </ul>
+                                                    } 
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .table {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>background-color: #fbfbfc;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .table td {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>color: #4A4A4A;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .table thead th {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>border-bottom: none;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .selectedRow {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>background-color: #91BFF3;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+                                                  <p class="mx-0">
+                                                    .whiteTxt {
+                                                     <ul class="list-unstyled m-l-15 mx-0">
+                                                        <li>color: #fff;</li>
+                                                     </ul> 
+                                                     }
+                                                  </p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: page -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                        <h4 class="m-t-0 header-title mb-0">Multi Select Table</h4>
+                                        <p class="mx-0">*****===== IMPORTANT!!! When multiple rows are selected add Footer Action Bar =====*****</p>
+                                    </div>
+
+                                    <div class="card-body greyBG pt-0">
+
+                                        <section class="toggleHeaader">
+                                                    <div class="tableBttnWraper">
+                                                        <div>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Select All</button>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Add Record</button>
+                                                        </div>
+
+                                                        <div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt">Related Links <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--<div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt"> Export <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+
+                                                    <div>
+                                                        <button class="btn waves-effect waves-light bgTransparent"><img src="assets/images/Grid-active.svg" class="deselectImg"></button>
+
+                                                        <button class="btn waves-effect waves-light bgTransparent"><img src="assets/images/Card-inactive.svg" class="deselectImg"></button>
+                                                    </div>
+                                                </section>
+
+                                        <div class="displayHeader">
+                                            <div tabindex="0" class="onclick-menu ml-Auto"> Display <i class="ion ion-md-arrow-dropdown downDropArrow"></i>
+                                                <ul class="onclick-menu-content">
+                                                    <li><a href="javascript:;">Related Link</a></li>
+                                                    <li><a href="javascript:;">Related Link</a></li>
+                                                    <li><a href="javascript:;">Related Link</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <table class="table table-striped table-borderless add-edit-table" id="datatable-editable">
+                                            <thead>
+                                                <tr>
+                                                    <th><input type="checkbox" title="Select All" name="select all"></th>
+                                                    <th>Carrier Code <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Mode <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>SL <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Rating Level <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Equipment <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>PL <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Preference Bonus <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Secondary Carrier <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Rate <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="gradeX">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">HJBT</a></td>
+                                                    <td>TL</td>
+                                                    <td>TL</td>
+                                                    <td>Shipment</td>
+                                                    <td>53FT</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>2.93 USD/Mile</td>
+                                                </tr>
+                                                <tr class="gradeC">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">SWFT</a></td>
+                                                    <td>TL</td>
+                                                    <td>TL</td>
+                                                    <td>Shipment</td>
+                                                    <td>53FT</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>2.96 USD/Mile</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>  
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td> 
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>AIR</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FFON</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDEGND</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>AIR</td>
+                                                    <td>FPON</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA">
+                                                    <td><input type="checkbox" name="select row"></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: page -->
+
+                        </div> <!-- end Panel -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                        <h4 class="m-t-0 header-title mb-0">Select All Table</h4>
+                                        <p class="mx-0">*****===== IMPORTANT!!! When multiple rows are selected add Footer Action Bar =====*****</p>
+                                    </div>
+
+                                    <div class="card-body greyBG pt-0">
+
+                                        <section class="toggleHeaader">
+                                                    <div class="tableBttnWraper">
+                                                        <div>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Deselect</button>
+                                                            <button class="btn waves-effect waves-light bgTransparent mr-3">Add Record</button>
+                                                        </div>
+
+                                                        <div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt">Related Links <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                    <li><a href="javascript:;">Link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--<div>
+                                                            <div tabindex="0" class="onclick-menu whiteTxt"> Export <i class="ion ion-ios-arrow-down downDropArrow whiteTxt"></i>
+                                                                <ul class="onclick-menu-content">
+                                                                    <li><a href="javascript:;">Excel</a></li>
+                                                                    <li><a href="javascript:;">CSV</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+
+                                                    <div>
+                                                        <button class="btn waves-effect waves-light bgTransparent"><img src="assets/images/Grid-active.svg" class="deselectImg"></button>
+
+                                                        <button class="btn waves-effect waves-light bgTransparent"><img src="assets/images/Card-inactive.svg" class="deselectImg"></button>
+                                                    </div>
+                                                </section>
+
+                                        <div class="displayHeader">
+                                            <div tabindex="0" class="onclick-menu ml-Auto"> Display <i class="ion ion-md-arrow-dropdown downDropArrow"></i>
+                                                <ul class="onclick-menu-content">
+                                                    <li><a href="javascript:;">Related Link</a></li>
+                                                    <li><a href="javascript:;">Related Link</a></li>
+                                                    <li><a href="javascript:;">Related Link</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <table class="table table-striped table-borderless add-edit-table" id="datatable-editable">
+                                            <thead>
+                                                <tr>
+                                                    <th><input type="checkbox" title="Select All" name="select all" checked></th>
+                                                    <th>Carrier Code <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Mode <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>SL <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Rating Level <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Equipment <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>PL <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Preference Bonus <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Secondary Carrier <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                    <th>Rate <span><i class="ion ion-ios-arrow-round-up tableArrow"></i></span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="gradeX selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">HJBT</a></td>
+                                                    <td>TL</td>
+                                                    <td>TL</td>
+                                                    <td>Shipment</td>
+                                                    <td>53FT</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>2.93 USD/Mile</td>
+                                                </tr>
+                                                <tr class="gradeC selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">SWFT</a></td>
+                                                    <td>TL</td>
+                                                    <td>TL</td>
+                                                    <td>Shipment</td>
+                                                    <td>53FT</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>2.96 USD/Mile</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>  
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td> 
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>AIR</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FFON</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDEGND</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>AIR</td>
+                                                    <td>FPON</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr class="gradeA selectedRow">
+                                                    <td><input type="checkbox" name="select row" checked></td>
+                                                    <td><a href="javascript:;" class="tableLink">FEDEX</a></td>
+                                                    <td>PCL</td>
+                                                    <td>FDE1D</td>
+                                                    <td>Case</td>
+                                                    <td>ALL</td>
+                                                    <td>ALL</td>
+                                                    <td>0.0</td>
+                                                    <td>ALL</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: page -->
+
+                        </div> <!-- end Panel -->
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    2018 © Manhattan Associates
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- MODAL -->
+        <div id="dialog" class="modal-block mfp-hide">
+            <section class="card">
+                <div class="card-body">
+                    <header class="panel-heading">
+                        <h4 class="panel-title mt-0">Are you sure?</h4>
+                    </header>
+                    <div class="panel-body">
+                        <div class="modal-wrapper">
+                            <div class="modal-text">
+                                <p>Are you sure that you want to delete this row?</p>
+                            </div>
+                        </div>
+
+                        <div class="row m-t-20">
+                            <div class="col-md-12 text-right">
+                                <button id="dialogConfirm" class="btn btn-success waves-effect waves-light">Confirm</button>
+                                <button id="dialogCancel" class="btn btn-danger waves-effect">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- end Modal -->
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+
+        <!-- Examples -->
+        <script src="../plugins/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="../plugins/tiny-editable/mindmup-editabletable.js"></script>
+        <script src="../plugins/tiny-editable/numeric-input-example.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script src="assets/pages/jquery.datatables.editable.init.js"></script>
+
+        <script>
+            $('#mainTable').editableTableWidget().numericInputExample().find('td:first').focus();
+        </script>
+
+    </body>
+</html>

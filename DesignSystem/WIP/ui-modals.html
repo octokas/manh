@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MANH - Design System</title>
+        <meta name="description" content="A fully featured Design System which can be used to build CRM, CMS, etc.">
+        <meta name="MANH" content="DesignSystem">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Custom box css -->
+        <link href="../plugins/custombox/css/custombox.min.css" rel="stylesheet">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+        
+        <!-- your custom css -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left logoContainer">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/MANH.png" alt="Manhattan Associates Logo" class="manhLogo">
+                        <span class="nav-label">MANH</span>
+                    </a>
+                </div>
+                
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <nav class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+
+                            <li>
+                                <a href="index.html">
+                                    <i class="ion-md-speedometer"></i> <span> Getting Started </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="javascript: void(0);"><img src="assets/images/atomIcon.png" class="iconSize"> <span> Atoms </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="ui-typography.html">Typography</a></li>
+                                    <li><a href="ui-buttons.html">Buttons</a></li>
+                                    <li><a href="ui-ionicons.html">Ion Icons</a></li>
+                                    <li><a href="forms-elements.html">Form Field Elements</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><img src="assets/images/molecule.png" class="iconSize"> <span> Molecules/UI Elements </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="ui-app-header.html">App Headers & Footers</a></li>
+                                    <li><a href="ui-sweet-alert.html">Alerts & Toasts</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><img src="assets/images/organism.png" class="iconSize"> <span> Organisms/Components </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="appointments.html">Appointments</a></li>
+                                    <li><a href="ui-cards.html">Cards</a></li>
+                                    <li><a href="tlm2020-table.html">TLM 2020 Table</a></li>
+                                    <li><a href="tlm2020-radio-table.html">TLM 2020 Table Radio</a></li>
+                                    <li><a href="ui-modals.html">Modals</a></li>
+                                    <li><a href="l4_view.html">L4 View</a></li>
+                                    <li><a href="l4_add.html">L4 Add</a></li>
+                                    <li><a href="l4_edit.html">L4 Edit</a></li>
+                                    <li><a href="l4_validation.html">L4 Validation</a></li>
+                                    <!--<li><a href="l4-search-related-modal.html">l4 Search Related</a></li>
+                                    <li><a href="lookup_modal.html">Basic Lookup Modal</a></li>
+                                    <li><a href="advanced-lookup_modal.html">Advanced Lookup Modal</a></li>-->
+                                    <li>
+                                        <a href="https://marvelapp.com/311f5hh/screen/47082035/handoff" target="_blank">L4 Calendar</a>
+                                    </li>
+                                    <li><a href="ui-warning-modal.html">Warning Modal</a></li>
+                                    <li><a href="ui-confirmation-modal.html">Confirmation Modal</a></li>
+                                    <li><a href="tracking-message.html">Message Tracking</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><i class="ion-md-copy"></i>  <span> Pages </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="pages-login.html" target="_blank">Login</a></li>
+                                    <li><a href="pages-logout.html" target="_blank">Logout</a></li>
+                                    <li>
+                                        <a href="http://tlm-rd-dev.us.manh.com/ux/2020LCC/homepage.html" target="_blank">LCC 2020 Homepage</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </nav>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title float-left">Modals</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="m-t-0 header-title mb-0">TMS Modals Examples</h4>
+                                    </div>
+                                    <div class="card-body">
+    
+                                        <a href="#custom-modal" class="btn btn-primary waves-effect waves-light m-r-5 m-b-10" data-animation="fadein" data-plugin="custommodal" data-overlayspeed="200" data-overlaycolor="#36404a">Informational Popup: Basic</a>
+
+                                        <a href="#custom-modal2" class="btn btn-primary waves-effect waves-light m-r-5 m-b-10" data-animation="fadein" data-plugin="custommodal" data-overlayspeed="200" data-overlaycolor="#36404a">Informational Popup: Tabular Data</a>
+
+                                        <a href="#custom-modal3" class="btn btn-primary waves-effect waves-light m-r-5 m-b-10" data-animation="fadein" data-plugin="custommodal" data-overlayspeed="200" data-overlaycolor="#36404a">Complex Transactional Popup : Step 1 - Search Results</a>
+
+                                        <a href="#custom-modal4" class="btn btn-primary waves-effect waves-light m-r-5 m-b-10" data-animation="fadein" data-plugin="custommodal" data-overlayspeed="200" data-overlaycolor="#36404a">Complex Transactional Popup : Step 1 - Input Form</a>
+
+                                        <a href="#custom-modal5" class="btn btn-primary waves-effect waves-light m-r-5 m-b-10" data-animation="fadein" data-plugin="custommodal" data-overlayspeed="200" data-overlaycolor="#36404a">Complex Transactional Popup W/Table Modal</a>
+    
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+                        </div>
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    2018 © Manhattan Associates.
+                </footer>
+                <!-- Footer Ends -->
+
+            </div>
+
+            <!-- Informational Popup: Basic Modal -->
+            <div id="custom-modal" class="modal-demo basicModalWidth">
+                <button type="button" class="close" onclick="Custombox.close();">
+                    <span class="closeBttn">X</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="custom-modal-title">TMS Title</h4>
+                <div class="modalContentWraper">
+                    <table id="modal__desc" class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                            </tr>
+                            <tr>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                            </tr>
+                            <tr>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                            </tr>
+                            <tr>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                            </tr>
+                            <tr>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                            </tr>
+                            <tr>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                                <td class="l4HeaderTableRow"><strong>Label</strong></td>
+                                <td class="l4HeaderTableRow">Value</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modalFooter">
+                    <section class="paginationActionBarModal">
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5""> < </button>
+
+                        <button class="pagBttnsModal"> 1 </button>
+
+                        <button class="pagBttnsModal"> 2 </button>
+
+                        <button class="pagBttnsModal"> 3 </button>
+
+                        <button class="pagBttnsModal"> 4 </button>
+
+                        <button class="pagBttnsModal"> 5 </button>
+
+                        <span class="paginationDotsModal bgTransparentModal m-b-5"> ... </span>
+
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5"> > </button>
+                    </section>
+
+                    <button type="button" class="primaryFooter maL"  onclick="Custombox.close();">
+                        Okay
+                    </button>
+                </div>
+            </div>
+            <!-- Informational Popup: Basic Modal End -->
+
+
+            <!-- Informational Popup: Tabular Data Modal -->
+            <div id="custom-modal2" class="modal-demo basicModalWidth">
+                <button type="button" class="close" onclick="Custombox.close();">
+                    <span class="closeBttn">X</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="custom-modal-title">POPUP Title</h4>
+                <div class="modalContentWraper">
+                    <table class="table">
+                      <tbody>
+                          <tr>
+                              <td class="modalTableNoBorder"><strong>Label</strong></td>
+                              <td class="modalTableNoBorder">Value</td>
+                              <td class="modalTableNoBorder"><strong>Label</strong></td>
+                              <td class="modalTableNoBorder">Value</td>
+                          </tr>
+                          <tr>
+                              <td class="modalTableNoBorder"><strong>Label</strong></td>
+                              <td class="modalTableNoBorder">Value</td>
+                              <td class="modalTableNoBorder"><strong>Label</strong></td>
+                              <td class="modalTableNoBorder"><a href="#" class="blueLink">Value</a></td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+                    <div class="modalTableWraper1">
+                        <table class="table table-striped modalTable">
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                    <th>Column 5</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="modalFooter">
+                    <section class="paginationActionBarModal">
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5""> < </button>
+
+                        <button class="pagBttnsModal"> 1 </button>
+
+                        <button class="pagBttnsModal"> 2 </button>
+
+                        <button class="pagBttnsModal"> 3 </button>
+
+                        <button class="pagBttnsModal"> 4 </button>
+
+                        <button class="pagBttnsModal"> 5 </button>
+
+                        <span class="paginationDotsModal bgTransparentModal m-b-5"> ... </span>
+
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5"> > </button>
+                    </section>
+
+                    <button type="button" class="primaryFooter maL"  onclick="Custombox.close();">
+                        Okay
+                    </button>
+                </div>
+            </div>
+            <!-- Informational Popup: Tabular Data Modal End -->
+
+            <!-- Informational Popup: Tabular Data Modal -->
+            <div id="custom-modal3" class="modal-demo resultsModalWidth">
+                <button type="button" class="close" onclick="Custombox.close();">
+                    <span class="closeBttn">X</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="custom-modal-title">POPUP Title</h4>
+                <div class="modalContentWraper">
+                    <div>
+                        <h6 class="resultsTitle">X Results Found</h6>
+                    </div>
+                    <div class="modalTableWraper2">
+                        <table class="table table-striped resultsModalTable">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" name=""></th>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr class="selectedRow">
+                                    <td><input type="checkbox" name="" class="tableCheckbox" checked> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="modalFooter">
+                    <section class="paginationActionBarModal">
+                        <div class="selectWraperModal">
+                            <span class="selectBorderModal">X Records Selected</span>
+                        </div>
+
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5""> < </button>
+
+                        <button class="pagBttnsModal"> 1 </button>
+
+                        <button class="pagBttnsModal"> 2 </button>
+
+                        <button class="pagBttnsModal"> 3 </button>
+
+                        <button class="pagBttnsModal"> 4 </button>
+
+                        <button class="pagBttnsModal"> 5 </button>
+
+                        <span class="paginationDotsModal bgTransparentModal m-b-5"> ... </span>
+
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5"> > </button>
+                    </section>
+
+                    <div class="modalFooterBttnWraper">
+                        <button type="button" class="primaryFooter"  onclick="Custombox.close();">
+                            Cancel
+                        </button>
+
+                        <button type="button" class="primaryFooter">
+                            Select
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Informational Popup: Tabular Data Modal End -->
+
+            <!-- Complex Transactional Popup : Step 1 - Input Form Modal -->
+            <div id="custom-modal4" class="modal-demo resultsModalWidth">
+                <button type="button" class="close" onclick="Custombox.close();">
+                    <span class="closeBttn">X</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="custom-modal-title">POPUP Title</h4>
+                <div class="modalContentWraper">
+                    <div class="modalSubTitle">
+                        <h6 class="resultsTitle">SECTION 1</h6>
+                        <p>Required<span class="required">*</span></p>
+                    </div>
+
+                    <div class="modalInputWraper">
+                        <div class="dropSelectLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <div class="inputSelectWraper">
+                                <select name="cars">
+                                    <option value="None">Select</option>
+                                </select>
+                                <i class="ion ion-ios-arrow-down"></i>
+                            </div>
+                        </div>
+                        <div class="dropSelectLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <div class="inputSelectWraper">
+                                <select name="cars">
+                                    <option value="None">Select</option>
+                                </select>
+                                <i class="ion ion-ios-arrow-down"></i>
+                            </div>
+                        </div>
+                        <div class="modalCalInputWraper">
+                            <label class="cal-m-b"><strong>Label</strong><span class="required">*</span></label>
+                            <div class="modalDateInputWraper">
+                                <input type="date" name="" placeholder="Input" class="modalDateInputs">
+                                <span><i class="ion ion-ios-calendar"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modalInputWraper">
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+                        
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+                    </div>
+
+                    <div class="dropdown-divider"></div>
+
+                    <h6><strong>SECTION 2</strong></h6>
+                    <div class="modalInputWraper">
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+                    </div>
+
+                    <div class="modalInputWraper">
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modalFooter">
+                    <div class="modalFooterBttnWraper">
+                        <button type="button" class="primaryFooter"  onclick="Custombox.close();">
+                            Cancel
+                        </button>
+
+                        <button type="button" class="primaryFooter">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Complex Transactional Popup : Step 1 - Input Form Modal End -->
+ 
+            <!-- Complex Transactional Popup W/Table Modal Start -->
+            <div id="custom-modal5" class="modal-demo resultsModalWidth">
+                <button type="button" class="close" onclick="Custombox.close();">
+                    <span class="closeBttn">X</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="custom-modal-title">POPUP Title</h4>
+                <div class="modalContentWraper2">
+                    <div class="modalSubTitle">
+                        <h6 class="resultsTitle">SECTION 1</h6>
+                        <p>Required<span class="required">*</span></p>
+                    </div>
+
+                    <div class="modalInputWraper2">
+                        <div class="dropSelectLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <div class="inputSelectWraper">
+                                <select name="cars">
+                                    <option value="None">Select</option>
+                                </select>
+                                <i class="ion ion-ios-arrow-down"></i>
+                            </div>
+                        </div>
+                        <div class="dropSelectLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <div class="inputSelectWraper">
+                                <select name="cars">
+                                    <option value="None">Select</option>
+                                </select>
+                                <i class="ion ion-ios-arrow-down"></i>
+                            </div>
+                        </div>
+                        <div class="modalCalInputWraper">
+                            <label class="cal-m-b"><strong>Label</strong><span class="required">*</span></label>
+                            <div class="modalDateInputWraper">
+                                <input type="date" name="" placeholder="Input" class="modalDateInputs">
+                                <span><i class="ion ion-ios-calendar"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modalInputWraper mb-2">
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+
+                        <div class="inputLabel">
+                            <label><strong>Label</strong><span class="required">*</span></label>
+                            <input type="text" name="" placeholder="Input" class="modalTxtInputs">
+                        </div>
+                    </div>
+
+                    <div class="modalSearchBttnWraper">
+                        <button type="button" class="primaryFooter">
+                            Search
+                        </button>
+                    </div>
+
+                    <h6><strong>X Results Found</strong></h6>
+                    <div class="modalTableWraper2">
+                        <table class="table table-striped resultsModalTable">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr class="selectedRow">
+                                    <td><input type="radio" name="" class="tableCheckbox" checked> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="" class="tableCheckbox"> Result Identifier</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="modalFooter">
+                    <section class="paginationActionBarModal">
+                        <div class="selectWraperModal">
+                            <span class="selectBorderModal">X Records Selected</span>
+                        </div>
+
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5""> < </button>
+
+                        <button class="pagBttnsModal"> 1 </button>
+
+                        <button class="pagBttnsModal"> 2 </button>
+
+                        <button class="pagBttnsModal"> 3 </button>
+
+                        <button class="pagBttnsModal"> 4 </button>
+
+                        <button class="pagBttnsModal"> 5 </button>
+
+                        <span class="paginationDotsModal bgTransparentModal m-b-5"> ... </span>
+
+                        <button class="pagBttnsModal pagArrowBttnModal m-b-5"> > </button>
+                    </section>
+
+                    <div class="modalFooterBttnWraper">
+                        <button type="button" class="primaryFooter"  onclick="Custombox.close();">
+                            Cancel
+                        </button>
+
+                        <button type="button" class="primaryFooter">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Complex Transactional Popup W/Table: Modal End -->
+
+                
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+
+        <!-- Modal-Effect -->
+        <script src="../plugins/custombox/js/custombox.min.js"></script>
+        <script src="../plugins/custombox/js/legacy.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
+</html>

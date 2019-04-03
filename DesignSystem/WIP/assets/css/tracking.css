@@ -1,0 +1,202 @@
+:root {
+  --mup-header1-font-size: 24px;
+  --mup-header2-font-size: 20px;
+  --mup-warning-toast-message-background-color: #FFDEA5;
+  --mup-warning-toast-message-link-color: #FF9E00;
+  --mup-action-button-background-color: #4F93E4;
+  --mup-secondary-button-background-color: #3D7DCA;
+  --mup-light-input-background-color: #ECEFF4;
+  --mup-light-input-border-color: #CAD3DF;
+  --mup-light-container-background-color: #fbfbfc;
+}
+
+table {
+    margin-bottom: 0px !important;
+}
+input {
+    color: #bebebe;
+}
+input:focus {
+    outline: none;
+}
+button:focus {
+    outline: none;
+}
+select {
+    width: 170px;
+    background-color: transparent !important;
+    border: none !important;
+    color: #bebebe;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+.date {
+    margin-right: 1rem;
+    background-color: transparent;
+    color: #bebebe;
+    border: none !important;
+}
+.table td {
+    border-top: none !important;
+}
+.inputHeaderArea {
+    margin: 80px auto 0 auto;
+    padding: 0 15px;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inputWraper {
+  margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.labelWraper {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.tmsLabels {
+  margin-right: .5rem;
+  font-weight: 700;
+}
+.tmsInputField {
+    width: 200px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: var(--mup-light-input-background-color);
+    border: 1px solid var(--mup-light-input-border-color);
+}
+.tmsInputField2 {
+    width: 200px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: var(--mup-light-input-background-color);
+    border: 1px solid var(--mup-light-input-border-color);
+}
+.contentSection {
+    margin: 1rem 15px;
+    padding: 15px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    background-color: var(--mup-light-container-background-color);
+    border: 1px solid var(--mup-light-input-border-color);
+    color: var(--mup-ion-font-color);
+}
+.addressWraper {
+    display: flex;
+    flex-direction: column;
+}
+.radioContainer {
+    display: flex;
+}
+.radioBttn {
+    margin-top: .25rem;
+    margin-right: .5rem;
+}
+.inputLabelContainer {
+    margin-right: 1rem;
+    display: flex;
+}
+.textareaWraper {
+    display: flex;
+    flex-direction: column;
+}
+.textarea {
+    width: 400px;
+    min-height: 100px;
+    border-radius: 4px;
+    background-color: var(--mup-light-input-background-color);
+    border: 1px solid var(--mup-light-input-border-color);
+}
+.level2Label {
+    display: flex;
+    flex-direction: column;
+}
+.deleteBttn {
+    margin-top: 1rem;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background-color: var(--mup-action-button-background-color);
+    color: #fff;
+    border: none;
+}
+.deleteBttn:hover,
+.deleteBttn:focus {
+    background-color: var(--mup-secondary-button-background-color);
+    color: #fff;
+}
+.dropContainer {
+    display: flex;
+    flex-direction: column;
+}
+.dropDownWraper {
+    padding: 0 5px 0 8px;
+    width: 200px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    background-color: var(--mup-light-input-background-color);
+    border: 1px solid var(--mup-light-input-border-color);
+    border-radius: 4px;
+}
+.tmsInputFieldShort {
+    width: 160px;
+    background-color: transparent;
+    border: none;
+}
+.fa-angle-down,
+.fa-calendar-alt {
+    color: #bebebe;
+}
+.mainContentContainer {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 768px !important;
+}
+.addBttn {
+    margin-left: 15px;
+    width: 80px;
+    background-color: var(--mup-action-button-background-color);
+    color: #fff;
+    border: none;
+}
+.addBttn:hover {
+    background-color: var(--mup-secondary-button-background-color);
+    color: #fff;
+    border: none; 
+}
+.addBttn:focus {
+    outline: none !important;
+}
+.allContentContainer {
+    max-height: 468px !important;
+    overflow-y: scroll !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -35,7 +35,7 @@ body
 body a
 {
     text-decoration: none;
-    color: #000000;    
+    color: #01447B;    
     transition: color .2s linear, background-color .2s linear, border-color .2s linear;
 }
 
@@ -97,7 +97,7 @@ body img
 .content-left
 {
     float: left;
-    width: 30%;
+    width: 28%;
     position: relative;
 }
 
@@ -109,19 +109,20 @@ body img
 .content-right
 {
     float: right;
-    width: 70%;    
+    width: 72%;    
     position: relative;
 }
 
 .content-right-holder
 {
-    width: 700px;    
-    max-width: 95%;
+    width: 72px;    
+    max-width: 700px;
 }
 
 .welcome-content
 {
-    width: 200px;   
+    width: 54%;
+    max-width: 400px;   
     padding-left: 85px;
     position: relative;
 }
@@ -152,8 +153,8 @@ body img
 
 .site-description
 {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 1.1em;
+    line-height: 1.4em;
 }
 
 .page h1.entry-title
@@ -163,6 +164,8 @@ body img
     line-height: 38px;
     padding: 0;
 }
+
+
 
 
 /* ===================================
@@ -415,15 +418,17 @@ body img
 .carousel-cell h3.entry-title 
 {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 2em;
     padding: 0;
-    font-weight: 700;    
+    color: #01447B;
+    margin-bottom: -5px;
+    margin-top: 10px;   
 }
 
 .carousel-cell .cat-links 
 {
-    color: #000000;
+    color: #01447B;
 }
 
 .carousel-cell .cat-links:before 
@@ -432,7 +437,7 @@ body img
     display: inline-block;
     width: 25px;
     height: 1px;
-    background-color: #000;
+    background-color: #01447B;
     vertical-align: 5px;
     margin-right: 5px;
 }
@@ -1201,7 +1206,7 @@ a.read-more:hover:after
 
     .content-right
     {
-        width: 65%;
+        width: 54%;
     }        
 }
 
@@ -1251,7 +1256,7 @@ a.read-more:hover:after
 
     .content-right 
     {        
-        width: 95%;
+        width: 72%;
         float: none;
         margin: 0 auto;        
     }

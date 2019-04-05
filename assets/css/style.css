@@ -1,5 +1,7 @@
 
 /*------------------------------------------------------------------
+  MANH - DESIGN SYSTEM BY UXTEAM JAMES & KASKA
+  
 [Table of contents]
 1. Global CSS   
     1.1 Columns CSS
@@ -1874,7 +1876,7 @@ footer ul  {
 .subtle-nav {
     color: grey !important;
     /* text-decoration: none; */
-    font-weight: normal !important;
+    font-weight: 500 !important;
     font-size: 1em !important;
 }
 

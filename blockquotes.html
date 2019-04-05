@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en-US">
         <title>MANH - Blockquotes</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,19 +8,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" href="assets/images/favicon.ico" />    
-        <link href='http://fonts.googleapis.com/css?family=Work%20Sans:400,500,700,900%7CPT%20Serif%7CRoboto:700' rel='stylesheet' type='text/css'>	
-        <link rel="stylesheet" href="assets/xcode/css/snip.css">	
+        <link href='http://fonts.googleapis.com/css?family=Work%20Sans:400,500,700,900%7CPT%20Serif%7CRoboto:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="assets/xcode/css/snip.css">		
         <link rel="stylesheet" type="text/css"  href='assets/css/style.css' />
-	    <script src="assets/xcode/js/modernizr.js"></script>
+        <script src="assets/xcode/js/modernizr.js"></script>
+
         <!--[if lt IE 9]>
                 <script src="js/html5shiv.js"></script>            
                 <script src="js/respond.min.js"></script>                   
         <![endif]-->         
     </head>
-    <body class="single single-portfolio">
+    <body>
         <div class="site-wrapper">                  
-            <div class="doc-loader"></div>  
-            <header class="header-holder">
+            <div class="doc-loader"></div> 
+                <header class="header-holder">
                     <div class="menu-wrapper center-relative relative">
                         <div class="header-logo">
                             <a href="index.html"><img src="assets/images/Manhattan-Associates-Inc.jpg" alt="MANH"> 
@@ -44,7 +46,7 @@
                                             <li><a href="#">Buttons</a></li>
                                             <li><a href="#">Form Field Elements</a></li>
                                             <li><a href="#">Iconography</a></li>
-                                            <li><a href="#">Typography</a></li>
+                                            <li><a href="#" class="active current">Typography</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -72,62 +74,70 @@
                         <div class="clear"></div>                        
                     </div>
                 </header>
-
-            <div class="portfolio-item-wrapper">
-                <div class="full-page-width center-relative">
-                        <img src="assets/images/blockquotes.jpg" alt="fortune cookie about patience">                                                             
-                </div><br><br>
-
-                <div class="center-text content-650 center-relative">
-                    <h1>Blockquotes</h1><br>
-                    <p>Blockquotes indicate that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation, as seen below. A URL for the source of the quote may be given using the <b>cite</b> attribute, while a simple text representaion of the source can be given by using the HTML <code>< cite ></code> element.</p><br><br>
-                    <img class="divider-left" src="assets/images/divider2.png" alt="MANH" /><img class="divider-right" src="assets/images/divider3.png" alt="MANH" />
-                    <!-- Show code -->
-						<div class="tabs js-tabs code-highlight-tabs code-highlight-tabs-center">
-                                <h4 class="tab-title">
-                                    <i class="fa fa-quote-left"></i>Example</h4>
-                                <div class="tab-content">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <blockquote>
-                                                    “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.”
-                                            </blockquote>
-                                            <cite>- Paul Rand</cite>
-                                        </div>
+                <div id="content" class="site-content" style="padding:0px;">
+                    <div class="section-wrapper">
+                        <h1 class="entry-title page-title block content-1170 center-relative"> 
+                            <b><u>Blockquotes</u></b> are <b>indicators</b>,<br>that the <b>selected text</b><em> is an extended quotation</em>.
+                        </h1> 
+                        <!-- <img class="title-logo center-relative block" src="assets/images/divider1.png" alt=""> -->
+                        <div class="content-wrapper block content-1170 center-relative">
+                            <div class="one_half">
+                                Blockquotes indicate that the enclosed text is an extended quotation. A URL for the source of the quote may be given using the <b>cite</b> attribute, while a simple text representaion of the source can be given by using the HTML <code class="language-markup js-code">&lt;cite&gt;</code> element.<br><br>If the quotation is in a language other than that of the main document, <code class="language-markup js-code">lang&#61;</code> and maybe <code class="language-markup js-code">dir&#61;</code> attributes may be relevant to specify the language of the quoted text and perhaps its direction, left-to-right or right-to-left.
+                            </div>
+                            <div class="one_half last">
+                                In HTML and XHTML, the blockquote element defines "a section [within a document] that is quoted from another source".<br>The syntax is:<pre><code class="language-markup js-code">&lt;blockquote&gt;
+    &lt;p&gt;blockquoted text goes here&lt;p&gt;
+&lt;blockquote&gt;</code></pre>The blockquote element is used to indicate the quotation of a large section of text from another source.
+                            </div>
+                            <div class="clear"></div>                                                
+                        </div>                    
+                        <div class="content-1170 center-relative top-30">
+                            <!-- <img class="divider-left" src="assets/images/divider2.png" alt="MANH" /><img class="divider-right" src="assets/images/divider3.png" alt="MANH" /> -->
+                            <hr style="border-top:2px dotted grey;"/><br>
+                        </div>
+                        <div class="content-1170 center-relative">
+                            <div class="one_half">
+                                <p><strong>Blockquote Examples</strong></p>
+                                <!-- Show code -->
+						<div class="tabs js-tabs code-highlight-tabs code-highlight-tabs-center" style="margin-bottom:-72px;">
+                            <h4 class="tab-title">
+                                <i class="fa fa-quote-left"></i>Example</h4>
+                            <div class="tab-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <blockquote style="text-align:center;">
+                                                “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.”
+                                        </blockquote>
+                                        <cite>- Paul Rand</cite>
                                     </div>
                                 </div>
-                                <h4 class="tab-title">
-                                    <i class="fa fa-code"></i>Code</h4>
-                                <div class="tab-content">
-                                    <div class="code-highlight " data-label="">
-                                        <span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">&lt;blockquote&gt;
-    “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.”
+                            </div>
+                            <h4 class="tab-title">
+                                <i class="fa fa-code"></i>Code</h4>
+                            <div class="tab-content">
+                                <div class="code-highlight " data-label="">
+                                    <span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">&lt;blockquote&gt;
+“There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.”
 &lt;blockquote&gt;
 &lt;cite&gt;- Paul Rand&lt;cite&gt;</code></pre> </div>
-                                </div>
                             </div>
-                            <!-- End of Show code -->
-                            <!-- <img class="divider-left" src="assets/images/divider2.png" alt="MANH" /><img class="divider-right" src="assets/images/divider3.png" alt="MANH" /> -->
-                </div>
-
-                <div class="nav-links" style="padding:5px 0;">
-                    <div class="content-1170 center-relative">
-                        <div class="nav-previous"> 
-                            <a href="index.html" rel="prev">Typography</a>
-                            <div class="arrow-holder">←</div>
-                            <div class="clear"></div>                                
                         </div>
-                        <div class="nav-next"> 
-                            <a href="headings.html" rel="next">Headers</a>
-                            <div class="arrow-holder">→</div>
-                            <div class="clear"></div>                               
-                        </div>                            
-                    </div>                        
-                </div>
-            </div>              
-
-
-            <footer class="footer">
+                        <!-- End of Show code -->
+                            </div>
+    
+                            <div class="one_half last">
+                                <ul class="archive-list">
+                                    <li><span><a href="blockquotes.html">Blockquotes</a> &nbsp; · &nbsp; </span> Extended quotations.</li>
+                                    <li><span><a href="headings.html">Headings</a> &nbsp; · &nbsp; </span> Best web design award.</li>
+                                    <li><span><a href="lists.html">Lists</a> &nbsp; · &nbsp; </span> Best web design award.</li>
+                                    <li><span><a href="text-elements.html">Text Elements</a> &nbsp; · &nbsp; </span> Best web design award.</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>                           
+                        </div>                        
+                    </div>                
+                </div>                
+                <footer class="footer">
                     <div class="footer-content center-relative">
                         <img class="footer-logo" src="assets/images/MANH.png" alt="MANH">
                         <div class="copyright-holder content-1170 center-relative">© 2019 Manhattan &amp; Associates. All Rights Reserved.</a></div>
@@ -143,5 +153,5 @@
 <script src='assets/js/swiper.min.js'></script>                        
 <script src='assets/js/main.js'></script>
 <script src="assets/xcode/js/snip.js"></script>
-    </body>
+</body>
 </html>

@@ -10259,7 +10259,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .page-title {
   font-size: 5em;
-  color: #1a1a1a;
+  /* color: #1a1a1a; */
   font-weight: 100;
   margin-bottom: 30px;
 }

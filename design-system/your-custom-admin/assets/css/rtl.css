@@ -1,0 +1,468 @@
+/**** SIDEBAR  ****/
+/**** TOPBAR ****/
+/**** QUICKVIEW SIDEBAR ****/
+/**** BOXED LAYOUT ****/
+/**** MAIN CONTENT ****/
+/**** WIDGETS ****/
+/**** PAGES ****/
+/**** SEARCH ****/
+/**** BUILDER ****/
+/******** UI **********/
+/* Main Color */
+/* Alert & Notification */
+/* Popover */
+/* Form */
+/* Select Input */
+/* Tabs */
+/* Table */
+/* Summernote */
+/******* THEMES *******/
+/* Mixin */
+.rtl ul,
+.rtl li,
+.rtl input,
+.rtl p,
+.rtl label,
+.rtl div,
+.rtl section,
+.rtl textarea {
+  text-align: right;
+}
+.rtl .fileinput-new.input-group .btn-file {
+  border-radius: 4px 0 0 4px;
+}
+.rtl .fileinput-new .input-group .btn-file {
+  border-radius: 4px 0 0 4px;
+}
+.rtl .ui-timepicker-div dl dt {
+  clear: right;
+  float: right;
+  padding: 5px 5px 0 0;
+  text-align: right;
+}
+.rtl .ui-timepicker-div dl dd {
+  margin: 0 40% 20px 10px;
+  text-align: right;
+}
+.rtl .ui-timepicker-div .ui-slider-horizontal .ui-slider-handle {
+  margin-left: 0;
+  margin-right: -0.6em;
+}
+.rtl .ui-timepicker-div .ui-slider .ui-slider-handle:before {
+  left: auto;
+  right: 4px;
+}
+.rtl .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: right;
+}
+.rtl .ui-datepicker .ui-datepicker-buttonpane button {
+  float: left;
+}
+.rtl .ui-datepicker-buttonpane {
+  clear: both;
+}
+.rtl .ui-datepicker-buttonpane:before {
+  content: " ";
+  display: table;
+}
+.rtl .ui-datepicker-buttonpane:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.rtl .main-content .page-content .ui-datepicker i {
+  float: none !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+.rtl .main-content .page-content .panel .panel-content i {
+  float: right;
+  padding-left: 6px;
+  padding-right: 0;
+  padding-top: 2px;
+}
+.rtl .main-content .page-content .panel .panel-content .inside-tooltip i {
+  padding-top: 0;
+}
+.rtl .main-content .page-content table i {
+  padding-left: 0 !important;
+}
+.rtl .main-content .page-content table .btn {
+  height: 26px;
+}
+.rtl .main-content .page-content table .btn.edit i {
+  margin-top: 2px;
+}
+.rtl .main-content .page-content .pagination i {
+  padding-top: 0 !important;
+}
+.rtl .media-left {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.rtl .media > .pull-left {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.rtl .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up {
+  -moz-border-radius: 4px 0 0 0;
+  -webkit-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
+}
+.rtl .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+  -moz-border-radius: 0 0 0 4px;
+  -webkit-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+}
+.rtl .input-group-btn-vertical i {
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+.rtl .bootstrap-tagsinput .tag {
+  display: inline-block;
+  position: relative;
+}
+.rtl .bootstrap-tagsinput .tag[data-role="remove"] {
+  float: left;
+  margin-left: 0;
+  margin-right: 8px;
+}
+.rtl .switch-input {
+  left: auto;
+  right: 0;
+}
+.rtl .switch-input:checked ~ .switch-handle {
+  left: auto;
+  right: 40px;
+}
+.rtl .switch-label:before {
+  content: attr(data-off);
+  left: 7px;
+  right: auto;
+}
+.rtl .switch-label:after {
+  content: attr(data-on);
+  left: 0;
+  right: 11px;
+}
+.rtl .switch-handle {
+  -moz-transition: right 0.15s ease-out;
+  -o-transition: right 0.15s ease-out;
+  -webkit-transition: right 0.15s ease-out;
+  left: auto;
+  right: 4px;
+  transition: right 0.15s ease-out;
+}
+.rtl .switch-handle:before {
+  right: 50%;
+}
+.rtl .form-right .control-label {
+  text-align: left !important;
+}
+.rtl .append-icon i {
+  left: 0;
+  right: auto;
+}
+.rtl .ios-switch input[type="checkbox"]:checked + div {
+  padding-left: 0;
+  padding-right: 2em;
+  text-align: right;
+}
+.rtl .ios-switch input[type="checkbox"] + div:before {
+  float: right;
+  text-align: right;
+}
+.rtl .ios-switch input[type="checkbox"] + div:after {
+  float: right;
+  text-align: right;
+}
+.rtl .onoffswitch {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.rtl .onoffswitch .onoffswitch-inner {
+  margin-left: 0;
+  margin-right: -100%;
+}
+.rtl .onoffswitch .onoffswitch-inner .onoffswitch-active {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.rtl .onoffswitch .onoffswitch-inner .onoffswitch-inactive {
+  padding-left: 15px;
+  padding-right: 0;
+  text-align: left;
+}
+.rtl .onoffswitch .onoffswitch-inner > span {
+  float: right;
+}
+.rtl .onoffswitch .onoffswitch-active .onoffswitch-switch {
+  left: auto;
+  right: 0;
+}
+.rtl .onoffswitch .onoffswitch-active .onoffswitch-switch:before {
+  border-color: rgba(0, 0, 0, 0) #34a7c1 #34a7c1 rgba(0, 0, 0, 0);
+  left: auto;
+  right: 40px;
+}
+.rtl .onoffswitch .onoffswitch-inactive .onoffswitch-switch {
+  left: 0;
+  right: auto;
+}
+.rtl .onoffswitch .onoffswitch-inactive .onoffswitch-switch:before {
+  border-color: #a1a1a1 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #a1a1a1;
+  left: 40px;
+  right: auto;
+}
+.rtl .onoffswitch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: auto;
+  margin-right: 0;
+}
+.rtl .onoffswitch2 {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.rtl .onoffswitch2 .onoffswitch-inner {
+  margin-left: auto;
+  margin-right: -100%;
+}
+.rtl .onoffswitch2 .onoffswitch-inner:before {
+  float: right;
+  padding-left: 0;
+  padding-left: 10px;
+  padding-right: 8px;
+}
+.rtl .onoffswitch2 .onoffswitch-inner:after {
+  float: right;
+  padding-left: 10px;
+  text-align: left;
+}
+.rtl .onoffswitch2 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  left: 0;
+  right: auto;
+}
+.rtl .onoffswitch2 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: auto;
+  margin-right: 0;
+}
+.rtl .onoffswitch2 .onoffswitch-switch {
+  left: 45px;
+  right: auto;
+}
+.rtl input[type=checkbox].switch-iphone:checked before {
+  margin-left: 0;
+  margin-right: 33px;
+}
+.rtl .DTTT_container.btn-group > .btn span i {
+  margin-top: 2px;
+}
+.rtl .dataTables_filter {
+  float: left;
+}
+.rtl .DTTT_container {
+  float: left;
+}
+.rtl table.dataTable thead .sorting:before {
+  float: left;
+}
+.rtl table.dataTable thead .sorting_asc:before {
+  float: left;
+}
+.rtl .dataTable thead th {
+  text-align: right;
+}
+.rtl .dataTable thead th input[type=text] {
+  background-position: 95% 10px;
+  padding-left: 12px;
+  padding-right: 32px;
+  float: right;
+}
+.rtl .dataTable tfoot th input[type=text] {
+  background-position: 95% 10px;
+  padding-left: 12px;
+  padding-right: 32px;
+  float: right;
+}
+.rtl .filter-right .dataTables_filter {
+  float: left !important;
+}
+.rtl .form-inline label {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.rtl .pagination li {
+  float: right;
+  margin-left: 0;
+  margin-right: 5px;
+}
+.rtl .pagination2 .fa-angle-right:before {
+  content: "Next";
+}
+.rtl .fa-angle-right:before {
+  content: "\f104";
+}
+.rtl .select2-container .select2-choice abbr {
+  left: 31px;
+  right: auto;
+}
+.rtl .after-tooltip i {
+  float: left;
+  left: 0;
+  right: auto;
+}
+.rtl .after-tooltip input {
+  float: right;
+}
+.rtl .before-tooltip i {
+  left: auto;
+  right: -18px;
+}
+.rtl .inside-tooltip i {
+  left: auto;
+  right: 17px;
+}
+.rtl .inside-tooltip input {
+  padding-left: 0;
+  padding-right: 36px;
+}
+.rtl .inside-tooltip span {
+  padding-left: 0;
+  padding-right: 36px;
+}
+.rtl .panel-heading h4 > a:after {
+  float: left;
+}
+.rtl .panel-heading h4 > a.collapsed:after {
+  float: left;
+}
+.rtl .jstree-default .jstree-node {
+  margin-left: 0;
+  margin-right: 24px;
+}
+.rtl .dropdown-menu li a i {
+  padding-left: 8px;
+  padding-right: 0;
+}
+.rtl input,
+.rtl p,
+.rtl label,
+.rtl div,
+.rtl section,
+.rtl textarea,
+.rtl .form-horizontal .control-label {
+  text-align: right;
+}
+.rtl .datepicker-dropdown.datepicker-orient-left:before {
+  right: 6px;
+  left: auto;
+}
+.rtl .datepicker-dropdown.datepicker-orient-left:after {
+  right: 7px;
+  left: auto;
+}
+.rtl .m-l-5 {
+  margin-right: 5px !important;
+  margin-left: 0 !important;
+}
+.rtl .m-l-10 {
+  margin-right: 10px !important;
+  margin-left: 0 !important;
+}
+.rtl .m-l-20 {
+  margin-right: 20px !important;
+  margin-left: 0 !important;
+}
+.rtl .m-l-30 {
+  margin-right: 30px !important;
+  margin-left: 0 !important;
+}
+.rtl .m-l-60 {
+  margin-right: 60px !important;
+  margin-left: 0 !important;
+}
+.rtl .m-r-5 {
+  margin-left: 5px !important;
+  margin-right: 0 !important;
+}
+.rtl .m-r-10 {
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+}
+.rtl .m-r-20 {
+  margin-left: 20px !important;
+  margin-right: 0 !important;
+}
+.rtl .m-r-30 {
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.rtl .m-r-60 {
+  margin-left: 60px !important;
+  margin-right: 0 !important;
+}
+.rtl .p-l-5 {
+  padding-right: 5px !important;
+  padding-left: 0 !important;
+}
+.rtl .p-l-10 {
+  padding-right: 10px !important;
+  padding-left: 0 !important;
+}
+.rtl .p-l-20 {
+  padding-right: 20px !important;
+  padding-left: 0 !important;
+}
+.rtl .p-l-30 {
+  padding-right: 30px !important;
+  padding-left: 0 !important;
+}
+.rtl .p-l-40 {
+  padding-right: 40px !important;
+  padding-left: 0 !important;
+}
+.rtl .p-r-5 {
+  padding-left: 5px !important;
+  padding-right: 0 !important;
+}
+.rtl .p-r-10 {
+  padding-left: 10px !important;
+  padding-right: 0 !important;
+}
+.rtl .p-r-20 {
+  padding-left: 20px !important;
+  padding-right: 0 !important;
+}
+.rtl .p-r-30 {
+  padding-left: 30px !important;
+  padding-right: 0 !important;
+}
+.rtl .l-5 {
+  right: 5px;
+  left: auto;
+}
+.rtl .l-10 {
+  right: 10px;
+  left: auto;
+}
+.rtl .l-15 {
+  right: 15px;
+  left: auto;
+}
+.rtl .r-0 {
+  right: auto;
+  left: 0;
+}
+.rtl .r-5 {
+  left: 5px;
+  right: auto;
+}
+.rtl .r-10 {
+  left: 10px;
+  right: auto;
+}
+.rtl .r-15 {
+  left: 15px;
+  right: auto;
+}

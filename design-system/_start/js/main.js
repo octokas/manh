@@ -1,9 +1,13 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 $('[data-plugin-rotate-tect], .rotate-text').each(function() {
     var $this = $(this), opts = null,
     pluginOptions = $this.data('plugin-options'),
     defaults = {
         "animation": "dissolve",  // Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-        "separator": ",",  // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+        "separator": ",",  // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by using this field.
         "speed": 2500  // How many milliseconds until the next word show.
     };
     opts = $.extend( {}, defaults, pluginOptions );

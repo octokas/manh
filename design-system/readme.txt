@@ -18,13 +18,6 @@ WHERE TO BEGIN?
 2) Open _documentation/intro.html file in your browser to see help files. It will explain you all main functionnalities and how to use it.
 
 
-
-HAVE A QUESTION?
-
-Don't hesitate to send us a message on Themeforest or to support@themes-lab.com for any questions or for improvement ideas.
-
-
-
 WHAT CONTAIN THIS PACKAGE?
 
 Here is a list of all folders that package contain:

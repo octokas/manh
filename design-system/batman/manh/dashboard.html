@@ -6,7 +6,7 @@
     <meta name="description" content="admin-themes-lab">
     <meta name="author" content="themes-lab">
     <link rel="shortcut icon" href="../assets/global/images/favicon.png" type="image/png">
-    <title>Make Admin Template &amp; Builder</title>
+    <title>MANH Design System - Dashboard</title>
     <link href="../assets/global/css/style.css" rel="stylesheet">
     <link href="../assets/global/css/theme.css" rel="stylesheet">
     <link href="../assets/global/css/ui.css" rel="stylesheet">
@@ -60,7 +60,7 @@
             <div class="userlogged clearfix">
               <i class="icon icons-faces-users-01"></i>
               <div class="user-details">
-                <h4>Mike Mayers</h4>
+                <h4>The Dude</h4>
                 <div class="dropdown user-login">
                   <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
                   <i class="online"></i><span>Available</span><i class="fa fa-angle-down"></i>
@@ -263,14 +263,11 @@
                 <span>Language</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" data-lang="en"><img src="../assets/global/images/flags/usa.png" alt="flag-english"> <span>English</span></a>
+                  <li><a href="#" data-lang="en"><img src="../assets/global/images/flags/usa.png" alt="flag-english"> <span>English</span></a>
                   </li>
-                  <li>
-                    <a href="#" data-lang="es"><img src="../assets/global/images/flags/spanish.png" alt="flag-english"> <span>Español</span></a>
+                  <li><a href="#" data-lang="es"><img src="../assets/global/images/flags/spanish.png" alt="flag-english"> <span>Español</span></a>
                   </li>
-                  <li>
-                    <a href="#" data-lang="fr"><img src="../assets/global/images/flags/french.png" alt="flag-english"> <span>Français</span></a>
+                  <li><a href="#" data-lang="fr"><img src="../assets/global/images/flags/french.png" alt="flag-english"> <span>Français</span></a>
                   </li>
                 </ul>
               </li>
@@ -390,7 +387,7 @@
                         </span>
                         <div class="clearfix">
                           <div>
-                            <strong>John Smith</strong> 
+                            <strong>Joseph Smith</strong> 
                             <small class="pull-right text-muted">
                             <span class="glyphicon glyphicon-time p-r-5"></span>47 mins ago
                             </small>
@@ -441,7 +438,7 @@
               <li class="dropdown" id="user-header">
                 <a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                 <img src="../assets/global/images/avatars/user1.png" alt="user image">
-                <span class="username">Hi, John Doe</span>
+                <span class="username">Hi, Dude</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -646,56 +643,96 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xlg-4 col-financial-stocks">
+            <div class="col-md-4 col-sm-6 portlets">
               <div class="panel">
                 <div class="panel-header panel-controls">
-                  <h3><i class="icon-graph"></i> <strong>Financial</strong> Stock</h3>
+                  <h3><i class="icon-list"></i> <strong>Todo</strong> List</h3>
                 </div>
-                <div class="panel-content widget-full widget-stock stock1">
-                  <div class="tabs tabs-linetriangle">
-                    <ul class="nav nav-tabs nav-4" role="tablist">
-                      <li class="nav-item lines-3" role="tab" data-toggle="tab">
-                        <a href="#microsoft-tab" id="microsoft" data-toggle="tab">
-                        <span class="title">Microsoft</span>
-                        <span class="c-gray"><strong>23.32</strong></span>
-                        <span class="c-green">+6.214%</span>
-                        </a>
-                      </li>
-                      <li class="nav-item active lines-3" role="tab" data-toggle="tab">
-                        <a href="#sony-tab" id="sony" data-toggle="tab">
-                        <span class="title">Sony</span>
-                        <span class="c-gray"><strong>23.32</strong></span>
-                        <span class="c-red">-8.425%</span>
-                        </a>
-                      </li>
-                      <li class="nav-item lines-3" role="tab" data-toggle="tab">
-                        <a href="#samsung-tab"  id="samsung" data-toggle="tab">
-                        <span class="title">Samsung</span>
-                        <span class="c-gray"><strong>23.32</strong></span>
-                        <span class="c-green">+2.035%</span>
-                        </a>
-                      </li>
-                      <li class="nav-item lines-3" role="tab" data-toggle="tab">
-                        <a href="#apple-tab"  id="apple" data-toggle="tab">
-                        <span class="title">Apple</span>
-                        <span class="c-gray"><strong>23.32</strong></span>
-                        <span class="c-green">+1.245%</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane" id="microsoft-tab">
-                        <div id="stock-microsoft"></div>
+                <div class="panel-content">
+                  <ul class="todo-list ui-sortable">
+                    <li class="high">
+                      <span class="span-check">
+                        <input id="task-1" type="checkbox" data-checkbox="icheckbox_square-blue" />
+                        <label for="task-1"></label>
+                      </span>
+                      <span class="todo-task">Send email to Bob Linch</span>
+                      <div class="todo-date clearfix">
+                        <div class="completed-date"></div>
+                        <div class="due-date">Due on <span class="due-date-span">15 December 2014</span></div>
                       </div>
-                      <div role="tabpanel" class="tab-pane active" id="sony-tab">
-                        <div id="stock-sony"></div>
+                      <span class="todo-options pull-right">
+                        <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
+                      </span>
+                      <div class="todo-tags pull-right">
+                        <div class="label label-success">Work</div>
                       </div>
-                      <div role="tabpanel" class="tab-pane" id="samsung-tab">
-                        <div id="stock-samsung"></div>
+                    </li>
+                    <li>
+                      <span class="span-check">
+                        <input id="task-2" type="checkbox" data-checkbox="icheckbox_square-blue" />
+                        <label for="task-2"></label>
+                      </span>
+                      <span class="todo-task">Call datacenter for servers</span>
+                      <div class="todo-date clearfix">
+                        <div class="completed-date"></div>
+                        <div class="due-date">Due on <span class="due-date-span">7 January</span></div>
                       </div>
-                      <div role="tabpanel" class="tab-pane" id="apple-tab">
-                        <div id="stock-apple"></div>
+                      <span class="todo-options pull-right">
+                        <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
+                      </span>
+                    </li>
+                    <li class="low">
+                      <span class="span-check">
+                        <input id="task-3" type="checkbox" data-checkbox="icheckbox_square-blue" />
+                        <label for="task-3"></label>
+                      </span>
+                      <span class="todo-task">Remove all unused icons</span>
+                      <div class="todo-date clearfix">
+                        <div class="completed-date"></div>
+                        <div class="due-date">Due on <span class="due-date-span">5 January</span></div>
                       </div>
+                      <span class="todo-options pull-right">
+                        <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
+                      </span>
+                    </li>
+                    <li class="medium">
+                      <span class="span-check">
+                        <input id="task-4" type="checkbox" data-checkbox="icheckbox_square-blue" />
+                        <label for="task-4"></label>
+                      </span>
+                      <span class="todo-task">Read my todo list</span>
+                      <div class="todo-date clearfix">
+                        <div class="completed-date"></div>
+                        <div class="due-date">Due on <span class="due-date-span">4 January</span></div>
+                      </div>
+                      <span class="todo-options pull-right">
+                        <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
+                      </span>
+                      <div class="todo-tags pull-right">
+                        <div class="label label-info">Tuesday</div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="span-check">
+                        <input id="task-6" type="checkbox" data-checkbox="icheckbox_square-blue" />
+                        <label for="task-6"></label>
+                      </span>
+                      <span class="todo-task">Have a breakfeast before 12</span>
+                      <div class="todo-date clearfix">
+                        <div class="completed-date"></div>
+                        <div class="due-date">Due on <span class="due-date-span">1 January</span></div>
+                      </div>
+                      <span class="todo-options pull-right">
+                        <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="clearfix m-t-10">
+                    <div class="pull-left">
+                      <button type="button" class="btn btn-sm btn-default check-all-tasks">Check All Done</button>
+                    </div>
+                    <div class="pull-right">
+                      <button type="button" class="btn btn-sm btn-dark add-task">Add Task</button>
                     </div>
                   </div>
                 </div>
@@ -829,102 +866,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4 col-sm-6 portlets">
-              <div class="panel">
-                <div class="panel-header panel-controls">
-                  <h3><i class="icon-list"></i> <strong>Todo</strong> List</h3>
-                </div>
-                <div class="panel-content">
-                  <ul class="todo-list ui-sortable">
-                    <li class="high">
-                      <span class="span-check">
-                      <input id="task-1" type="checkbox" data-checkbox="icheckbox_square-blue" />
-                      <label for="task-1"></label>
-                      </span>
-                      <span class="todo-task">Send email to Bob Linch</span>
-                      <div class="todo-date clearfix">
-                        <div class="completed-date"></div>
-                        <div class="due-date">Due on <span class="due-date-span">15 December 2014</span></div>
-                      </div>
-                      <span class="todo-options pull-right">
-                      <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
-                      </span>
-                      <div class="todo-tags pull-right">
-                        <div class="label label-success">Work</div>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="span-check">
-                      <input id="task-2" type="checkbox" data-checkbox="icheckbox_square-blue"/>
-                      <label for="task-2"></label>
-                      </span>
-                      <span class="todo-task">Call datacenter for servers</span>
-                      <div class="todo-date clearfix">
-                        <div class="completed-date"></div>
-                        <div class="due-date">Due on <span class="due-date-span">7 January</span></div>
-                      </div>
-                      <span class="todo-options pull-right">
-                      <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
-                      </span>
-                    </li>
-                    <li class="low">
-                      <span class="span-check">
-                      <input id="task-3" type="checkbox" data-checkbox="icheckbox_square-blue"/>
-                      <label for="task-3"></label>
-                      </span>
-                      <span class="todo-task">Remove all unused icons</span>
-                      <div class="todo-date clearfix">
-                        <div class="completed-date"></div>
-                        <div class="due-date">Due on <span class="due-date-span">5 January</span></div>
-                      </div>
-                      <span class="todo-options pull-right">
-                      <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
-                      </span>
-                    </li>
-                    <li class="medium">
-                      <span class="span-check">
-                      <input id="task-4" type="checkbox" data-checkbox="icheckbox_square-blue"/>
-                      <label for="task-4"></label>
-                      </span>
-                      <span class="todo-task">Read my todo list</span>
-                      <div class="todo-date clearfix">
-                        <div class="completed-date"></div>
-                        <div class="due-date">Due on <span class="due-date-span">4 January</span></div>
-                      </div>
-                      <span class="todo-options pull-right">
-                      <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
-                      </span>
-                      <div class="todo-tags pull-right">
-                        <div class="label label-info">Tuesday</div>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="span-check">
-                      <input id="task-6" type="checkbox" data-checkbox="icheckbox_square-blue"/>
-                      <label for="task-6"></label>
-                      </span>
-                      <span class="todo-task">Have a breakfeast before 12</span>
-                      <div class="todo-date clearfix">
-                        <div class="completed-date"></div>
-                        <div class="due-date">Due on <span class="due-date-span">1 January</span></div>
-                      </div>
-                      <span class="todo-options pull-right">
-                      <a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a>
-                      </span>
-                    </li>
-                  </ul>
-                  <div class="clearfix m-t-10">
-                    <div class="pull-left">
-                      <button type="button" class="btn btn-sm btn-default check-all-tasks">Check All Done</button>
-                    </div>
-                    <div class="pull-right">
-                      <button type="button" class="btn btn-sm btn-dark add-task">Add Task</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portlets">
+            <!-- <div class="col-md-4 col-sm-6 portlets">
               <div class="panel widget-weather"></div>
               <div class="panel widget-member clearfix">
                 <div class="col-xs-3">
@@ -945,8 +887,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portlets">
+            </div> -->
+            <!-- <div class="col-md-4 col-sm-6 portlets">
               <div class="widget widget_calendar bg-dark">
                 <div class="multidatepicker"></div>
               </div>
@@ -958,13 +900,13 @@
                   <div id="bar-chart"></div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="footer">
             <div class="copyright">
               <p class="pull-left sm-pull-reset">
-                <span>Copyright <span class="copyright">©</span> 2016 </span>
-                <span>THEMES LAB</span>.
+                <span>Copyright <span class="copyright">©</span> 2019 </span>
+                <span>Manhattan &amp; Associates</span>.
                 <span>All rights reserved. </span>
               </p>
               <p class="pull-right sm-pull-reset">

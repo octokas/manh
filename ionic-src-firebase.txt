@@ -1,0 +1,53 @@
+
+EACH HTML
+---
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCh-OQWLaQyJnPpRCIphFzeE1_Xz0CB-cc",
+    authDomain: "manh-ds.firebaseapp.com",
+    databaseURL: "https://manh-ds.firebaseio.com",
+    projectId: "manh-ds",
+    storageBucket: "manh-ds.appspot.com",
+    messagingSenderId: "482994893342"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+SRC/ENVIRONMENTS/ENVIRONMENT.TS
+---
+
+export const environment = {
+ production: false,
+ firebase: {
+   apiKey: "YOUR_API_KEY",
+   authDomain: "YOUR_AUTH_DOMAIN",
+   databaseURL: "YOUR_DATABASE_URL",
+   projectId: "YOUR_PROJECT_ID",
+   storageBucket: "YOUR_STORAGE_BUCKET",
+   messagingSenderId: "YOUR_SENDER_ID"
+ }
+};
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+
+STEPS
+---
+https://devdactic.com/deploy-ionic-website-heroku/
+
+https://ionicthemes.com/tutorials/about/the-complete-guide-to-progressive-web-apps-with-ionic4
+
+https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+
+npm install promise-polyfill --save-exact
+

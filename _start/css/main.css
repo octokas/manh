@@ -62,9 +62,9 @@ footer {margin-left: 0;margin-top: 40px;}
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{background-color:#2c8ca1;border-color:#2c8ca1;color:#fff}
 .btn-primary.active{background:#267a8d;border-color:#267a8d}
 .btn.btn-transparent{background-color:transparent;margin-left:0;margin-right:9px}
-.btn.btn-transparent:hover{color:#464646}
+.btn.btn-transparent:hover{color:#00457C}
 .btn-default.btn-transparent{border:1px solid #D3D7DB!important;color:#333}
-.btn-default.btn-transparent:hover{background-color:rgba(197,202,208,0.2);border:1px solid #c5cad0;color:#333}
+.btn-default.btn-transparent:hover{background-color:rgba(0, 69, 124,0.9);border:1px solid #c5cad0;color:#ffffff}
 .btn-translucent i{padding-right:8px}
 .btn.btn-square{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
 .btn.btn-lg {font-size: 16px;padding: 11px 48px;}

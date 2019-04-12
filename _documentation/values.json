@@ -1,0 +1,10 @@
+var searchIndex = [
+	{
+		title: "My awesome article",
+		date: "December 18, 2018",
+		url: "https://gomakethings.com/my-awesome-article",
+		content: "The full text of the content...",
+		summary: "A short summary or preview of the content (can also be a clipped version of the first few sentences)..."
+	},
+	// More content...
+];

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Search WIP</title>
+        </head>
+    <body>
+        <form action="https://www.google.com/search?q=site%3Agomakethings.com&oq=site%3Agomakethings.com" id="form-search">
+            <label for="input-search">Enter your search criteria:</label>
+            <input type="text" name="q" id="input-search" value="site:gomakethings.com">
+            <button id="submit-search">Search</button>
+        </form><br><br>
+        
+        <div id="search-results"></div>
+
+        <script>
+            /*
+            ******** Special Notes *********
+
+            ---Regarding the use of IIFE Scripts--- 
+            This feature is mostly completed with IIFE Scripts, which are utilized for when you want to immediately 
+            invoke an expression, but also want to keep all of your variables and functions out of the global scope to avoid conflicts.
+            IIFE literally stands for "Immediately Invoked Function Expressions"
+
+            ---Regarding any kind of "test measures"--- 
+            We are looking for our search form, input and container for the search
+            results in the DOM and caching them to variables. If they don't exist, we bail and do nothing. :)
+
+            ---Regarding the use of String.replace() over a pass of an empty string over input.value---
+            I am using String.replace() as a failsafe for the placeholder search string placeholder replacement, 
+            as opposed to using input.value to set an empty string, in the event that our users start typing 
+            before our script runs. therefore wiping out whatever it is that they type.
+
+            ---Regarding JavaScript event to element attachment---
+            Although most cases it's better to utilize event delegation than attaching events to each element directly, 
+            but in this use case, we are only listening for events on a single element, it's cheaper for the script/browser,
+            it's simplier to reproduce, there are no dependencies, and it's less likely to cause conflicts.
+
+            ---Regarding browser support and compatibility---
+            Should work in all modern browsers, including IE9 and forward.
+
+            */
+
+            ;(function (window, document, undefined) {
+                'use strict';
+
+                var form = document.querySelector('#form-search');
+                var input = document.querySelector('#input-search');
+                var resultList = document.querySelector('#search-results');
+
+                // HTML for each result
+                // each result has a unique ID, and all content is wrapped in URL so entire element is clickable
+                // link includes article's publish date and article title, and use slice for short summary 
+                var createHTML = function (article, id) {
+                    var html = 
+                        '<div id="search-result-' + id + '">' +
+                            '<a href="' + article.url + '">' +
+                                '<aside>' +
+                                    article.date +
+                                '</aside>' +
+                                '<h2>' + article.title + '<h2>' +
+                                    article.summary.slice(0, 150) + '...<br>' +
+                                    article.url +
+                            '</a>' +
+                        '<div>';
+                    return html;
+                };
+
+                // Markup for no results found
+                var createNoResultsHTML = function () {
+                    return '<p>Sorry, there were no matching results found.<br><br>Please try your search again.</p>';
+                };
+
+                // Markup for positive results found
+                var createResultsHTML = function (results) {
+                    var html = '<p>Found ' + results.length + ' matching articles</p>';
+                    //using array.map to create new array from results array
+                    // each item containing markup for result is a string
+                    html += results.map(function (article, index) {
+                        return createHTML(article, index);
+                    }).join(''); //combining all items found into new array and appending to html
+                    return html;
+                };
+
+                // Searching for matches
+                // where search() function accepts search query as an argument
+                var search = function (query) {
+                    //using new regular expression w/ query
+                    var reg = new RegExp(query, 'gi'); //g & i flags set global and case-insensitive
+                    //higher priority given to results with search query in title vs body
+                    var priority1 = [];
+                    var priority2 = [];
+
+                    // Searching content
+                    searchIndex.forEach(function (article) {
+                        if (reg.test(article.title)) return priority1.push(article);
+                        if (reg.test(article.content)) return priority2.push(article);
+                        //TODO - ADD PARAMETERS FOR IF NULL
+                    });
+
+                    // Combine results into a single array
+                    var results = [].concat(priority1, priority2);
+
+                    // Displaying results
+                    // If results array yields no fruit, display "no items found", otherwise display results
+                    resultList.innerHTML = results.length < 1 ? createNoResultsHTML(): createNoResultsHTML(results);
+
+                };
+
+                 // Handling submission events
+                 // the event.preventDefault() is in place to prevent Google submission
+                 var submitHandler = function (event) {
+                     event.preventDefault();
+                     search(input.value); //actually runs the function
+                 };
+
+                 // Removal of placeholder from input
+                 var clearInput = function() {
+                     input.value = input.value.replace('site:gomakethings.com', '');
+                 };
+
+                // Inits & Event Listeners (making sure required content exists)
+                if (!form || !input || !resultList || !searchIndex) return;
+
+                 // Removal of site: from the input
+                 clearInput();
+
+                 // Submission handler
+                 form.addEventListener('submit', submitHandler, false);
+
+                })(window, document);
+
+                //JSON 
+                var searchIndex = [
+                    {
+                        title: "My awesome article",
+                        date: "December 18, 2018",
+                        url: "https://gomakethings.com/my-awesome-article",
+                        content: "The full text of the content...",
+                        summary: "A short summary or preview of the content (can also be a clipped version of the first few sentences)..."
+                    },
+                    // More content...
+                ];
+        </script>
+    </body>
+</html>

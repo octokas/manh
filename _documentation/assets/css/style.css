@@ -120,11 +120,13 @@ a.scrollup:hover{opacity:1;color:#fff}
 .sidebar .nav-stacked>li+li {margin-top:0;}
 .sidebar .ui-resizable-handle {  right: 0;}
 body:not(.sidebar-fixed, .topbar-fixed) .sidebar .logopanel{background:#202226;padding:10px;position: absolute;top: -50px;left: 0;right:auto;width: 240px;height: 50px;z-index: 2;}
-.sidebar .logopanel{background:#202226;padding:10px;position: fixed;top: 0;left: 0;right:auto;width: 240px;height: 50px;z-index: 2;-moz-transition:color .2s ease-out 0;-webkit-transition:color .2s ease-out 0;transition:color .2s ease-out 0}
+.sidebar .logopanel{background:#202226;padding:10px;padding-right:24px;position: fixed;top: 0;left: 0;right:auto;width: 240px;min-height: 50px;z-index: 2;-moz-transition:color .2s ease-out 0;-webkit-transition:color .2s ease-out 0;transition:color .2s ease-out 0}
 .sidebar .logopanel h1{color:#1d2939;font-size:30px;font-family:'Lato','Lucida Grande','Lucida Sans Unicode',Helvetica,sans-serif;font-weight: 900; letter-spacing:-1.5px;line-height:30px;margin:0}
-.sidebar .logopanel h1 {background-image: url("../images/logo/manhattan-w2.svg"); width:200px;min-height:30px;display: block}
+/* .sidebar .logopanel h1 {background-image: url("../images/logo/manhattan-w2.svg"); width:200px;min-height:30px;display: block} */
+.sidebar .logopanel h1 {min-height:30px;}
 .sidebar .logopanel h1 span{color:#E6E7E8}
-.sidebar .logopanel h1 img {margin-left: 10px;margin-top: -4px;}
+/* .sidebar .logopanel h1 img {margin-left: 10px;margin-top: -4px;} */
+.sidebar .logopanel h1 img {margin-left: 10px;margin-top: -4px;display:block;width:100%;max-width:16vw;}
 .sidebar .sidebar-inner{background-color: #2B2E33;padding:0;height: 100%;}
 .sidebar .sidebar-inner .menu-title {text-align:left;position: relative;text-transform: uppercase;font-size: 12px;padding:20px 20px 15px 20px;margin-bottom: 0;text-overflow: ellipsis;}
 .sidebar .sidebar-inner .menu-title.widget-title {padding: 10px 0;}

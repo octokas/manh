@@ -1,7 +1,7 @@
 /* Pretty printing styles. Used with prettify.js.
  *
- * Name:  Stanley Ng
- * Email:   stanleyhlng@googlegroups.com
+ * Name:  Kaska Miskolczi
+ * Email:   kmiskolczi@outlook.hu
  * 
  * Credits:
  * https://github.com/chriskempson/tomorrow-theme
@@ -56,7 +56,8 @@
 pre.prettyprint {
   background-color: #1d1f21;
   padding: 10px;
-  border: 1px solid #E1E1E8; }
+  border: 1px solid #E1E1E8;
+  max-height: 36vh; }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {

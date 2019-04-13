@@ -1,0 +1,11 @@
+rh-nodejs10-build.x86_64 : Package shipping basic build configuration
+rh-nodejs10-nodejs.x86_64 : JavaScript runtime
+rh-nodejs10-nodejs-devel.x86_64 : JavaScript runtime - development headers
+rh-nodejs10-nodejs-docs.noarch : Node.js API documentation
+rh-nodejs10-nodejs-nodemon.noarch : Simple monitor script for use during development of a node.js app
+rh-nodejs10-npm.x86_64 : Node.js Package Manager
+
+$ sudo certbot -a dns-plugin -i apache -d "*.example.com" -d example.com --server https://acme-v02.api.letsencrypt.org/directory
+
+
+certbot -a dns-plugin -i apache -d "*.dmesg.dev" -d dmesg.dev --server https://acme-v02.api.letsencrypt.org/directory

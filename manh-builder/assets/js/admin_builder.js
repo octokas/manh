@@ -292,7 +292,7 @@ $(function() {
                     '            <div class="userlogged clearfix">\n'+
                     '              <i class="icon icons-faces-users-01"></i>\n'+
                     '              <div class="user-details">\n'+
-                    '                <h4>Walter Sobchak</h4>\n'+
+                    '                <h4>Jeff Bridges</h4>\n'+
                     '                <div class="dropdown user-login">\n'+
                     '                  <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">\n'+
                     '                    <i class="online"></i><span>Available</span><i class="fa fa-angle-down"></i>\n'+
@@ -310,7 +310,7 @@ $(function() {
                     '              <img src="assets/images/profil_page/friend8.jpg" class="img-responsive img-circle">\n'+
                     '            </div>\n'+
                     '            <div class="user-details">\n'+
-                    '              <h4>Walter Sobchak</h4>\n'+
+                    '              <h4>Jeff Bridges</h4>\n'+
                     '              <div class="dropdown user-login">\n'+
                     '                <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">\n'+
                     '                  <i class="online"></i> Available <i class="fa fa-angle-down"></i>\n'+

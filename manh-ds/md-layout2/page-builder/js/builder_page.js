@@ -7,7 +7,7 @@ var checkboxRequired = '';
 var buttonType = 'btn1';
 var selectRequired = selectMultiple = selectSearch = '';
 /**** WIDGETS ****/
-var widgetTodoList = '<div class="panel"><div class="panel-header md-panel-controls"><h3><i class="icon-list"></i> <strong>Todo</strong> List</h3></div><div class="panel-content"><ul class="todo-list ui-sortable"><li class="high"><span class="span-check"><input id="task-1" type="checkbox" data-checkbox="icheckbox_square-blue" /><label for="task-1"></label></span><span class="todo-task">Send email to Bob Linch</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">15 December 2014</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span><span class="todo-tags pull-right"><div class="label label-success">Work</div></span></li><li><span class="span-check"><input id="task-2" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-2"></label></span><span class="todo-task">Call datacenter for servers</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">7 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span></li><li class="low"><span class="span-check"><input id="task-3" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-3"></label></span><span class="todo-task">Remove all unused icons</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">5 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span></li><li class="medium"><span class="span-check"><input id="task-4" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-4"></label></span><span class="todo-task">Read my todo list</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">4 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span><span class="todo-tags pull-right"><div class="label label-info">Tuesday</div></span></li><li><span class="span-check"><input id="task-6" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-6"></label></span><span class="todo-task">Have a breakfeast before 12</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">1 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span></li></ul><div class="clearfix m-t-10"><div class="pull-left"><button type="button" class="btn btn-sm btn-default check-all-tasks">Check All Done</button></div><div class="pull-right"><button type="button" class="btn btn-sm btn-dark add-task">Add Task</button></div></div></div></div>';
+var widgetTodoList = '<div class="panel"><div class="panel-header md-panel-controls"><h3><i class="icon-list"></i> <strong>Todo</strong> List</h3></div><div class="panel-content"><ul class="todo-list ui-sortable"><li class="high"><span class="span-check"><input id="task-1" type="checkbox" data-checkbox="icheckbox_square-blue" /><label for="task-1"></label></span><span class="todo-task">Send email to Francis Donnelly</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">15 December 2014</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span><span class="todo-tags pull-right"><div class="label label-success">Work</div></span></li><li><span class="span-check"><input id="task-2" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-2"></label></span><span class="todo-task">Call datacenter for servers</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">7 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span></li><li class="low"><span class="span-check"><input id="task-3" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-3"></label></span><span class="todo-task">Remove all unused icons</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">5 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span></li><li class="medium"><span class="span-check"><input id="task-4" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-4"></label></span><span class="todo-task">Read my todo list</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">4 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span><span class="todo-tags pull-right"><div class="label label-info">Tuesday</div></span></li><li><span class="span-check"><input id="task-6" type="checkbox" data-checkbox="icheckbox_square-blue"/><label for="task-6"></label></span><span class="todo-task">Have a breakfeast before 12</span><div class="todo-date clearfix"><div class="completed-date"></div><div class="due-date">Due on <span class="due-date-span">1 January</span></div></div><span class="todo-options pull-right"><a href="javascript:;" class="todo-delete"><i class="icons-office-52"></i></a></span></li></ul><div class="clearfix m-t-10"><div class="pull-left"><button type="button" class="btn btn-sm btn-default check-all-tasks">Check All Done</button></div><div class="pull-right"><button type="button" class="btn btn-sm btn-dark add-task">Add Task</button></div></div></div></div>';
 var widgetNews = '<div class="panel"> <div class="panel-header"> <h3><i class="icon-list"></i> <strong>News</strong> List</h3> <div class="control-btn"> <span class="pull-right badge badge-primary">12</span> </div> </div> <div class="panel-content widget-news"> <div class="withScroll" data-height="400"> <a href="#" class="message-item media"> <div class="media"> <div class="media-body"> <div class="pull-left p-r-10"> <i class="icon-lock-open pull-left"></i> </div> <div> <small class="pull-right">28 Feb</small> <h4 class="c-dark">Reset your account password</h4> <p class="f-14 c-gray">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div> </div> </div> </a> <a href="#" class="message-item media"> <div class="media"> <div class="media-body"> <div class="pull-left p-r-10"> <i class="icon-cloud-upload pull-left"></i> </div> <div> <small class="pull-right">27 Feb</small> <h4 class="c-dark">Check Dropbox</h4> <p class="f-14 c-gray">Hello Steve, I have added new files in your Dropbox in order to show you how to...</p> </div> </div> </div> </a> <a href="#" class="message-item media"> <div class="media"> <div class="media-body"> <div class="pull-left p-r-10"> <i class="icon-docs pull-left"></i> </div> <div> <small class="pull-right">27 Feb</small> <h4 class="c-dark">New document added</h4> <p class="f-14 c-gray">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div> </div> </div> </a> <a href="#" class="message-item media"> <div class="media"> <div class="media-body"> <div class="pull-left p-r-10"> <i class="icon-present pull-left"></i> </div> <div> <small class="pull-right">26 Feb</small> <h4 class="c-dark">You receive a gift</h4> <p class="f-14 c-gray">Hello Steve, I have added new files in your Dropbox in order to show you how to...</p> </div> </div> </div> </a> <a href="#" class="message-item media"> <div class="media"> <div class="media-body"> <div class="pull-left p-r-10"> <i class="icon-call-in pull-left"></i> </div> <div> <small class="pull-right">25 Feb</small> <h4 class="c-dark">Call Alfred for business</h4> <p class="f-14 c-gray">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div> </div> </div> </a> <a href="#" class="message-item media"> <div class="media"> <div class="media-body"> <div class="pull-left p-r-10"> <i class="icon-calendar pull-left"></i> </div> <div> <small class="pull-right">25 Feb</small> <h4 class="c-dark">Appointment at 8pm today</h4> <p class="f-14 c-gray">Hello Steve, I have added new files in your Dropbox in order to show you how to...</p> </div> </div> </div> </a> <a href="#" class="message-item media"> <div class="media"> <div class="media-body"> <div class="pull-left p-r-10"> <i class="icon-rocket pull-left"></i> </div> <div> <small class="pull-right">24 Feb</small> <h4 class="c-dark">Trip to Mars begin</h4> <p class="f-14 c-gray">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div> </div> </div> </a> </div> </div> </div>';
 var widgetTable = '<div class="panel"> <div class="panel-header md-panel-controls"> <h3><i class="icon-star"></i> Popular <strong>Domains</strong></h3> </div> <div class="panel-content widget-table"> <div class="withScroll" data-height="400"> <table class="table table-striped"> <thead> <tr> <th>Name</th> <th>Price</th> <th>Status</th> </tr> </thead> <tbody> <tr> <td>internet.com</td> <td><span class="l-through c-red">$29.99</span> <span class="p-l-10 c-green">$19.99</span></td> <td> <div class="badge badge-primary">on sale</div> </td> </tr> <tr> <td>online.com</td> <td><span class="c-primary">$19.99</span></td> <td> <div class="badge badge-success">approved</div> </td> </tr> <tr> <td>newsite.es</td> <td><span class="c-primary">$16.45</span></td> <td> <div class="badge badge-danger">pending</div> </td> </tr> <tr> <td>web.uk</td> <td><span class="c-primary">$15.00</span></td> <td> <div class="badge badge-warning badge-stock">out of stock</div> </td> </tr> <tr> <td>domain.com</td> <td><span class="c-primary">$18.40</span></td> <td> <div class="badge badge-default badge-sold">sold</div> </td> </tr> <tr> <td>mywebsite.com</td> <td><span class="l-through c-red">$22.99</span> <span class="p-l-10 c-green">$15.90</span></td> <td> <div class="badge badge-primary">on sale</div> </td> </tr> <tr> <td>intranet.com</td> <td><span class="l-through c-red">$27.99</span> <span class="p-l-10 c-green">$16.99</span></td> <td> <div class="badge badge-primary">on sale</div> </td> </tr> <tr> <td>hereiam.com</td> <td><span class="c-primary">$18.99</span></td> <td> <div class="badge badge-success">approved</div> </td> </tr> <tr> <td>johndoe.es</td> <td><span class="c-primary">$15.45</span></td> <td> <div class="badge badge-warning badge-stock">out of stock</div> </td> </tr> <tr> <td>skyblue.uk</td> <td><span class="c-primary">$14.00</span></td> <td> <div class="badge badge-danger">pending</div> </td> </tr> <tr> <td>morris.fr</td> <td><span class="c-primary">$17.40</span></td> <td> <div class="badge badge-default badge-sold">sold</div> </td> </tr> <tr> <td>justforfun.com</td> <td><span class="l-through c-red">$25.99</span> <span class="p-l-10 c-green">$18.90</span></td> <td> <div class="badge badge-primary">on sale</div> </td> </tr> </tbody> </table> </div> </div> </div>';
 var widgetCounter = '<div class="panel"><div class="panel-content widget-info"><div class="row"><div class="left"><i class="fa fa-umbrella bg-green"></i></div><div class="right"><p class="number countup" data-from="0" data-to="52000">0</p><p class="text">New robots</p></div></div></div></div>';
@@ -1102,7 +1102,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                             '                  <img src="../assets/global/images/avatars/avatar13.png" alt="avatar" />\n' +
                             '                </div>\n' + 
                             '                <div class="user-details">\n' + 
-                            '                  <div class="user-name">Bobby Brown</div>\n' + 
+                            '                  <div class="user-name">Torsten Voges</div>\n' + 
                             '                  <div class="user-txt">On the road again...</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-status">\n' + 
@@ -1115,7 +1115,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                             '                  <div class="pull-right badge badge-danger">3</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-details">\n' + 
-                            '                  <div class="user-name">Alexa Johnson</div>\n' + 
+                            '                  <div class="user-name">Maude Lebowski</div>\n' + 
                             '                  <div class="user-txt">Still at the beach</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-status">\n' + 
@@ -1127,7 +1127,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                             '                  <img src="../assets/global/images/avatars/avatar10.png" alt="avatar" />\n' + 
                             '                </div>\n' + 
                             '                <div class="user-details">\n' + 
-                            '                  <div class="user-name">Bobby Brown</div>\n' + 
+                            '                  <div class="user-name">Torsten Voges</div>\n' + 
                             '                  <div class="user-txt">On stage...</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-status">\n' + 
@@ -1145,7 +1145,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                             '                  <div class="pull-right badge badge-danger">3</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-details">\n' + 
-                            '                  <div class="user-name">James Miller</div>\n' + 
+                            '                  <div class="user-name">Jesus Quintana</div>\n' + 
                             '                  <div class="user-txt">At work...</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-status">\n' + 
@@ -1157,7 +1157,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                             '                  <img src="../assets/global/images/avatars/avatar11.png" alt="avatar" />\n' + 
                             '                </div>\n' + 
                             '                <div class="user-details">\n' + 
-                            '                  <div class="user-name">Fred Smith</div>\n' + 
+                            '                  <div class="user-name">Jackie Treehorn</div>\n' + 
                             '                  <div class="user-txt">Waiting for tonight</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-status">\n' + 
@@ -1169,7 +1169,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                             '                  <img src="../assets/global/images/avatars/avatar8.png" alt="avatar" />\n' + 
                             '                </div>\n' + 
                             '                <div class="user-details">\n' + 
-                            '                  <div class="user-name">Ben Addams</div>\n' + 
+                            '                  <div class="user-name">Peter Siragusa</div>\n' + 
                             '                  <div class="user-txt">On my way to NYC</div>\n' + 
                             '                </div>\n' + 
                             '                <div class="user-status">\n' + 
@@ -1186,7 +1186,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                             '                <i class="icon-action-undo"></i>\n' + 
                             '              </div>\n' + 
                             '              <div class="user-details">\n' + 
-                            '                <div class="user-name">James Miller</div>\n' + 
+                            '                <div class="user-name">Jesus Quintana</div>\n' + 
                             '                <div class="user-txt">On the road again...</div>\n' + 
                             '              </div>\n' + 
                             '            </div>\n' + 
@@ -1451,7 +1451,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                         '      <h2>Users</h2>\n' + 
                         '      <a class="dummy-media-object" href="#">\n' + 
                         '        <img src="../assets/global/images/avatars/avatar1_big.png" alt="Avatar 1"/>\n' + 
-                        '        <h3>John Smith</h3>\n' + 
+                        '        <h3>Peter Siragusa</h3>\n' + 
                         '      </a>\n' + 
                         '      <a class="dummy-media-object" href="#">\n' + 
                         '        <img src="../assets/global/images/avatars/avatar2_big.png" alt="Avatar 2"/>\n' + 
@@ -1459,15 +1459,15 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                         '      </a>\n' + 
                         '      <a class="dummy-media-object" href="#">\n' + 
                         '        <img src="../assets/global/images/avatars/avatar3_big.png" alt="Avatar 3"/>\n' + 
-                        '        <h3>Jenny Finlan</h3>\n' + 
+                        '        <h3>Bunny Lebowski</h3>\n' + 
                         '      </a>\n' + 
                         '      <a class="dummy-media-object" href="#">\n' + 
                         '        <img src="../assets/global/images/avatars/avatar4_big.png" alt="Avatar 4"/>\n' + 
-                        '        <h3>Harold Fox</h3>\n' + 
+                        '        <h3>Larry Sellers</h3>\n' + 
                         '      </a>\n' + 
                         '      <a class="dummy-media-object" href="#">\n' + 
                         '        <img src="../assets/global/images/avatars/avatar5_big.png" alt="Avatar 5"/>\n' + 
-                        '        <h3>Martin Hendrix</h3>\n' + 
+                        '        <h3>Maude Lebowski</h3>\n' + 
                         '      </a>\n' + 
                         '      <a class="dummy-media-object" href="#">\n' + 
                         '        <img src="../assets/global/images/avatars/avatar6_big.png" alt="Avatar 6"/>\n' + 

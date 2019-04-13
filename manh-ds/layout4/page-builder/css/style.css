@@ -1,5 +1,5 @@
-@import "http://fonts.googleapis.com/css?family=Lato:300,400,700,900";
-@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700";
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700";
 @import "../../../admin/assets/plugins/bootstrap/css/bootstrap.min.css";
 @import "../../../admin/assets/plugins/bootstrap/css/bootstrap-rtl.min.css";
 @import "../../../admin/assets/plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
@@ -1477,7 +1477,7 @@ body:not(.sidebar-collapsed) .topbar .header-left .topnav .menutoggle:hover .men
   background-color: #2b2e33;
   left: 0;
   position: absolute;
-  top: 50px;
+  top: 85px;
   bottom: 0;
   width: 240px;
   z-index: 100;
@@ -1491,7 +1491,7 @@ body:not(.sidebar-collapsed) .topbar .header-left .topnav .menutoggle:hover .men
 }
 .sidebar .logopanel {
   background: #202226;
-  height: 50px;
+  height: 85px;
   left: 0;
   padding: 10px;
   position: fixed;
@@ -1525,6 +1525,9 @@ body:not(.sidebar-collapsed) .topbar .header-left .topnav .menutoggle:hover .men
 .sidebar .logopanel h1 img {
   margin-left: 10px;
   margin-top: -4px;
+  width: 100%;
+  max-width: 300px;
+  padding-right: 1vw;
 }
 .sidebar .sidebar-inner {
   background-color: #2b2e33;

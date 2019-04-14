@@ -170,7 +170,7 @@ function toggleTopbar() {
 /* Adjust margin of content for boxed layout */
 function handleboxedLayout() {
 
-    if ($('body').hasClass('builder-admin')) return;
+    if ($('body').hasClass('builder-manh')) return;
     $logopanel.css('left', '').css('right', '');
     $topbar.css('width', '');
     $sidebar.css('margin-left', '').css('margin-right', '');

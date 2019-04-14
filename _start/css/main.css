@@ -24,7 +24,7 @@ span.bg-primary {background: #319db5;padding:4px 10px;}
 .layout .layout-img {max-height: 200px;margin-top: -15px;overflow: hidden;border-bottom: 1px solid #ededed}
 .layout .layout-img img {opacity: 0.95; -webkit-filter: grayscale(20%); -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -ms-transition: opacity 0.2s linear; transition: all 0.2s linear; }
 .layout:hover .layout-img img {opacity: 1;-webkit-filter: grayscale(0);}
-.admin-section {background: #E1E6E7;}
+.manh-section {background: #E1E6E7;}
 .builder-layout .clearfix {border-bottom: 1px solid #ededed}
 .builder-layout .layout-img {width: 50%;float: left;border-bottom:none;max-height: 199px;}
 .builder-layout h4 {font-size: 16px;margin-top: 5px;margin-bottom:20px;}

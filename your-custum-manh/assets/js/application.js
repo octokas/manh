@@ -685,7 +685,7 @@ $(window).resize(function() {
     setTimeout(function() {
         customScroll();
         reposition_topnav();
-        if (!$('body').hasClass('fixed-sidebar') && !$('body').hasClass('builder-admin')) sidebarBehaviour();
+        if (!$('body').hasClass('fixed-sidebar') && !$('body').hasClass('builder-manh')) sidebarBehaviour();
         maximizePanel();
     }, 100);
 });

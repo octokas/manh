@@ -3,7 +3,7 @@
 /* CONFIG */
 $zipfileName = $_POST['html-file-name'];
 if($zipfileName == ''){
-  $zipfileName = 'custom-admin';
+  $zipfileName = 'custom-manh';
 }
 
 
@@ -21,7 +21,7 @@ foreach( $_POST['pages'] as $page=>$content ) {
 
   $page = $_POST['html-file-name'];
   if($page == ''){
-    $page = 'custom-admin';
+    $page = 'custom-manh';
   }
 
 	$zip->addFromString($page.".html", $_POST['doctype']."\n".stripslashes($content));

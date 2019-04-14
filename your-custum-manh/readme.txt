@@ -4,11 +4,11 @@ Make Admin Template - Custom Admin Builder
 
 HOW TO CREATE MY CUSTOM ADMIN?
 
-1) Open admin-builder/index.html file in your browser.
+1) Open manh-builder/index.html file in your browser.
 
-2) Create your admin with Admin builder: select your sidebar and topbar, edit your menu text and link, choose your colors.
+2) Create your manh with Admin builder: select your sidebar and topbar, edit your menu text and link, choose your colors.
 
-3) Once you have finished, your admin blank page will be here.
+3) Once you have finished, your manh blank page will be here.
 
 4) That's all!
 

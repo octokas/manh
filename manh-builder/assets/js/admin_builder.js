@@ -1,4 +1,4 @@
-var adminBuilder = true;
+var manhBuilder = true;
 var doc = document;
 var docEl = document.documentElement;
 var $body = $('body');
@@ -10,7 +10,7 @@ var $mainContent = $('.main-content');
 var $pageContent = $('.page-content');
 var $topbar = $('.topbar');
 var $logopanel = $('.logopanel');
-var $adminBuilder = $('.admin-builder');
+var $manhBuilder = $('.manh-builder');
 var $sidebarWidth = $(".sidebar").width();
 var is_RTL = false; 
 $loader = $('#preloader');
@@ -68,7 +68,7 @@ $(function() {
       .to($('.step-sidebar-style'), 0.4, {css: {autoAlpha:  1,display:"block", scaleX:1,scaleY:1},ease: Circ.easeInOut}, "sidebar+=1.2")
       .to($('.s1'), 0.4, {css: {autoAlpha:  0.7},ease: Circ.easeInOut}, "sidebar+=1.5")
       .to($('.ip-header .ip-logo svg'), 0.4, {css: {left:  190},ease: Circ.easeInOut}, "sidebar+=1.5")
-      .to($('.admin-builder > div, .admin-builder h1'), 0.4, {css: {marginLeft:  240},ease: Circ.easeInOut}, "sidebar+=1.5")
+      .to($('.manh-builder > div, .manh-builder h1'), 0.4, {css: {marginLeft:  240},ease: Circ.easeInOut}, "sidebar+=1.5")
       .to($('.s2'), 0.4, {css: {autoAlpha:  0.7},ease: Circ.easeInOut}, "sidebar+=1.8")
       .to($('.s3'), 0.4, {css: {autoAlpha:  0.7},ease: Circ.easeInOut}, "sidebar+=2.1");
   });
@@ -96,7 +96,7 @@ $(function() {
       .to($('.step-sidebar-style'), 0.4, {css: {autoAlpha:  1,display:"block", scaleX:1,scaleY:1},ease: Circ.easeInOut}, "sidebar+=1.2")
       .to($('.s1'), 0.4, {css: {autoAlpha:  0.7},ease: Circ.easeInOut}, "sidebar+=1.5")
       .to($('.ip-header .ip-logo svg'), 0.4, {css: {right:  190},ease: Circ.easeInOut}, "sidebar+=1.5")
-      .to($('.admin-builder > div, .admin-builder h1'), 0.4, {css: {marginRight:  240},ease: Circ.easeInOut}, "sidebar+=1.5")
+      .to($('.manh-builder > div, .manh-builder h1'), 0.4, {css: {marginRight:  240},ease: Circ.easeInOut}, "sidebar+=1.5")
       .to($('.s2'), 0.4, {css: {autoAlpha:  0.7},ease: Circ.easeInOut}, "sidebar+=1.8")
       .to($('.s3'), 0.4, {css: {autoAlpha:  0.7},ease: Circ.easeInOut}, "sidebar+=2.1");
   });
@@ -610,7 +610,7 @@ $(function() {
               $('.topbar .header-left').html('').html(topbar1);
               tl.to($topbar, 0.4, {css: {marginTop:0, autoAlpha:1},ease: Circ.easeInOut}, "topbar+=0")
                 .to($('.ip-logo'), 0.4, {css: {top:10, },ease: Circ.easeInOut}, "topbar+=0")
-                .to($('.admin-builder h1'), 0.4, {css: {marginTop:20, },ease: Circ.easeInOut}, "topbar+=0")
+                .to($('.manh-builder h1'), 0.4, {css: {marginTop:20, },ease: Circ.easeInOut}, "topbar+=0")
                 .to($('.builder-container'), 0.4, {css: {marginTop:30, },ease: Circ.easeInOut}, "topbar+=0")
                 .to($logopanel, 0.4, {css: {top:  0},ease: Circ.easeInOut}, "topbar+=0")
                 .to($('.next-theme'), 0.4, {css: {autoAlpha:1},ease: Circ.easeInOut}, "topbar+=0.3");
@@ -629,7 +629,7 @@ $(function() {
               $('.topbar .header-left').html('').html(topbar2);
               tl.to($topbar, 0.4, {css: {marginTop:0, autoAlpha:1},ease: Circ.easeInOut}, "topbar+=0")
                 .to($('.ip-logo'), 0.4, {css: {top:10, },ease: Circ.easeInOut}, "topbar+=0")
-                .to($('.admin-builder h1'), 0.4, {css: {marginTop:20, },ease: Circ.easeInOut}, "topbar+=0")
+                .to($('.manh-builder h1'), 0.4, {css: {marginTop:20, },ease: Circ.easeInOut}, "topbar+=0")
                 .to($('.builder-container'), 0.4, {css: {marginTop:30, },ease: Circ.easeInOut}, "topbar+=0")
                 .to($logopanel, 0.4, {css: {top:  0},ease: Circ.easeInOut}, "topbar+=0")
                 .to($('.next-theme'), 0.4, {css: {autoAlpha:1},ease: Circ.easeInOut}, "topbar+=0.3");
@@ -1036,7 +1036,7 @@ $(function() {
   });
 
 
-  $('#export-admin').on('click', function(e){
+  $('#export-manh').on('click', function(e){
       e.preventDefault();
       $('#modal-export-template').modal('show');
   });
@@ -1046,19 +1046,19 @@ $(function() {
       var cloneQuickview  = $('#quickview-sidebar').clone();
       var cloneSearch  = $('#morphsearch').clone();
       var fileName = $('.html-file-name').val();
-      $('body').removeClass('modal-open').removeClass('layout-switch').removeClass('builder-admin');
+      $('body').removeClass('modal-open').removeClass('layout-switch').removeClass('builder-manh');
       var bodyClass = $('body').attr('class');
-      if(fileName == '') fileName = 'my-custom-admin';
+      if(fileName == '') fileName = 'my-custom-manh';
       var rtlClass = '';
       if($('body').hasClass('rtl')) {
           rtlClass = 'rtl';
       }
-      var adminHeader =   '<!DOCTYPE html>\n'+
+      var manhHeader =   '<!DOCTYPE html>\n'+
                           '<html class="'+ rtlClass +'" lang="en">\n'+
                           '<head>\n'+
                           '  <meta charset="utf-8">\n'+
                           '  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">\n'+
-                          '  <meta name="description" content="admin-themes-lab">\n'+
+                          '  <meta name="description" content="manh-themes-lab">\n'+
                           '  <meta name="author" content="themes-lab">\n'+
                           '  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">\n'+
                           '  <title>Make Admin Template - Themes Lab</title>\n'+
@@ -1099,12 +1099,12 @@ $(function() {
 
       var copyright =   '      <div class="footer">\n'+
                         '        <div class="copyright">\n'+
-                        '          <p class="pull-left sm-pull-reset"> <span>Copyright <span class="copyright">©</span> 2014 </span> <span>THEMES LAB</span>. <span>All rights reserved. </span> </p>\n'+
+                        '          <p class="pull-left sm-pull-reset"> <span>Copyright <span class="copyright">©</span> 2014 </span> <span>Manhattan &amp; Associates</span>. <span>All rights reserved. </span> </p>\n'+
                         '          <p class="pull-right sm-pull-reset"> <span><a href="#" class="m-r-10">Support</a> | <a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span> </p>\n'+
                         '        </div>\n'+
                         '      </div>\n';
 
-      var adminFooter = '</section>\n'+
+      var manhFooter = '</section>\n'+
                         '<div id="quickview-sidebar" class="">\n'+
                         cloneQuickview.html() +
                         '</div>\n'+
@@ -1200,7 +1200,7 @@ $(function() {
       $('#modal-export-template form input[type="hidden"]').remove();
       newInput = $('<input type="hidden" name="pages[index]" value="">');
       $('#modal-export-template form').prepend( newInput );
-      newInput.val(adminHeader + customPageContent + adminFooter);
+      newInput.val(manhHeader + customPageContent + manhFooter);
       
   });
 
@@ -1211,19 +1211,19 @@ $(function() {
       var cloneQuickview  = $('#quickview-sidebar').clone();
       var cloneSearch  = $('#morphsearch').clone();
       var fileName = $('.html-file-name').val();
-      $('body').removeClass('modal-open').removeClass('layout-switch').removeClass('builder-admin');
+      $('body').removeClass('modal-open').removeClass('layout-switch').removeClass('builder-manh');
       var bodyClass = $('body').attr('class');
-      if(fileName == '') fileName = 'my-custom-admin';
+      if(fileName == '') fileName = 'my-custom-manh';
       var rtlClass = '';
       if($('body').hasClass('rtl')) {
           rtlClass = 'rtl';
       }
-      var adminHeader =   '<!DOCTYPE html>\n'+
+      var manhHeader =   '<!DOCTYPE html>\n'+
                           '<html class="'+ rtlClass +'" lang="en">\n'+
                           '<head>\n'+
                           '  <meta charset="utf-8">\n'+
                           '  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">\n'+
-                          '  <meta name="description" content="admin-themes-lab">\n'+
+                          '  <meta name="description" content="manh-themes-lab">\n'+
                           '  <meta name="author" content="themes-lab">\n'+
                           '  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">\n'+
                           '  <title>Make Admin Template - Themes Lab</title>\n'+
@@ -1264,12 +1264,12 @@ $(function() {
 
       var copyright =   '      <div class="footer">\n'+
                         '        <div class="copyright">\n'+
-                        '          <p class="pull-left sm-pull-reset"> <span>Copyright <span class="copyright">©</span> 2014 </span> <span>THEMES LAB</span>. <span>All rights reserved. </span> </p>\n'+
+                        '          <p class="pull-left sm-pull-reset"> <span>Copyright <span class="copyright">©</span> 2014 </span> <span>Manhattan &amp; Associates</span>. <span>All rights reserved. </span> </p>\n'+
                         '          <p class="pull-right sm-pull-reset"> <span><a href="#" class="m-r-10">Support</a> | <a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span> </p>\n'+
                         '        </div>\n'+
                         '      </div>\n';
 
-      var adminFooter = '</section>\n'+
+      var manhFooter = '</section>\n'+
                         '<div id="quickview-sidebar" class="">\n'+
                         cloneQuickview.html() +
                         '</div>\n'+
@@ -1381,7 +1381,7 @@ $(function() {
 
   $('#go-page-builder').on('click', function(e){
       e.preventDefault();
-      var pageTemplate = $.cookie('custom-admin');
+      var pageTemplate = $.cookie('custom-manh');
   });
 
 

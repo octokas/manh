@@ -248,7 +248,7 @@ angular.module('newApp').factory('applicationService', ['pluginsService', functi
 
     /* Adjust margin of content for boxed layout */
     function handleboxedLayout() {
-        if ($('body').hasClass('builder-admin')) return;
+        if ($('body').hasClass('builder-manh')) return;
         $logopanel.css('left', '').css('right', '');
         $topbar.css('width', '');
         $sidebar.css('margin-left', '').css('margin-right', '');
@@ -1137,7 +1137,7 @@ angular.module('newApp').factory('applicationService', ['pluginsService', functi
         setTimeout(function () {
             customScroll();
             reposition_topnav();
-            if (!$('body').hasClass('fixed-sidebar') && !$('body').hasClass('builder-admin')) sidebarBehaviour();
+            if (!$('body').hasClass('fixed-sidebar') && !$('body').hasClass('builder-manh')) sidebarBehaviour();
             handleboxedLayout();
             maximizePanel();
         }, 100);

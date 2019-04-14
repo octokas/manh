@@ -92,7 +92,7 @@
         <!-- BEGIN PAGE CONTENT -->
         <div class="page-content">
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-8">
               <h2 class="doc-title">Manhattan &amp; Associates <strong>Structure</strong></h2>
               <p>The general template structure is the same throughout the template. All template files have fixed structure consisting of header, top menu, main sidebar menu, chat menu and page content.</p>
               <pre class="prettyprint linenums">
@@ -136,8 +136,22 @@
 &lt;/html&gt;</pre>
               <h2><strong>Sidebar</strong> Structure</h2>
               <p>Sidebar is divided if 3 main parts:sidebar top, sidebar nav and sidebar widget</p>
-              <pre class="prettyprint linenums">
-&lt;!-- BEGIN SIDEBAR --&gt;
+              <div class="row"><br>
+                <div class="col-md-12 portlets">
+                  <div class="panel structs">
+                    <div class="panel-header panel-controls"></div>
+                    <div class="panel-content" style="padding: 0px;">
+                      <ul class="nav nav-tabs">
+                        <li class=""><a href="#tab1_1" data-toggle="tab">HTML</a></li>
+                        <li class="active"><a href="#tab1_2" data-toggle="tab">TypeScript</a></li>
+                        <li class=""><a href="#tab1_3" data-toggle="tab">Extra Demos</a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane fade" id="tab1_1">
+                            <button type="button" class="btn btn-default js-htmlcodecopybtn">
+                                Copy <code>HTML</code> to clipboard&nbsp;&nbsp;<i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                          <pre class="prettyprint linenums m-t-20 js-htmlcodesnip">&lt;!-- BEGIN SIDEBAR --&gt;
 &lt;div class=&quot;sidebar&quot;&gt;
   &lt;div class=&quot;logopanel&quot;&gt;
       &lt;!-- LOGO --&gt;
@@ -158,8 +172,75 @@
       &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- END SIDEBAR --&gt;
+&lt;!-- END SIDEBAR --&gt;</pre>
+                        </div>
+                        <div class="tab-pane fade active in" id="tab1_2">
+                            <button type="button" class="btn btn-default js-webcodecopybtn">
+                                Copy <code>TypeScript</code> to clipboard&nbsp;&nbsp;<i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                          <pre class="prettyprint linenums m-t-20 js-webcodesnip">/* TypeScript Conversions */
+interface Nav {
+  linkDesc: string;
+  linkRef:  string;
+}
+
+interface Links {
+  begRef: string;
+  class:  string;
+  endRef: string;
+}
+
+let links = {
+  begRef: '<a href="',
+  classActive: '" class="active">',
+  classInactive: '">',
+  classParent: '" class="nav-parent">',
+  endRef: '</a>'
+}
+
+let nav = {
+  homeDesc: 'Introduction',
+  homeRef:  'https://google.com',
+  apiDesc: 'Layout API',
+  apiRef:  'https://apple.com',
+  strucDesc: 'Structure',
+  strucRef:  'https://samsung.com',
+  uiDesc: 'UI Elements',
+  uiRef:  'https://sony.com'
+}
+
+
+var home = links.begRef + nav.homeRef + links.classActive + nav.homeDesc + links.endRef; 
+var api = links.begRef + nav.apiRef + links.classInactive + nav.apiDesc + links.endRef;
+var structure = links.begRef + nav.strucRef + links.classInactive + nav.strucDesc + links.endRef;
+var ui = links.begRef + nav.uiRef + links.classParent + nav.uiDesc + links.endRef;
+
+function menu() {
+  return home + "<br>" + api + "<br>" + structure + "<br>" + ui;
+}
+
+function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.visibility == 'visible')
+          e.style.visibility = 'hidden';
+        else
+          e.style.visibility = 'visible';
+    }
+
+document.querySelector(".menu").innerHTML = menu();
 </pre>
+                          </div>
+                          <div class="tab-pane fade" id="tab1_3">
+                            <p><b><em>My suggestions</em></b>:<br>
+                              <a href="https://jsfiddle.net/stddef/z31b8o5s/369/" target="_blank">JS Fiddle for the TypeScript conversion...</a><br>
+                              <a href="http://jsfiddle.net/stddef/9qvr3kg8/1/" target="_blank">JS Fiddle for a variant of the PrettyPrint style...</a>
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <h3><strong>Submenu</strong> Elements</h3>
               <p>You can add easily submenu to your menu by adding a class to li element and to ul like this:</p>
               <pre class="prettyprint linenums">

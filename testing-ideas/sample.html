@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamically Create ul and li with jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <style>
+        ul {
+            list-style:none;
+            padding:0px;
+            margin:0px;
+        }
+        ul li {
+            display:block;
+            position:relative;
+            float:left;
+            border:none;
+        }
+        li ul {
+            display:none;
+        }
+        ul li a {
+            display:block;
+            font-family:Verdana;
+            font-size:15px;
+            transition:all linear 0.2s;
+            background:#000;
+            padding:5px 10px;
+            text-decoration:none;
+            white-space:nowrap;
+            color:#FFF;
+            background:#909EAB;
+        }
+        ul li a:hover {
+            background:#4B545F;
+        }
+        li:hover ul {
+            display:block;
+            position:absolute;
+        }
+        li:hover li {
+            float:none;
+        }
+        li:hover a {
+            background:#5F6975;
+        }
+        li:hover li a:hover {
+            background:#4B545F;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu"></ul>
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        // THE TOP (HEADER) LIST ITEM.
+        var li = $('<li/>')
+            .appendTo('#menu');
+
+        $('<a />')
+            .text('Book')
+            .attr('href', '#')
+            .appendTo(li);     // ADD THE TOP LIST TO THE HEADER (<ul>).
+
+        // CREATE THE SUB <ul>.
+        var sub_ul = $('<ul/>')
+            .appendTo(li);
+
+        // EXTRACT XML DATA.
+        $.ajax({
+            type: 'GET',
+            url: 'https://www.encodedna.com/library/library.xml',        // CHANGE THIS URL ACCORDING TO YOUR REQUIREMENT.
+            dataType: 'xml',
+            success: function (xml) {
+                $(xml).find('List').each(function () {
+
+                    // CREATE AND ADD SUB LIST ITEMS.
+                    var sub_li = $('<li/>')
+                        .appendTo(sub_ul);
+
+                    title = $(this).find('BookName').text();
+
+                    $('<a />')
+                        .text(title)
+                        .attr('href', 'https://www.encodedna.com')
+                        .appendTo(sub_li);
+                });
+            }
+        });
+    });
+</script>
+</html>

@@ -1142,7 +1142,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
                       '<script src="../assets/global/js/application.js"></script> <!-- Main Application Script -->\n' + 
                       '<script src="../assets/global/js/plugins.js"></script> <!-- Main Plugin Initialization Script -->\n' + 
                       '<script src="../assets/global/js/widgets/notes.js"></script>\n' + '<script src="../assets/global/js/quickview.js"></script>\n' + 
-                      '<script src="../assets/global/js/pages/search.js"></script>\n' + '<script src="../assets/admin/layout1/js/layout.js"></script>\n' + '</body>\n' + 
+                      '<script src="../assets/global/js/pages/search.js"></script>\n' + '<script src="../assets/manh-ds/layout1/js/layout.js"></script>\n' + '</body>\n' + 
                       '</html>';
     
     if ($('body').hasClass('fixed-sidebar')) {

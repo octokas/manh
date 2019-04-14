@@ -3,17 +3,17 @@
  =========================================================== */
 
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900";
-@import "../../../admin/assets/global/plugins/bootstrap/css/bootstrap.min.css";
-@import "../../../admin/assets/global/plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
-@import "../../../admin/assets/global/css/icons/font-awesome/font-awesome.css";
-@import "../../../admin/assets/global/css/icons/line-icons/line-icons.css";
-@import "../../../admin/assets/global/css/icons/line-icons/simple-line-icons.css";
-@import "../../../admin/assets/global/plugins/bootstrap-loading/lada.min.css"; /* Buttons Loading State - See Buttons Page - OPTIONAL */
-@import "../../../admin/assets/global/plugins/select2/select2.css"; /* Select & Radio Inputs */
-@import "../../../admin/assets/global/plugins/icheck/skins/all.css"; /* Checbox & Radio Icheck */
-@import "../../../admin/assets/global/css/icons/rounded/style.css"; /* Rounded Icons - See Icons Page  */
-@import "../../../admin/assets/global/css/icons/octicons/octicons.css"; /* Topbar Left Icons  */
-@import "../../../admin/assets/global/plugins/prettify/prettify.css"; /* Show Html Code  */
+@import "../../../manh-ds/assets/global/plugins/bootstrap/css/bootstrap.min.css";
+@import "../../../manh-ds/assets/global/plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
+@import "../../../manh-ds/assets/global/css/icons/font-awesome/font-awesome.css";
+@import "../../../manh-ds/assets/global/css/icons/line-icons/line-icons.css";
+@import "../../../manh-ds/assets/global/css/icons/line-icons/simple-line-icons.css";
+@import "../../../manh-ds/assets/global/plugins/bootstrap-loading/lada.min.css"; /* Buttons Loading State - See Buttons Page - OPTIONAL */
+@import "../../../manh-ds/assets/global/plugins/select2/select2.css"; /* Select & Radio Inputs */
+@import "../../../manh-ds/assets/global/plugins/icheck/skins/all.css"; /* Checbox & Radio Icheck */
+@import "../../../manh-ds/assets/global/css/icons/rounded/style.css"; /* Rounded Icons - See Icons Page  */
+@import "../../../manh-ds/assets/global/css/icons/octicons/octicons.css"; /* Topbar Left Icons  */
+@import "../../../manh-ds/assets/global/plugins/prettify/prettify.css"; /* Show Html Code  */
 
 /* FONTS */
 @font-face{font-family:'weather';src:url('icons/weather/artill_clean_icons-webfont.eot');src:url('icons/weather/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),url('icons/weather/artill_clean_icons-webfont.woff') format('woff'),url('icons/weather/artill_clean_icons-webfont.ttf') format('truetype'),url('icons/weather/weatherfont/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');font-weight:normal;font-style:normal}

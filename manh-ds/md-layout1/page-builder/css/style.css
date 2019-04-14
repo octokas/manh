@@ -1,21 +1,21 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900";
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700";
-@import "../../../admin/assets/plugins/bootstrap/css/bootstrap.min.css";
-@import "../../../admin/assets/plugins/bootstrap/css/bootstrap-rtl.min.css";
-@import "../../../admin/assets/plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
-@import "../../../admin/assets/plugins/animation-css/animate.min.css";
+@import "../../../manh-ds/assets/plugins/bootstrap/css/bootstrap.min.css";
+@import "../../../manh-ds/assets/plugins/bootstrap/css/bootstrap-rtl.min.css";
+@import "../../../manh-ds/assets/plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
+@import "../../../manh-ds/assets/plugins/animation-css/animate.min.css";
 @import "icons/font-awesome/font-awesome.css";
 @import "icons/line-icons/line-icons.css";
 @import "icons/line-icons/simple-line-icons.css";
-@import "../../../admin/assets/plugins/select2/select2.css";
-@import "../../../admin/assets/plugins/slick/slick.css";
-@import "../../../admin/assets/plugins/icheck/skins/all.css";
+@import "../../../manh-ds/assets/plugins/select2/select2.css";
+@import "../../../manh-ds/assets/plugins/slick/slick.css";
+@import "../../../manh-ds/assets/plugins/icheck/skins/all.css";
 @import "icons/rounded/style.css";
 @import "icons/octicons/octicons.css";
-@import "../../../admin/assets/plugins/bootstrap-loading/lada.min.css";
-@import "../../../admin/assets/plugins/bootstrap-tags-input/bootstrap-tagsinput.css";
-@import "../../../admin/assets/plugins/bootstrap-editable/css/bootstrap-editable.css";
-@import "../../../admin/assets/plugins/prettify/prettify.css";
+@import "../../../manh-ds/assets/plugins/bootstrap-loading/lada.min.css";
+@import "../../../manh-ds/assets/plugins/bootstrap-tags-input/bootstrap-tagsinput.css";
+@import "../../../manh-ds/assets/plugins/bootstrap-editable/css/bootstrap-editable.css";
+@import "../../../manh-ds/assets/plugins/prettify/prettify.css";
 
 
 @font-face {
@@ -1515,7 +1515,7 @@ body:not(.sidebar-collapsed) .topbar .header-left .topnav .menutoggle:hover .men
   margin: 0;
 }
 .sidebar .logopanel h1 a {
-  background: url(../../../admin/assets/images/logo/logo-white.png) no-repeat;
+  background: url(../../../manh-ds/assets/images/logo/logo-white.png) no-repeat;
   display: block;
   height: 31px;
 }
@@ -10214,7 +10214,7 @@ a.message-item:hover {
 .morphsearch-submit {
   -webkit-transform: translate3d(-30px, -50%, 0) scale3d(0, 0, 1);
   background-size: 100%;
-  background: transparent url(../../../admin/assets/images/magnifier.svg) no-repeat center center;
+  background: transparent url(../../../manh-ds/assets/images/magnifier.svg) no-repeat center center;
   border: none;
   height: 80px;
   opacity: 0;

@@ -1446,7 +1446,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
 
     /* Fix URL and SRC attribute for export */
     allContent.find('.sidebar a').each(function(){
-        var newurl = $(this).attr('href').replace('../../admin/','');
+        var newurl = $(this).attr('href').replace('../../manh-ds/','');
         newurl     = $(this).attr('href').replace('../admin-builder/','../builder/admin-builder/');
         $(this).attr('href', newurl);
     });

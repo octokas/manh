@@ -1,20 +1,20 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900";
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700";
-@import "../../../admin/assets/global/plugins/bootstrap/css/bootstrap.min.css";
-@import "../../../admin/assets/global/plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
-@import "../../../admin/assets/global/plugins/animation-css/animate.min.css";
+@import "../../../manh-ds/assets/global/plugins/bootstrap/css/bootstrap.min.css";
+@import "../../../manh-ds/assets/global/plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
+@import "../../../manh-ds/assets/global/plugins/animation-css/animate.min.css";
 @import "icons/font-awesome/font-awesome.css";
 @import "icons/line-icons/line-icons.css";
 @import "icons/line-icons/simple-line-icons.css";
-@import "../../../admin/assets/global/plugins/select2/select2.css";
-@import "../../../admin/assets/global/plugins/slick/slick.css";
-@import "../../../admin/assets/global/plugins/icheck/skins/all.css";
+@import "../../../manh-ds/assets/global/plugins/select2/select2.css";
+@import "../../../manh-ds/assets/global/plugins/slick/slick.css";
+@import "../../../manh-ds/assets/global/plugins/icheck/skins/all.css";
 @import "icons/rounded/style.css";
 @import "icons/octicons/octicons.css";
-@import "../../../admin/assets/global/plugins/bootstrap-loading/lada.min.css";
-@import "../../../admin/assets/global/plugins/bootstrap-tags-input/bootstrap-tagsinput.css";
-@import "../../../admin/assets/global/plugins/bootstrap-editable/css/bootstrap-editable.css";
-@import "../../../admin/assets/global/plugins/prettify/prettify.css";
+@import "../../../manh-ds/assets/global/plugins/bootstrap-loading/lada.min.css";
+@import "../../../manh-ds/assets/global/plugins/bootstrap-tags-input/bootstrap-tagsinput.css";
+@import "../../../manh-ds/assets/global/plugins/bootstrap-editable/css/bootstrap-editable.css";
+@import "../../../manh-ds/assets/global/plugins/prettify/prettify.css";
 
 
 @font-face {

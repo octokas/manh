@@ -10,7 +10,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="../manh-ds/assets/global/css/ui.css" rel="stylesheet">
     <link href="../manh-ds/assets/global/plugins/jstree/src/themes/default/style.min.css" rel="stylesheet">
-    <link href="../admin/assets/global/plugins/jstree/src/themes/default/style.min.css" rel="stylesheet">
+    <link href="../manh-ds/assets/global/plugins/jstree/src/themes/default/style.min.css" rel="stylesheet">
   </head>
   <!-- BEGIN BODY -->
   <body class="fixed-topbar fixed-sidebar">
@@ -98,11 +98,11 @@
               <p>Make admin include AngularJS version of each variation / layout.</p>
               <p>AngularJS will allow fast application that works like a single page. That's mean that for example topbar and sidebar will stay when page change. Only main content will be updated.</p>
               <p>
-                <a class="btn btn-primary" href="../admin/layout1/angularjs/app/index.html" target="_blank">See AngularJS version example</a>
+                <a class="btn btn-primary" href="../manh-ds/layout1/angularjs/app/index.html" target="_blank">See AngularJS version example</a>
                 <a class="btn btn-default" href="https://docs.angularjs.org/tutorial" target="_blank">See official Documentation</a>
               </p>
               <h2><strong>AngularJS</strong> files</h2>
-              <p>You will find all specific AngularJS files inside angularjs folder. For example, if you want to use layout1, you will find AngularJS files in admin/layout1/angularjs folder.</p>
+              <p>You will find all specific AngularJS files inside angularjs folder. For example, if you want to use layout1, you will find AngularJS files in manh-ds/layout1/angularjs folder.</p>
 
               <h2><strong>How to use</strong> AngularJS theme?</h2>
               <p>We will take example of layout 1 version. It's the same thing without other layouts and with RTL version too.</p>
@@ -111,10 +111,10 @@
               <p>Here we just need files inside admin folder. All images / js / css / html files will be available.</p>
 
               <h3><strong>2. Remove unecessary files</strong></h3>
-              <p>If you want to use layout 1, you can remove admin/layout2 , admin/layout3 , admin/layout4 folders.</p>
-              <p>you can also remove admin/assets/admin/layout2 , admin/assets//admin/layout3 , admin/assets//admin/layout4 folders.</p>
-              <p>You can also remove all html pages that are unnecessary, like admin/layout1/charts.html, admin/layout1/charts-finance.html...</p>
-              <p>You can also remove admin/layout1/page-builder folder since it's not available for AngularJS version, as well as admin/layout1/partial folder.</p>
+              <p>If you want to use layout 1, you can remove manh-ds/layout2 , manh-ds/layout3 , manh-ds/layout4 folders.</p>
+              <p>you can also remove manh-ds/assets/manh-ds/layout2 , manh-ds/assets//manh-ds/layout3 , manh-ds/assets//manh-ds/layout4 folders.</p>
+              <p>You can also remove all html pages that are unnecessary, like manh-ds/layout1/charts.html, manh-ds/layout1/charts-finance.html...</p>
+              <p>You can also remove manh-ds/layout1/page-builder folder since it's not available for AngularJS version, as well as manh-ds/layout1/partial folder.</p>
 
               <h2>How to <strong>change files path </strong>(optional)</h2>
               <p>It's possible that you want to modify files path. Indeed, your files tree now is:</p>
@@ -124,16 +124,16 @@
               <div id="tree-angular-after"></div>
 
               <h3><strong>1. Move angularjs files</strong></h3>
-              <p>Cut all files inside admin/layout1/angularjs folder and past it in your root folder.</p>
-              <p>After that, you can remove admin/layout1 folder since we don't need it now.</p>
+              <p>Cut all files inside manh-ds/layout1/angularjs folder and past it in your root folder.</p>
+              <p>After that, you can remove manh-ds/layout1 folder since we don't need it now.</p>
 
               <h3><strong>2. Move admin &amp; global files</strong></h3>
-              <p>Cut the 2 folders (admin &amp; global) that you will find in admin/assets folder and past it in your root folder.</p>
-              <p>After that, you can remove admin/assets folder since we don't need it now.</p>
+              <p>Cut the 2 folders (admin &amp; global) that you will find in manh-ds/assets folder and past it in your root folder.</p>
+              <p>After that, you can remove manh-ds/assets folder since we don't need it now.</p>
               <p>We have now file organization as we want, but we will have to change some files path to make it works now.</p>
 
               <h3><strong>3. Move admin &amp; global files</strong></h3>
-              <p>Cut the 2 folders (admin &amp; global) that you will find in admin/assets folder and past it in your root folder.</p>
+              <p>Cut the 2 folders (admin &amp; global) that you will find in manh-ds/assets folder and past it in your root folder.</p>
               <p>We have now file organization as we want, but we will have to change some files path to make it works now.</p>
 
               <h3><strong>4. Update files and images path</strong></h3>
@@ -142,7 +142,7 @@
               <p>So, in all files, you will have to search and replace:</p>
               <ul class="with-pad">
                 <li><strong>../../../assets/global/</strong> by <strong>../global/</strong></li>
-                <li><strong>../../../assets/admin/</strong> by <strong>../admin/</strong></li>
+                <li><strong>../../../assets/manh-ds/</strong> by <strong>../manh-ds/</strong></li>
               </ul>
               <br>
               <p>Here normally you application will work fine. Of course, if you want to have another files organization, you can adapt it to fit your needs.</p>

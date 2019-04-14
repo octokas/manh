@@ -4,7 +4,7 @@
  * https://github.com/sydcanem/bootstrap-contextmenu
  *
  * Inspired by Bootstrap's dropdown plugin.
- * Bootstrap (http://getbootstrap.com).
+ * Bootstrap (https://getbootstrap.com).
  *
  * Licensed under MIT
  * ========================================================= */

@@ -7,7 +7,7 @@ if($zipfileName == ''){
 }
 
 
-$filename = "../your-custom-manh-ds/".$zipfileName.".zip"; //use the /tmp folder to circumvent any permission issues on the root folder
+$filename = "../your-custom-manh/".$zipfileName.".zip"; //use the /tmp folder to circumvent any permission issues on the root folder
 
 /* END CONFIG */
 	
@@ -32,7 +32,7 @@ $zip->close();
 
 
 if ($zip->open($filename, ZipArchive::CREATE) === TRUE) {
-    $zip->extractTo('../your-custom-manh-ds/');
+    $zip->extractTo('../your-custom-manh/');
     $zip->close();
 
 } 

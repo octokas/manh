@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+ 
 .at-view-slide-in-left.ng-enter,.at-view-slide-in-left.ng-leave{-webkit-transition:all .6s ease;-moz-transition:all .6s ease;-o-transition:all .6s ease;transition:all .6s ease;position:absolute;width:calc(100% - 240px)}
 .at-view-slide-in-left.ng-enter{left:-100%}
 .at-view-slide-in-left.ng-enter-active{left:240px}

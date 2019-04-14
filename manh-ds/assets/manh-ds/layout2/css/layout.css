@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 body:not(.sidebar-top):not(.fixed-sidebar):not(.sidebar-collapsed) .sidebar:before{margin-top:0}
 .sidebar-condensed:not(.sidebar-collapsed):not(.fixed-topbar) .main-content .topbar{left:0}
 .sidebar-condensed .sidebar .sidebar-inner .nav-sidebar > li > a{text-align:center}

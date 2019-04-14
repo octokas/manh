@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 h1 {font-family: 'Lato';font-weight: 100; text-align: center;margin-bottom: 20px;}
 h3 {font-family: 'Lato';font-weight: 100;text-transform:uppercase;margin-bottom: 16px;font-size: 15px}
 h1 strong,h3 strong, .step-title strong{font-family: 'Lato' !important; font-weight:900;}

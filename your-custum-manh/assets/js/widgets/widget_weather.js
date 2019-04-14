@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 /**** WEATHER WIDGET ****/
 
 $(document).ready(function(){

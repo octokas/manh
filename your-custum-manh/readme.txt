@@ -1,29 +1,13 @@
-Make Admin Template - Custom Admin Builder
+MANH-DS - Custom MANH Page Builder
 
 
 
-HOW TO CREATE MY CUSTOM ADMIN?
+HOW TO CREATE MY CUSTOM MANH-DS PAGE?
 
 1) Open manh-builder/index.html file in your browser.
 
-2) Create your manh with Admin builder: select your sidebar and topbar, edit your menu text and link, choose your colors.
+2) Create your MANH custom page with the MANH-DS builder: select your sidebar and topbar, edit your menu text and link, choose your colors.
 
 3) Once you have finished, your manh blank page will be here.
 
 4) That's all!
-
-
-
-
-HAVE A QUESTION?
-
-Don't hesitate to send us a message on Themeforest or to support@themes-lab.com for any questions or for improvement ideas.
-
-
-
-WANT TO SUPPORT US?
-
-If you like this template and want to help us to give you continuous updates, please give us a 5 stars rating on Themeforest download page: https://themeforest.net/downloads.
-
-
-THANKS FOR YOUR PURCHASE AND STAY TUNED!

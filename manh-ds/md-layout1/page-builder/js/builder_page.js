@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 var formLayout = 'horizontal';
 var formElement = 'input';
 var radioLayout = 'vertical';

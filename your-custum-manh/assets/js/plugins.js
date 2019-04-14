@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 /****  Variables Initiation  ****/
 var doc = document;
 var docEl = document.documentElement;

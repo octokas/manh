@@ -1,4 +1,8 @@
-﻿angular.module('newApp').controller('mainCtrl',
+﻿/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
+angular.module('newApp').controller('mainCtrl',
     ['$scope', 'applicationService', 'quickViewService', 'builderService', 'pluginsService', '$location',
         function ($scope, applicationService, quickViewService, builderService, pluginsService, $location) {
             $(document).ready(function () {

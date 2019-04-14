@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 body.boxed, body.mailbox {height: auto}
 .sidebar-mailbox.sidebar .sidebar-inner .nav-sidebar > li.active > a span.badge,.sidebar .sidebar-inner .nav-sidebar .badge-rounded{position:absolute;right:55px}
 .sidebar-mailbox.sidebar .sidebar-inner .nav-sidebar > li.active > a{text-align:center}

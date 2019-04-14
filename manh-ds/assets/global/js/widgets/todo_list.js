@@ -1,3 +1,7 @@
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 /**** TODO LIST WIDGET ****/
 
 $(document).ready(function(){

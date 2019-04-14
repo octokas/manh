@@ -187,6 +187,10 @@ function handleTopbarFixed() {
     $('body').removeClass('fixed-topbar').addClass('fixed-topbar');
     $.removeCookie('fluid-topbar');
 }
+/* ============================================================
+ * Written by Kaska Miskolczi for Manhattan & Associates
+ =========================================================== */
+
 
 /* Create Topbar Fluid / Remove Topbar Fixed */
 function handleTopbarFluid() {

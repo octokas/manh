@@ -1,12 +1,12 @@
 /*!
-Video.js Default Styles (http://videojs.com)
+Video.js Default Styles (https://videojs.com)
 Version GENERATED_AT_BUILD
-Create your own skin at http://designer.videojs.com
+Create your own skin at https://designer.videojs.com
 */
 
 // To customize the player skin, change the values of the variables or edit the
 // CSS below.
-// (This file uses LESS. Learn more at http://lesscss.org/)
+// (This file uses LESS. Learn more at https://lesscss.org/)
 
 // The base font size controls the size of everything, not just text. All
 // dimensions use em-based sizes so that the scale along with the font size.
@@ -27,7 +27,7 @@ Create your own skin at http://designer.videojs.com
 @slider-bar-color: #66A8CC; // e.g. rgb(255, 255, 255) or #ffffff
 // The background of the progress bar and volume bar have a lined pattern that
 // is created from a base64 encoded image. You can generate your own pattern at
-// http://www.patternify.com/ then replace the value in the quotes with your own
+// https://www.patternify.com/ then replace the value in the quotes with your own
 @slider-bar-pattern: ~'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC';
 // The color of the slider background
 @slider-background-color: #333333;
@@ -210,7 +210,7 @@ The default control bar that is a container for most of the controls.
 /* IE8 is flakey with fonts, and you have to change the actual content to force
 fonts to show/hide properly.
   - "\9" IE8 hack didn't work for this
-  - Found in XP IE8 from http://modern.ie. Does not show up in "IE8 mode" in IE9
+  - Found in XP IE8 from https://modern.ie. Does not show up in "IE8 mode" in IE9
 */
 @ie8screen: ~"\0screen";
 .vjs-default-skin.vjs-user-inactive.vjs-playing .vjs-control-bar :before {
@@ -440,7 +440,7 @@ fonts to show/hide properly.
   /*
     Using a data URI to create the white diagonal lines with a transparent
       background. Surprisingly works in IE8.
-      Created using http://www.patternify.com
+      Created using https://www.patternify.com
     Changing the first color value will change the bar color.
     Also using a paralax effect to make the lines move backwards.
       The -50% left position makes that happen.
@@ -524,7 +524,7 @@ fonts to show/hide properly.
 /* Big Play Button (play button at start)
 --------------------------------------------------------------------------------
 Positioning of the play button in the center or other corners can be done more
-easily in the skin designer. http://designer.videojs.com/
+easily in the skin designer. https://designer.videojs.com/
 */
 .vjs-default-skin .vjs-big-play-button {
   // Calculate total width/height so we're able to center the button
@@ -890,7 +890,7 @@ body.vjs-full-window {
   padding: 0;
   margin: 0;
   height: 100%;
-  /* Fix for IE6 full-window. http://www.cssplay.co.uk/layouts/fixed.html *///
+  /* Fix for IE6 full-window. https://www.cssplay.co.uk/layouts/fixed.html *///
   overflow-y: auto;
 }
 .video-js.vjs-fullscreen {
@@ -1086,7 +1086,7 @@ body.vjs-full-window {
 }
 
 // Hide something visually but keep available for screen readers.
-// http://h5bp.com/v
+// https://h5bp.com/v
 .hide-visually () {
   /* hide-visually *///
   border: 0;
@@ -1127,7 +1127,7 @@ body.vjs-full-window {
   // margin-top: ((@length*-1)/2);
 }
 
-// http://stackoverflow.com/questions/637921/opacity-of-background-but-not-the-text
+// https://stackoverflow.com/questions/637921/opacity-of-background-but-not-the-text
 .background-color-with-alpha (@color, @alpha) {
   @rgba: rgba(red(@color), green(@color), blue(@color), @alpha);
   /* background-color-with-alpha *///

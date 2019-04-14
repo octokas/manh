@@ -1,6 +1,6 @@
 ###############################################################################################################################
 
-Since version 3.8.9, change log moved to: http://www.amcharts.com/javascript-maps/changelog/
+Since version 3.8.9, change log moved to: https://www.amcharts.com/javascript-maps/changelog/
 
 #### 3.8.8 ####################################################################################################################
 
@@ -88,7 +88,7 @@ Since version 3.8.9, change log moved to: http://www.amcharts.com/javascript-map
 #### 3.6.0 ####################################################################################################################
 
      Great new features added - map now support patterns - areas can be filled with images. Check our new inspiring samples at
-     http://www.amcharts.com/inspiration/ to see new possibilities in action.
+     https://www.amcharts.com/inspiration/ to see new possibilities in action.
 
    # patterns
      Patterns can be set for areas via pattern property of MapArea. Value of pattern should be object with url, width, height

@@ -17,11 +17,11 @@
 </head>
 <body>
 <div id='header'>
-    <h1><a href='http://bgrins.github.com/spectrum'>Spectrum</a></h1> <h2><em>The No Hassle jQuery Colorpicker</em></h2>
+    <h1><a href='https://bgrins.github.com/spectrum'>Spectrum</a></h1> <h2><em>The No Hassle jQuery Colorpicker</em></h2>
     <div id='links'>
-        <a href='http://github.com/bgrins/spectrum/zipball/1.3.4' class="btn btn-primary">Download Zip</a>
-        View the <a href='http://github.com/bgrins/spectrum'>Source code</a>.
-        Spectrum is a project by <a href='http://twitter.com/bgrins'>@bgrins</a>.
+        <a href='https://github.com/bgrins/spectrum/zipball/1.3.4' class="btn btn-primary">Download Zip</a>
+        View the <a href='https://github.com/bgrins/spectrum'>Source code</a>.
+        Spectrum is a project by <a href='https://twitter.com/bgrins'>@bgrins</a>.
     </div>
     <br style='clear:both;' />
 </div>
@@ -55,17 +55,17 @@
         </p>
 
         <h3 id="why-footprint" class='point'>Small Footprint</h3>
-        <div class='note'>see a working <a href='http://jsfiddle.net/bgrins/ctkY3/'>jsFiddle example</a></div>
+        <div class='note'>see a working <a href='https://jsfiddle.net/bgrins/ctkY3/'>jsFiddle example</a></div>
         <p>Just include the needed CSS and JavaScript files, and you are ready to go!  </p>
 <pre class='prettyprint' id='code-subheading'>
-&lt;script src='<a href='http://bgrins.github.com/spectrum/spectrum.js' target="_blank">spectrum.js</a>'&gt;&lt;/script&gt;
-&lt;link rel='stylesheet' href='<a href='http://bgrins.github.com/spectrum/spectrum.css' target="_blank">spectrum.css</a>' /&gt;
+&lt;script src='<a href='https://bgrins.github.com/spectrum/spectrum.js' target="_blank">spectrum.js</a>'&gt;&lt;/script&gt;
+&lt;link rel='stylesheet' href='<a href='https://bgrins.github.com/spectrum/spectrum.css' target="_blank">spectrum.css</a>' /&gt;
 </pre>
         <p><strong>We don't need no stinkin' images!</strong></p>
         <p>Nobody wants to add a bunch of code into their project.  Spectrum is contained in two files, and both are careful not to mess with your existing code.</p>
 
         <h3 id="why-polyfill" class='point'>Polyfill</h3>
-        <p>I wanted an option for the most basic use case, a polyfill for the <a href='http://dev.w3.org/html5/markup/input.color.html'>input[type=color]</a> HTML5 control.
+        <p>I wanted an option for the most basic use case, a polyfill for the <a href='https://dev.w3.org/html5/markup/input.color.html'>input[type=color]</a> HTML5 control.
            This mode needs to work without JavaScript enabled - and fallback to an input[type=text] like other HTML5 inputs.
         </p>
         <p>If you don't want this behavior to happen, but still want to use spectrum elsewhere on the page, you can set <code>$.fn.spectrum.load = false;</code> right after loading the script file.</p>
@@ -88,11 +88,11 @@
         </p>
 
         <p>
-            When I started the project, I wrote about <a href="http://www.briangrinstead.com/blog/chrome-developer-tools-colorpicker-concept">developer tools concept colorpicker implementation</a>.  After that, I was <a href="http://groups.google.com/group/google-chrome-developer-tools/browse_thread/thread/4dd1e853b8051727/4549a6f0788885d4">contacted on the devtools mailing list</a> and got some initial feedback about the possibility of integrating it with devtools.  Then I pulled the jQuery dependency out of a branch and I submitted a patch to the WebKit project.
+            When I started the project, I wrote about <a href="https://www.briangrinstead.com/blog/chrome-developer-tools-colorpicker-concept">developer tools concept colorpicker implementation</a>.  After that, I was <a href="https://groups.google.com/group/google-chrome-developer-tools/browse_thread/thread/4dd1e853b8051727/4549a6f0788885d4">contacted on the devtools mailing list</a> and got some initial feedback about the possibility of integrating it with devtools.  Then I pulled the jQuery dependency out of a branch and I submitted a patch to the WebKit project.
         </p>
 
         <p>
-            From there, I opened a development case, entitled <a href="https://bugs.webkit.org/show_bug.cgi?id=71262">Web Inspector: Add colorpicker functionality to color swatches in Styles Sidebar</a>.  50+ comments and 10 patches later, the case <a href="http://www.webkit.org/blog/1804/last-week-in-webkit-calculated-css-values-and-the-translate-attribute/">landed in WebKit</a>. Thanks to all the WebKit developers who helped me along the way with getting the code and UI ready for committing.
+            From there, I opened a development case, entitled <a href="https://bugs.webkit.org/show_bug.cgi?id=71262">Web Inspector: Add colorpicker functionality to color swatches in Styles Sidebar</a>.  50+ comments and 10 patches later, the case <a href="https://www.webkit.org/blog/1804/last-week-in-webkit-calculated-css-values-and-the-translate-attribute/">landed in WebKit</a>. Thanks to all the WebKit developers who helped me along the way with getting the code and UI ready for committing.
         </p>
 
 
@@ -104,7 +104,7 @@
     the easiest way is to create an input with the type of color.
     Once a user's browser supports a native color control, it will opt to use their native control instead.
     </p>
-    <p><strong>Unlike the other modes, your value must be a 6 character hex value starting with a '#'.</strong>  Why?  Because the spec <a href='http://dev.w3.org/html5/markup/input.color.html#input.color.attrs.value'>says so</a>, that's why.
+    <p><strong>Unlike the other modes, your value must be a 6 character hex value starting with a '#'.</strong>  Why?  Because the spec <a href='https://dev.w3.org/html5/markup/input.color.html#input.color.attrs.value'>says so</a>, that's why.
     </p>
 
 <pre class='prettyprint' id='code-subheading'>
@@ -336,7 +336,7 @@ $("#showPalette").spectrum({
 
         <h3 id="options-showPaletteOnly">Show Palette Only</h3>
         <div class='option-content'>
-            <div class='note'>see a working <a href='http://jsfiddle.net/bgrins/S45tW/'>jsFiddle example</a></div>
+            <div class='note'>see a working <a href='https://jsfiddle.net/bgrins/S45tW/'>jsFiddle example</a></div>
             <div class='description'>
             <p>If you'd like, spectrum can show the palettes you specify, and nothing else.</p>
             </div>
@@ -1004,7 +1004,7 @@ $("input").spectrum("option", "showInput"); // false
         <h3 id="details-ieImplementation" class='point'>IE Implementation</h3>
         <p>
         IE Support is provided using
-        <a href='http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx'>proprietary filters</a>.
+        <a href='https://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx'>proprietary filters</a>.
         Other browsers use CSS gradients.
         </p>
 
@@ -1049,16 +1049,16 @@ t.toName()      // "red"
         <p>
         If you've made it this far, please share one of these links to help others find this project!
         <br />
-        <a href='http://bgrins.github.com/spectrum'>JavaScript Colorpicker</a> |
-        <a href='http://bgrins.github.com/spectrum'>jQuery Colorpicker</a> |
-        <a href='http://bgrins.github.com/spectrum'>Mobile Colorpicker</a> |
-        <a href='http://bgrins.github.com/spectrum'>Spectrum colorpicker</a>
+        <a href='https://bgrins.github.com/spectrum'>JavaScript Colorpicker</a> |
+        <a href='https://bgrins.github.com/spectrum'>jQuery Colorpicker</a> |
+        <a href='https://bgrins.github.com/spectrum'>Mobile Colorpicker</a> |
+        <a href='https://bgrins.github.com/spectrum'>Spectrum colorpicker</a>
         </p>
         <p>
         Thanks to all the <a href='https://github.com/bgrins/spectrum/graphs/contributors'>spectrum contributors</a> for committing code, documentation, and <a href='https://github.com/bgrins/spectrum/tree/master/i18n'>translations</a>.
         </p>
         <p>
-        If you want to let me (<a href='http://twitter.com/bgrins'>@bgrins</a>) know you are using it, send me a link where it can be seen or add it to the <a href='https://github.com/bgrins/spectrum/wiki/Sites-Using-Spectrum'>list of projects using Spectrum</a>!
+        If you want to let me (<a href='https://twitter.com/bgrins'>@bgrins</a>) know you are using it, send me a link where it can be seen or add it to the <a href='https://github.com/bgrins/spectrum/wiki/Sites-Using-Spectrum'>list of projects using Spectrum</a>!
         </p>
     </div>
 
@@ -1075,7 +1075,7 @@ t.toName()      // "red"
 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 

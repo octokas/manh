@@ -67,7 +67,7 @@ angular.module('newApp').factory('chartFinanceService', function () {
 
             $.each(names, function (i, name) {
 
-                $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=' + name.toLowerCase() + '-c.json&callback=?', function (data) {
+                $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=' + name.toLowerCase() + '-c.json&callback=?', function (data) {
 
                     seriesOptions[i] = {
                         name: name,
@@ -84,7 +84,7 @@ angular.module('newApp').factory('chartFinanceService', function () {
         financialCharts();
 
         /**** Candle Chart: HighStock ****/
-        $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?a=e&filename=aapl-ohlc.json&callback=?', function (data) {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?a=e&filename=aapl-ohlc.json&callback=?', function (data) {
             // create the chart
             $('#candle-chart').highcharts('StockChart', {
                 chart: {
@@ -153,7 +153,7 @@ angular.module('newApp').factory('chartFinanceService', function () {
         });
 
         /**** OHLC Chart: HighStock ****/
-        $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-ohlc.json&callback=?', function (data) {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-ohlc.json&callback=?', function (data) {
 
             // create the chart
             $('#ohlc-chart').highcharts('StockChart', {
@@ -204,7 +204,7 @@ angular.module('newApp').factory('chartFinanceService', function () {
         });
 
         /**** Aera Range Chart: HighStock ****/
-        $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=range.json&callback=?', function (data) {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=range.json&callback=?', function (data) {
 
             $('#arearange-chart').highcharts('StockChart', {
                 chart: {
@@ -323,7 +323,7 @@ angular.module('newApp').factory('chartFinanceService', function () {
 
 
         /**** Column Chart : HighStock ****/
-        $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-v.json&callback=?', function (data) {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-v.json&callback=?', function (data) {
 
             // create the chart
             $('#bar-chart').highcharts('StockChart', {
@@ -375,7 +375,7 @@ angular.module('newApp').factory('chartFinanceService', function () {
         });
 
         /**** Export Tools Example: HighStock ****/
-        $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
 
             // Create the chart
             $('#export-tools-chart').highcharts('StockChart', {
@@ -460,7 +460,7 @@ angular.module('newApp').factory('chartFinanceService', function () {
 
 
         /**** Point Chart: HighStock ****/
-        $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data) {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data) {
 
             // Create the chart
             $('#point-chart').highcharts('StockChart', {

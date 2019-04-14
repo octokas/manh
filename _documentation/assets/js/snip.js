@@ -2682,7 +2682,7 @@
                         return r && r.abort(t), n(0, t), this
                     }
                 };
-            if (h.promise(w).complete = g.add, w.success = w.done, w.error = w.fail, f.url = ((e || f.url || Tn) + "").replace(pn, "").replace(vn, Cn[1] + "//"), f.type = t.method || t.type || f.method || f.type, f.dataTypes = Z.trim(f.dataType || "*").toLowerCase().match(dt) || [""], null == f.crossDomain && (u = yn.exec(f.url.toLowerCase()), f.crossDomain = !(!u || u[1] === Cn[1] && u[2] === Cn[2] && (u[3] || ("http:" === u[1] ? "80" : "443")) === (Cn[3] || ("http:" === Cn[1] ? "80" : "443")))), f.data && f.processData && "string" != typeof f.data && (f.data = Z.param(f.data, f.traditional)), P(xn, f, t, w), 2 === x) return w;
+            if (h.promise(w).complete = g.add, w.success = w.done, w.error = w.fail, f.url = ((e || f.url || Tn) + "").replace(pn, "").replace(vn, Cn[1] + "//"), f.type = t.method || t.type || f.method || f.type, f.dataTypes = Z.trim(f.dataType || "*").toLowerCase().match(dt) || [""], null == f.crossDomain && (u = yn.exec(f.url.toLowerCase()), f.crossDomain = !(!u || u[1] === Cn[1] && u[2] === Cn[2] && (u[3] || ("https:" === u[1] ? "80" : "443")) === (Cn[3] || ("https:" === Cn[1] ? "80" : "443")))), f.data && f.processData && "string" != typeof f.data && (f.data = Z.param(f.data, f.traditional)), P(xn, f, t, w), 2 === x) return w;
             l = Z.event && f.global, l && 0 === Z.active++ && Z.event.trigger("ajaxStart"), f.type = f.type.toUpperCase(), f.hasContent = !mn.test(f.type), i = f.url, f.hasContent || (f.data && (i = f.url += (fn.test(i) ? "&" : "?") + f.data, delete f.data), f.cache === !1 && (f.url = dn.test(i) ? i.replace(dn, "$1_=" + cn++) : i + (fn.test(i) ? "&" : "?") + "_=" + cn++)), f.ifModified && (Z.lastModified[i] && w.setRequestHeader("If-Modified-Since", Z.lastModified[i]), Z.etag[i] && w.setRequestHeader("If-None-Match", Z.etag[i])), (f.data && f.hasContent && f.contentType !== !1 || t.contentType) && w.setRequestHeader("Content-Type", f.contentType), w.setRequestHeader("Accept", f.dataTypes[0] && f.accepts[f.dataTypes[0]] ? f.accepts[f.dataTypes[0]] + ("*" !== f.dataTypes[0] ? ", " + wn + "; q=0.01" : "") : f.accepts["*"]);
             for (c in f.headers) w.setRequestHeader(c, f.headers[c]);
             if (f.beforeSend && (f.beforeSend.call(p, w, f) === !1 || 2 === x)) return w.abort();
@@ -6237,7 +6237,7 @@ function(t, e, i) {
             o = t.attr("data-height") || this._core.settings.videoHeight,
             r = t.attr("href");
         if (!r) throw new Error("Missing video URL.");
-        if (s = r.match(/(http:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/), s[3].indexOf("youtu") > -1) i = "youtube";
+        if (s = r.match(/(https:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/), s[3].indexOf("youtu") > -1) i = "youtube";
         else {
             if (!(s[3].indexOf("vimeo") > -1)) throw new Error("Video URL not supported.");
             i = "vimeo"
@@ -6257,9 +6257,9 @@ function(t, e, i) {
             d = function(t) {
                 n = '<div class="owl-video-play-icon"></div>', s = c.lazyLoad ? '<div class="owl-video-tn ' + l + '" ' + h + '="' + t + '"></div>' : '<div class="owl-video-tn" style="opacity:1;background-image:url(' + t + ')"></div>', e.after(s), e.after(n)
             };
-        return e.wrap('<div class="owl-video-wrapper"' + r + "></div>"), this._core.settings.lazyLoad && (h = "data-src", l = "owl-lazy"), a.length ? (d(a.attr(h)), a.remove(), !1) : void("youtube" === i.type ? (o = "http://img.youtube.com/vi/" + i.id + "/hqdefault.jpg", d(o)) : "vimeo" === i.type && t.ajax({
+        return e.wrap('<div class="owl-video-wrapper"' + r + "></div>"), this._core.settings.lazyLoad && (h = "data-src", l = "owl-lazy"), a.length ? (d(a.attr(h)), a.remove(), !1) : void("youtube" === i.type ? (o = "https://img.youtube.com/vi/" + i.id + "/hqdefault.jpg", d(o)) : "vimeo" === i.type && t.ajax({
             type: "GET",
-            url: "http://vimeo.com/api/v2/video/" + i.id + ".json",
+            url: "https://vimeo.com/api/v2/video/" + i.id + ".json",
             jsonp: "callback",
             dataType: "jsonp",
             success: function(t) {
@@ -6275,7 +6275,7 @@ function(t, e, i) {
             r = this._videos[o.attr("data-video")],
             a = r.width || "100%",
             h = r.height || this._core.$stage.height();
-        "youtube" === r.type ? i = '<iframe width="' + a + '" height="' + h + '" src="http://www.youtube.com/embed/' + r.id + "?autoplay=1&v=" + r.id + '" frameborder="0" allowfullscreen></iframe>' : "vimeo" === r.type && (i = '<iframe src="http://player.vimeo.com/video/' + r.id + '?autoplay=1" width="' + a + '" height="' + h + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'), o.addClass("owl-video-playing"), this._playing = o, s = t('<div style="height:' + h + "px; width:" + a + 'px" class="owl-video-frame">' + i + "</div>"), n.after(s)
+        "youtube" === r.type ? i = '<iframe width="' + a + '" height="' + h + '" src="https://www.youtube.com/embed/' + r.id + "?autoplay=1&v=" + r.id + '" frameborder="0" allowfullscreen></iframe>' : "vimeo" === r.type && (i = '<iframe src="https://player.vimeo.com/video/' + r.id + '?autoplay=1" width="' + a + '" height="' + h + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'), o.addClass("owl-video-playing"), this._playing = o, s = t('<div style="height:' + h + "px; width:" + a + 'px" class="owl-video-frame">' + i + "</div>"), n.after(s)
     }, s.prototype.isInFullScreen = function() {
         var s = i.fullscreenElement || i.mozFullScreenElement || i.webkitFullscreenElement;
         return s && t(s).parent().hasClass("owl-video-frame") && (this._core.speed(0), this._fullscreen = !0), s && this._fullscreen && this._playing ? !1 : this._fullscreen ? (this._fullscreen = !1, !1) : this._playing && this._core.state.orientation !== e.orientation ? (this._core.state.orientation = e.orientation, !1) : !0
@@ -9624,7 +9624,7 @@ var Prism = function() {
     var p = "social-likes",
         l = p + "__",
         h = p + "_opened",
-        d = "https:" === location.protocol ? "https:" : "http:",
+        d = "https:" === location.protocol ? "https:" : "https:",
         f = "https:" === d,
         g = {
             facebook: {
@@ -9673,7 +9673,7 @@ var Prism = function() {
                 popupHeight: 330
             },
             odnoklassniki: {
-                counterUrl: f ? e : "http://connect.ok.ru/dk?st.cmd=extLike&ref={url}&uid={index}",
+                counterUrl: f ? e : "https://connect.ok.ru/dk?st.cmd=extLike&ref={url}&uid={index}",
                 counter: function(e, i) {
                     var n = g.odnoklassniki;
                     n._ || (n._ = [], window.ODKL || (window.ODKL = {}), window.ODKL.updateCount = function(t, e) {
@@ -9684,12 +9684,12 @@ var Prism = function() {
                         index: s
                     })).fail(i.reject)
                 },
-                popupUrl: "http://connect.ok.ru/dk?st.cmd=WidgetSharePreview&service=odnoklassniki&st.shareUrl={url}",
+                popupUrl: "https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&service=odnoklassniki&st.shareUrl={url}",
                 popupWidth: 550,
                 popupHeight: 360
             },
             plusone: {
-                counterUrl: f ? e : "http://share.yandex.ru/gpp.xml?url={url}",
+                counterUrl: f ? e : "https://share.yandex.ru/gpp.xml?url={url}",
                 counter: function(e, i) {
                     var n = g.plusone;
                     return n._ ? void i.reject() : (window.services || (window.services = {}), window.services.gplus = {
@@ -16610,7 +16610,7 @@ var Prism = function() {
                         r = void 0;
                     o && (r = i["default"].createElement("div"), r.innerHTML = '<a href="' + t + '"></a>', n = r.firstChild, r.setAttribute("style", "display:none; position:absolute;"), i["default"].body.appendChild(r));
                     for (var s = {}, a = 0; a < e.length; a++) s[e[a]] = n[e[a]];
-                    return "http:" === s.protocol && (s.host = s.host.replace(/:80$/, "")), "https:" === s.protocol && (s.host = s.host.replace(/:443$/, "")), o && i["default"].body.removeChild(r), s
+                    return "https:" === s.protocol && (s.host = s.host.replace(/:80$/, "")), "https:" === s.protocol && (s.host = s.host.replace(/:443$/, "")), o && i["default"].body.removeChild(r), s
                 };
             n.parseUrl = l;
             var u = function(t) {

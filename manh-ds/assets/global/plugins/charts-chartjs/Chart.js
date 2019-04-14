@@ -1,6 +1,6 @@
 /*!
  * Chart.js
- * http://chartjs.org/
+ * https://chartjs.org/
  * Version: 2.3.0-rc.1
  *
  * Copyright 2016 Nick Downie
@@ -415,7 +415,7 @@ Color.prototype = {
 	},
 
 	luminosity: function () {
-		// http://www.w3.org/TR/WCAG20/#relativeluminancedef
+		// https://www.w3.org/TR/WCAG20/#relativeluminancedef
 		var rgb = this.values.rgb;
 		var lum = [];
 		for (var i = 0; i < rgb.length; i++) {
@@ -426,7 +426,7 @@ Color.prototype = {
 	},
 
 	contrast: function (color2) {
-		// http://www.w3.org/TR/WCAG20/#contrast-ratiodef
+		// https://www.w3.org/TR/WCAG20/#contrast-ratiodef
 		var lum1 = this.luminosity();
 		var lum2 = color2.luminosity();
 		if (lum1 > lum2) {
@@ -445,7 +445,7 @@ Color.prototype = {
 	},
 
 	dark: function () {
-		// YIQ equation from http://24ways.org/2010/calculating-color-contrast
+		// YIQ equation from https://24ways.org/2010/calculating-color-contrast
 		var rgb = this.values.rgb;
 		var yiq = (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
 		return yiq < 128;
@@ -508,7 +508,7 @@ Color.prototype = {
 
 	greyscale: function () {
 		var rgb = this.values.rgb;
-		// http://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale
+		// https://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale
 		var val = rgb[0] * 0.3 + rgb[1] * 0.59 + rgb[2] * 0.11;
 		this.setValues('rgb', [val, val, val]);
 		return this;
@@ -1039,7 +1039,7 @@ function hsv2keyword(args) {
   return rgb2keyword(hsv2rgb(args));
 }
 
-// http://dev.w3.org/csswg/css-color/#hwb-to-rgb
+// https://dev.w3.org/csswg/css-color/#hwb-to-rgb
 function hwb2rgb(hwb) {
   var h = hwb[0] / 360,
       wh = hwb[1] / 100,
@@ -5101,7 +5101,7 @@ module.exports = function(Chart) {
 	};
 	helpers.splineCurve = function(firstPoint, middlePoint, afterPoint, t) {
 		// Props to Rob Spencer at scaled innovation for his post on splining between points
-		// http://scaledinnovation.com/analytics/splines/aboutSplines.html
+		// https://scaledinnovation.com/analytics/splines/aboutSplines.html
 
 		// This function must also respect "skipped" points
 
@@ -5263,7 +5263,7 @@ module.exports = function(Chart) {
 		return niceFraction * Math.pow(10, exponent);
 	};
 	// Easing functions adapted from Robert Penner's easing equations
-	// http://www.robertpenner.com/easing/
+	// https://www.robertpenner.com/easing/
 	var easingEffects = helpers.easingEffects = {
 		linear: function(t) {
 			return t;
@@ -5459,7 +5459,7 @@ module.exports = function(Chart) {
 			return easingEffects.easeOutBounce(t * 2 - 1) * 0.5 + 1 * 0.5;
 		}
 	};
-	// Request animation polyfill - http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+	// Request animation polyfill - https://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
 	helpers.requestAnimFrame = (function() {
 		return window.requestAnimationFrame ||
 			window.webkitRequestAnimationFrame ||
@@ -5499,7 +5499,7 @@ module.exports = function(Chart) {
 
 		// Scale mouse coordinates into canvas coordinates
 		// by following the pattern laid out by 'jerryj' in the comments of
-		// http://www.html5canvastutorials.com/advanced/html5-canvas-mouse-coordinates/
+		// https://www.html5canvastutorials.com/advanced/html5-canvas-mouse-coordinates/
 		var paddingLeft = parseFloat(helpers.getStyle(canvas, 'padding-left'));
 		var paddingTop = parseFloat(helpers.getStyle(canvas, 'padding-top'));
 		var paddingRight = parseFloat(helpers.getStyle(canvas, 'padding-right'));
@@ -5583,7 +5583,7 @@ module.exports = function(Chart) {
 	// @param domNode : the node to check the constraint on
 	// @param maxStyle : the style that defines the maximum for the direction we are using (maxWidth / maxHeight)
 	// @param percentageProperty : property of parent to use when calculating width as a percentage
-	// @see http://www.nathanaeljones.com/blog/2013/reading-max-width-cross-browser
+	// @see https://www.nathanaeljones.com/blog/2013/reading-max-width-cross-browser
 	function getConstraintDimension(domNode, maxStyle, percentageProperty) {
 		var view = document.defaultView;
 		var parentNode = domNode.parentNode;
@@ -5794,7 +5794,7 @@ module.exports = function(Chart) {
 		function(obj) {
 			return Object.prototype.toString.call(obj) === '[object Array]';
 		};
-	// ! @see http://stackoverflow.com/a/14853974
+	// ! @see https://stackoverflow.com/a/14853974
 	helpers.arrayEquals = function(a0, a1) {
 		var i, ilen, v0, v1;
 
@@ -9429,7 +9429,7 @@ module.exports = function(Chart) {
 			maxTicks = Math.max(2, maxTicks);
 
 			// To get a "nice" value for the tick spacing, we will use the appropriately named
-			// "nice number" algorithm. See http://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks
+			// "nice number" algorithm. See https://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks
 			// for details.
 
 			var spacing;
@@ -10214,15 +10214,15 @@ module.exports = function(Chart) {
 		position: 'bottom',
 
 		time: {
-			parser: false, // false == a pattern string from http://momentjs.com/docs/#/parsing/string-format/ or a custom callback that converts its argument to a moment
-			format: false, // DEPRECATED false == date objects, moment object, callback or a pattern string from http://momentjs.com/docs/#/parsing/string-format/
+			parser: false, // false == a pattern string from https://momentjs.com/docs/#/parsing/string-format/ or a custom callback that converts its argument to a moment
+			format: false, // DEPRECATED false == date objects, moment object, callback or a pattern string from https://momentjs.com/docs/#/parsing/string-format/
 			unit: false, // false == automatic or override with week, month, year, etc.
 			round: false, // none, or override with week, month, year, etc.
 			displayFormat: false, // DEPRECATED
-			isoWeekday: false, // override week start day - see http://momentjs.com/docs/#/get-set/iso-weekday/
+			isoWeekday: false, // override week start day - see https://momentjs.com/docs/#/get-set/iso-weekday/
 			minUnit: 'millisecond',
 
-			// defaults to unit's corresponding unitFormat below or override using pattern string from http://momentjs.com/docs/#/displaying/format/
+			// defaults to unit's corresponding unitFormat below or override using pattern string from https://momentjs.com/docs/#/displaying/format/
 			displayFormats: {
 				millisecond: 'h:mm:ss.SSS a', // 11:20:01.123 AM,
 				second: 'h:mm:ss a', // 11:20:01 AM
@@ -10620,7 +10620,7 @@ module.exports = function(Chart) {
 			}
 			// Custom parsing (return an instance of moment)
 			if (typeof me.options.time.format !== 'string' && me.options.time.format.call) {
-				console.warn('options.time.format is deprecated and replaced by options.time.parser. See http://nnnick.github.io/Chart.js/docs-v2/#scales-time-scale');
+				console.warn('options.time.format is deprecated and replaced by options.time.parser. See https://nnnick.github.io/Chart.js/docs-v2/#scales-time-scale');
 				return me.options.time.format(label);
 			}
 			// Moment format parsing

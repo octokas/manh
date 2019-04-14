@@ -1,7 +1,7 @@
 /*!
-Video.js Default Styles (http://videojs.com)
+Video.js Default Styles (https://videojs.com)
 Version 4.11.4
-Create your own skin at http://designer.videojs.com
+Create your own skin at https://designer.videojs.com
 */
 /* SKIN
 ================================================================================
@@ -131,7 +131,7 @@ The default control bar that is a container for most of the controls.
 /* IE8 is flakey with fonts, and you have to change the actual content to force
 fonts to show/hide properly.
   - "\9" IE8 hack didn't work for this
-  - Found in XP IE8 from http://modern.ie. Does not show up in "IE8 mode" in IE9
+  - Found in XP IE8 from https://modern.ie. Does not show up in "IE8 mode" in IE9
 */
 @media \0screen {
   .vjs-default-skin.vjs-user-inactive.vjs-playing .vjs-control-bar :before {
@@ -358,7 +358,7 @@ fonts to show/hide properly.
   /*
     Using a data URI to create the white diagonal lines with a transparent
       background. Surprisingly works in IE8.
-      Created using http://www.patternify.com
+      Created using https://www.patternify.com
     Changing the first color value will change the bar color.
     Also using a paralax effect to make the lines move backwards.
       The -50% left position makes that happen.
@@ -443,7 +443,7 @@ fonts to show/hide properly.
 /* Big Play Button (play button at start)
 --------------------------------------------------------------------------------
 Positioning of the play button in the center or other corners can be done more
-easily in the skin designer. http://designer.videojs.com/
+easily in the skin designer. https://designer.videojs.com/
 */
 .vjs-default-skin .vjs-big-play-button {
   left: 0.5em;
@@ -836,7 +836,7 @@ body.vjs-full-window {
   padding: 0;
   margin: 0;
   height: 100%;
-  /* Fix for IE6 full-window. http://www.cssplay.co.uk/layouts/fixed.html */
+  /* Fix for IE6 full-window. https://www.cssplay.co.uk/layouts/fixed.html */
   overflow-y: auto;
 }
 .video-js.vjs-fullscreen {

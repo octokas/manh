@@ -2,7 +2,7 @@
  * jquery.adpative-modal.js v1.0
  * ===========================================================
  * Copyright 2014 Pete Rojwongsuriya.
- * http://www.thepetedesign.com
+ * https://www.thepetedesign.com
  *
  * Adaptive Modal let you add a modal windows 
  * that can be morphed from anything

@@ -2,9 +2,9 @@ jQuery.mmenu
 ================
 
 A jQuery plugin that creates slick app look-alike sliding menus for your (mobile) website.<br />
-Demo's and documentation: http://mmenu.frebsite.nl
+Demo's and documentation: https://mmenu.frebsite.nl
 
-<img src="http://mmenu.frebsite.nl/img/preview.png" alt="jQuery mmenu" width="100%" />
+<img src="https://mmenu.frebsite.nl/img/preview.png" alt="jQuery mmenu" width="100%" />
 
 ### Features
 + Fully responsive CSS framework generated with SCSS.
@@ -20,13 +20,13 @@ Demo's and documentation: http://mmenu.frebsite.nl
 + Uses SCSS to easily create customized menus.
 
 ### Learn more
-+ [Tutorial](http://mmenu.frebsite.nl/tutorial.php)
-+ [What files to include](http://mmenu.frebsite.nl/usage.php)
-+ [Configuration options](http://mmenu.frebsite.nl/options.php)
-+ [Custom events](http://mmenu.frebsite.nl/events.php)
-+ [Custumize the menu](http://mmenu.frebsite.nl/customize.php)
++ [Tutorial](https://mmenu.frebsite.nl/tutorial.php)
++ [What files to include](https://mmenu.frebsite.nl/usage.php)
++ [Configuration options](https://mmenu.frebsite.nl/options.php)
++ [Custom events](https://mmenu.frebsite.nl/events.php)
++ [Custumize the menu](https://mmenu.frebsite.nl/customize.php)
 
 ### Licence
 The jQuery.mmenu plugin is dual licensed under the MIT and GPL licenses:
-+ http://en.wikipedia.org/wiki/MIT_License
-+ http://en.wikipedia.org/wiki/GNU_General_Public_License
++ https://en.wikipedia.org/wiki/MIT_License
++ https://en.wikipedia.org/wiki/GNU_General_Public_License

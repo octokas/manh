@@ -1297,7 +1297,7 @@ th {
   background: url(../img/backgrounds/5.jpg);
 }
 .background-gradient-grey {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+95,f2f2f2+95,f2f2f2+100 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+95,f2f2f2+95,f2f2f2+100 */
   background: #ffffff;
   /* Old browsers */
   background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 95%, #f2f2f2 95%, #f2f2f2 100%);
@@ -1887,8 +1887,8 @@ dt {
   line-height: 1.8;
 }
 /*!
- *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ *  Font Awesome 4.5.0 by @davegandy - https://fontawesome.io - @fontawesome
+ *  License - https://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 @font-face {
   font-family: 'FontAwesome';
@@ -4594,8 +4594,8 @@ dt {
   content: "\e67f";
 }
 /*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
+Animate.css - https://daneden.me/animate
+Licensed under the MIT license - https://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
@@ -11100,10 +11100,10 @@ li.browser-partial:hover .browser-icon:after {
 .modal-footer .button:last-child {
   margin-right: 0;
 }
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+applescript+aspnet+c+csharp+cpp+coffeescript+css-extras+git+haml+handlebars+jade+java+less+markdown+objectivec+perl+php+php-extras+python+jsx+ruby+scss+scheme+smarty+sql+stylus+swift+typescript&plugins=line-numbers */
+/* https://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+applescript+aspnet+c+csharp+cpp+coffeescript+css-extras+git+haml+handlebars+jade+java+less+markdown+objectivec+perl+php+php-extras+python+jsx+ruby+scss+scheme+smarty+sql+stylus+swift+typescript&plugins=line-numbers */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
+ * Based on dabblet (https://dabblet.com)
  * @author Lea Verou
  */
 code[class*="language-"],
@@ -13283,7 +13283,7 @@ body.vjs-full-window {
   padding: 0;
   margin: 0;
   height: 100%;
-  /* Fix for IE6 full-window. http://www.cssplay.co.uk/layouts/fixed.html */
+  /* Fix for IE6 full-window. https://www.cssplay.co.uk/layouts/fixed.html */
   overflow-y: auto;
 }
 .vjs-full-window .video-js.vjs-fullscreen {
@@ -13568,7 +13568,7 @@ about what's required to play video. */
 /* IE8 is flakey with fonts, and you have to change the actual content to force
 fonts to show/hide properly.
 - "\9" IE8 hack didn't work for this
-- Found in XP IE8 from http://modern.ie. Does not show up in "IE8 mode" in IE9
+- Found in XP IE8 from https://modern.ie. Does not show up in "IE8 mode" in IE9
 */
 @media screen {
   .vjs-user-inactive.vjs-playing .vjs-control-bar :before {
@@ -16070,7 +16070,7 @@ input.changelog-input {
   padding: 0 10px;
   margin: 0;
 }
-/*! Social Likes v3.0.15 by Artem Sapegin - http://sapegin.github.com/social-likes - Licensed MIT */
+/*! Social Likes v3.0.15 by Artem Sapegin - https://sapegin.github.com/social-likes - Licensed MIT */
 .social-likes {
   display: inline-block;
 }

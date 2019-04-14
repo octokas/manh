@@ -42,7 +42,7 @@
         isWebKit = !isMS && /AppleWebKit/.test(userAgent),
         isFirefox = /Firefox/.test(userAgent),
         isTouchDevice = /(Mobile|Android|Windows Phone)/.test(userAgent),
-        SVG_NS = 'http://www.w3.org/2000/svg',
+        SVG_NS = 'https://www.w3.org/2000/svg',
         hasSVG = doc && doc.createElementNS && !!doc.createElementNS(SVG_NS, 'svg').createSVGRect,
         hasBidiBug = isFirefox && parseInt(userAgent.split('Firefox/')[1], 10) < 4, // issue #38
         useCanVG = doc && !hasSVG && !isMS && !!doc.createElement('canvas').getContext,
@@ -737,7 +737,7 @@
     }
 
     /**
-     * Based on http://www.php.net/manual/en/function.strftime.php
+     * Based on https://www.php.net/manual/en/function.strftime.php
      * @param {String} format
      * @param {Number} timestamp
      * @param {Boolean} capitalize
@@ -1601,8 +1601,8 @@
         global: {
             useUTC: true,
             //timezoneOffset: 0,
-            canvasToolsURL: 'http://code.highcharts.com/modules/canvas-tools.js',
-            VMLRadialGradientURL: 'http://code.highcharts.com/stock/4.2.7/gfx/vml-radial-gradient.png'
+            canvasToolsURL: 'https://code.highcharts.com/modules/canvas-tools.js',
+            VMLRadialGradientURL: 'https://code.highcharts.com/stock/4.2.7/gfx/vml-radial-gradient.png'
         },
         chart: {
             //animation: true,
@@ -1891,7 +1891,7 @@
                 cursor: 'default',
                 fontSize: '12px',
                 padding: '8px',
-                pointerEvents: 'none', // #1686 http://caniuse.com/#feat=pointer-events
+                pointerEvents: 'none', // #1686 https://caniuse.com/#feat=pointer-events
                 whiteSpace: 'nowrap'
             }
             //xDateFormat: '%A, %b %e, %Y',
@@ -1903,7 +1903,7 @@
         credits: {
             enabled: true,
             text: 'Highcharts.com',
-            href: 'http://www.highcharts.com',
+            href: 'https://www.highcharts.com',
             position: {
                 align: 'right',
                 x: -10,
@@ -2304,7 +2304,7 @@
          * Apply a polyfill to the text-stroke CSS property, by copying the text element
          * and apply strokes to the copy.
          *
-         * Contrast checks at http://jsfiddle.net/highcharts/43soe9m1/2/
+         * Contrast checks at https://jsfiddle.net/highcharts/43soe9m1/2/
          */
         applyTextShadow: function (textShadow) {
             var elem = this.element,
@@ -2327,7 +2327,7 @@
                 styles.textRendering = 'geometricPrecision';
             }
 
-            /* Selective side-by-side testing in supported browser (http://jsfiddle.net/highcharts/73L1ptrh/)
+            /* Selective side-by-side testing in supported browser (https://jsfiddle.net/highcharts/73L1ptrh/)
             if (elem.textContent.indexOf('2.') === 0) {
                 elem.style['text-shadow'] = 'none';
                 supports = false;
@@ -4125,7 +4125,7 @@
 
             // set the href in the xlink namespace
             if (elemWrapper.element.setAttributeNS) {
-                elemWrapper.element.setAttributeNS('http://www.w3.org/1999/xlink',
+                elemWrapper.element.setAttributeNS('https://www.w3.org/1999/xlink',
                     'href', src);
             } else {
                 // could be exporting in IE
@@ -4507,7 +4507,7 @@
             fontSize = /px/.test(fontSize) ? pInt(fontSize) : /em/.test(fontSize) ? parseFloat(fontSize) * 12 : 12;
 
             // Empirical values found by comparing font size and bounding box height.
-            // Applies to the default font family. http://jsfiddle.net/highcharts/7xvn7/
+            // Applies to the default font family. https://jsfiddle.net/highcharts/7xvn7/
             lineHeight = fontSize < 24 ? fontSize + 3 : mathRound(fontSize * 1.2);
             baseline = mathRound(lineHeight * 0.8);
 
@@ -5263,7 +5263,7 @@
             // but it can probably be implemented for Firefox 3.5+ on user request. FF3.5+
             // has support for CSS3 transform. The getBBox method also needs to be updated
             // to compensate for the rotation, like it currently does for SVG.
-            // Test case: http://jsfiddle.net/highcharts/Ybt44/
+            // Test case: https://jsfiddle.net/highcharts/Ybt44/
 
             var rotation = this.rotation,
                 costheta = mathCos(rotation * deg2rad),
@@ -6275,7 +6275,7 @@
          */
         Highcharts.CanVGRenderer = CanVGRenderer = function () {
             // Override the global SVG namespace to fake SVG/HTML that accepts CSS
-            SVG_NS = 'http://www.w3.org/1999/xhtml';
+            SVG_NS = 'https://www.w3.org/1999/xhtml';
         };
 
         /**
@@ -17173,7 +17173,7 @@
             y: null
         },
         softThreshold: false,
-        startFromThreshold: true, // false doesn't work well: http://jsfiddle.net/highcharts/hz8fopan/14/
+        startFromThreshold: true, // false doesn't work well: https://jsfiddle.net/highcharts/hz8fopan/14/
         stickyTracking: false,
         tooltip: {
             distance: 6
@@ -20323,7 +20323,7 @@
          * Make the tick intervals closer because the ordinal gaps make the ticks spread out or cluster
          */
         postProcessTickInterval: function (tickInterval) {
-            // Problem: http://jsfiddle.net/highcharts/FQm4E/1/
+            // Problem: https://jsfiddle.net/highcharts/FQm4E/1/
             // This is a case where this algorithm doesn't work optimally. In this case, the
             // tick labels are spread out per week, but all the gaps reside within weeks. So
             // we have a situation where the labels are courser than the ordinal gaps, and

@@ -12,5 +12,5 @@ permission of Antanas Marcelionis, the author of amMap software.
 This software is provided without warranty.
 *********************************************************************************
 A commercial version (without link) is available at amMap's website:
-http://www.amcharts.com/online-store/
+https://www.amcharts.com/online-store/
 *********************************************************************************

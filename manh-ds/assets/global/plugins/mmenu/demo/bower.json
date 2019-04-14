@@ -2,7 +2,7 @@
 	"name": "jQuery.mmenu",
 	"main": "src/js/jquery.mmenu.min.js",
 	"version": "4.3.1",
-	"homepage": "http://mmenu.frebsite.nl/",
+	"homepage": "https://mmenu.frebsite.nl/",
 	"authors": [
 		"Fred Heusschen <info@frebsite.nl>"
 	],

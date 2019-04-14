@@ -7,7 +7,7 @@
  * markers.
  * <br/>
  * This is a v3 implementation of the
- * <a href="http://gmaps-utility-library-dev.googlecode.com/svn/tags/markerclusterer/"
+ * <a href="https://gmaps-utility-library-dev.googlecode.com/svn/tags/markerclusterer/"
  * >v2 MarkerClusterer</a>.
  */
 
@@ -16,7 +16,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -112,7 +112,7 @@ function MarkerClusterer(map, opt_markers, opt_options) {
  * @private
  */
 MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ =
-    'http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/' +
+    'https://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/' +
     'images/m';
 
 

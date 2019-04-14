@@ -1,8 +1,8 @@
 Element Onscreen Visibility
 ===========================
 
-This is a [jQuery](http://jquery.com/) plugin which allows us to quickly check if an element 
-is within the browsers [visual viewport](http://www.quirksmode.org/mobile/viewports.html), 
+This is a [jQuery](https://jquery.com/) plugin which allows us to quickly check if an element 
+is within the browsers [visual viewport](https://www.quirksmode.org/mobile/viewports.html), 
 regardless of the scroll position. If a user can see this element, the function will return true.
 
 
@@ -39,11 +39,11 @@ Demos
 
 The Demos for this plugin live under the examples/ directory. Open them directly in your web browser, or view the following online examples:
 
-- [Basic Demo](http://opensource.teamdf.com/visible/examples/demo-basic.html)
+- [Basic Demo](https://opensource.teamdf.com/visible/examples/demo-basic.html)
 
 See the blog article:
 
-- [Checking if an element is visible on-screen using jQuery](http://www.teamdf.com/web/jquery-element-onscreen-visibility/194/)
+- [Checking if an element is visible on-screen using jQuery](https://www.teamdf.com/web/jquery-element-onscreen-visibility/194/)
 
 
 Limitations

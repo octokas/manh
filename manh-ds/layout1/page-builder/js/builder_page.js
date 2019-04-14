@@ -1062,7 +1062,7 @@ $('.page-content').on('shown.bs.modal', '#modal-export-page', function (e) {
     '  <meta name="description" content="admin-themes-lab">\n' + 
     '  <meta name="author" content="themes-lab">\n' + 
     '  <link rel="shortcut icon" href="../assets/global/images/favicon.png" type="image/png">\n' + 
-    '  <title>Make</title>\n' + '  <link href="http://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css">\n' + 
+    '  <title>Make</title>\n' + '  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css">\n' + 
     '  <link href="../assets/global/css/style.css" rel="stylesheet"> <!-- MANDATORY -->\n' + 
     '  <link href="../assets/global/css/theme.css" rel="stylesheet"> <!-- MANDATORY -->\n' + 
     '  <link href="../assets/global/css/ui.css" rel="stylesheet"> <!-- MANDATORY -->\n' + 

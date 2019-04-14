@@ -23,11 +23,11 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
+      "url": "https://opensource.org/licenses/MIT"
     }
   ],
   "homepage": "https://github.com/morr/jquery.appear",
-  "demo": "http://morr.github.com/appear.html",
+  "demo": "https://morr.github.com/appear.html",
   "issues": "https://github.com/morr/jquery.appear/issues",
   "dependencies": {
     "jquery": ">=1.5"

@@ -23,7 +23,7 @@ Don't hesitate to send us a message on Themeforest or to support@themes-lab.com 
 
 WANT TO SUPPORT US?
 
-If you like this template and want to help us to give you continuous updates, please give us a 5 stars rating on Themeforest download page: http://themeforest.net/downloads.
+If you like this template and want to help us to give you continuous updates, please give us a 5 stars rating on Themeforest download page: https://themeforest.net/downloads.
 
 
 THANKS FOR YOUR PURCHASE AND STAY TUNED!

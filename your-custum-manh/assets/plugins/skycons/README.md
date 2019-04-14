@@ -33,7 +33,7 @@ lightweight, so they shouldn't rain on your parade:
       skycons.remove("icon2");
     </script>
 
-Skycons were designed for [Forecast](http://forecast.io/) by those wacky folks
+Skycons were designed for [Forecast](https://forecast.io/) by those wacky folks
 at The Dark Sky Company, and were heavily inspired by Adam Whitcroft's
-excellent [Climacons](http://adamwhitcroft.com/climacons/). The source code has
+excellent [Climacons](https://adamwhitcroft.com/climacons/). The source code has
 been released into the public domain, so please do with it as you see fit! ♡

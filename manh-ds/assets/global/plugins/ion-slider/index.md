@@ -7,8 +7,8 @@ Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of o
 ***
 
 * Version: 2.1.2
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html">Project page and demos</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.1.2.zip">Download ZIP</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/en.html">Project page and demos</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.1.2.zip">Download ZIP</a>
 
 [![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
 
@@ -17,10 +17,10 @@ Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of o
 * Supports events and public methods, has flexible settings, can be completely altered with CSS
 * Cross-browser: Google Chrome, Mozilla Firefox 3.6+, Opera 12+, Safari 5+, Internet Explorer 8+
 * Ion.RangeSlider supports touch-devices (iPhone, iPad, Nexus, etc.).
-* Ion.RangeSlider freely distributed under terms of <a href="http://ionden.com/a/plugins/licence.html" target="_blank">MIT licence</a>.
+* Ion.RangeSlider freely distributed under terms of <a href="https://ionden.com/a/plugins/licence.html" target="_blank">MIT licence</a>.
 * With this plugin you will be able to build beautiful range sliders, like this:
 
-![ion.rangeSlider](http://ionden.com/a/plugins/ion.rangeSlider/static/img/ion-range-slider.png)
+![ion.rangeSlider](https://ionden.com/a/plugins/ion.rangeSlider/static/img/ion-range-slider.png)
 
 ## Key features
 * Skin support. (5 skins included and PSD for skin creation)
@@ -44,9 +44,9 @@ Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of o
 
 ## Demos
 
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Basic demo</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Advanced demo</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Interactions demo</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Basic demo</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Advanced demo</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Interactions demo</a>
 
 
 ## GitHub

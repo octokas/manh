@@ -64,7 +64,7 @@ var videojs = window['videojs'] = vjs;
 
 // CDN Version. Used to target right flash swf.
 vjs.CDN_VERSION = '4.11';
-vjs.ACCESS_PROTOCOL = ('https:' == document.location.protocol ? 'https://' : 'http://');
+vjs.ACCESS_PROTOCOL = ('https:' == document.location.protocol ? 'https://' : 'https://');
 
 /**
  * Global Player instance options, surfaced from vjs.Player.prototype.options_
@@ -290,7 +290,7 @@ vjs.CoreObject.create = function(){
   return inst;
 };
 /**
- * @fileoverview Event System (John Resig - Secrets of a JS Ninja http://jsninja.com/)
+ * @fileoverview Event System (John Resig - Secrets of a JS Ninja https://jsninja.com/)
  * (Original book version wasn't completely usable, so fixed some things and made Closure Compiler compatible)
  * This should work very similarly to jQuery's events, however it's based off the book version which isn't as
  * robust as jquery's, so there's probably some differences.
@@ -691,7 +691,7 @@ vjs.createEl = function(tagName, properties){
     // The additional check for "role" is because the default method for adding attributes does not
     // add the attribute "role". My guess is because it's not a valid attribute in some namespaces, although
     // browsers handle the attribute just fine. The W3C allows for aria-* attributes to be used in pre-HTML5 docs.
-    // http://www.w3.org/TR/wai-aria-primer/#ariahtml. Using setAttribute gets around this problem.
+    // https://www.w3.org/TR/wai-aria-primer/#ariahtml. Using setAttribute gets around this problem.
     if (propName.indexOf('aria-') !== -1 || propName == 'role') {
      el.setAttribute(propName, val);
     } else {
@@ -939,7 +939,7 @@ vjs.removeData = function(el){
   if (!id) { return; }
   // Remove all stored data
   // Changed to = null
-  // http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/
+  // https://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/
   // vjs.cache[id] = null;
   delete vjs.cache[id];
 
@@ -1142,7 +1142,7 @@ vjs.getElementAttributes = function(tag){
 
 /**
  * Get the computed style value for an element
- * From http://robertnyman.com/2006/04/24/get-the-rendered-style-of-an-element/
+ * From https://robertnyman.com/2006/04/24/get-the-rendered-style-of-an-element/
  * @param  {Element} el        Element to get style value for
  * @param  {String} strCssRule Style name
  * @return {String}            Style value
@@ -1307,7 +1307,7 @@ vjs.setLocalStorage = function(key, value){
 
 /**
  * Get absolute version of relative URL. Used to tell flash correct URL.
- * http://stackoverflow.com/questions/470832/getting-an-absolute-url-from-a-relative-one-ie6-issue
+ * https://stackoverflow.com/questions/470832/getting-an-absolute-url-from-a-relative-one-ie6-issue
  * @param  {String} url URL to make absolute
  * @return {String}     Absolute URL
  * @private
@@ -1441,7 +1441,7 @@ vjs.log.warn = function(){
 };
 
 // Offset Left
-// getBoundingClientRect technique from John Resig http://ejohn.org/blog/getboundingclientrect-is-awesome/
+// getBoundingClientRect technique from John Resig https://ejohn.org/blog/getboundingclientrect-is-awesome/
 vjs.findPosition = function(el) {
   var box, docEl, body, clientLeft, scrollLeft, left, clientTop, scrollTop, top;
 
@@ -1504,11 +1504,11 @@ vjs.arr.forEach = function(array, callback, thisArg) {
  * ##### Example
  *
  *     // using url string
- *     videojs.xhr('http://example.com/myfile.vtt', function(error, response, responseBody){});
+ *     videojs.xhr('https://example.com/myfile.vtt', function(error, response, responseBody){});
  *
  *     // or options block
  *     videojs.xhr({
- *       uri: 'http://example.com/myfile.vtt',
+ *       uri: 'https://example.com/myfile.vtt',
  *       method: 'GET',
  *       responseType: 'text'
  *     }, function(error, response, responseBody){
@@ -1591,7 +1591,7 @@ vjs.xhr = function(options, callback){
     request.onload = successHandler;
     request.onerror = errorHandler;
     // These blank handlers need to be set to fix ie9
-    // http://cypressnorth.com/programming/internet-explorer-aborting-ajax-requests-fixed/
+    // https://cypressnorth.com/programming/internet-explorer-aborting-ajax-requests-fixed/
     request.onprogress = function(){};
     request.ontimeout = function(){};
 
@@ -2636,7 +2636,7 @@ vjs.Component.prototype.dimensions = function(width, height){
  * Known issue: Hidden elements officially have a width of 0. We're defaulting
  * to the style.width value and falling back to computedStyle which has the
  * hidden element issue. Info, but probably not an efficient fix:
- * http://www.foliotek.com/devblog/getting-the-width-of-a-hidden-element-with-jquery-using-width/
+ * https://www.foliotek.com/devblog/getting-the-width-of-a-hidden-element-with-jquery-using-width/
  *
  * @param  {String} widthOrHeight  'width' or 'height'
  * @param  {Number|String=} num     New dimension
@@ -2757,7 +2757,7 @@ vjs.Component.prototype.emitTapEvents = function(){
   noTap = function(){
     couldBeTap = false;
   };
-  // TODO: Listen to the original target. http://youtu.be/DujfpXOKUp8?t=13m8s
+  // TODO: Listen to the original target. https://youtu.be/DujfpXOKUp8?t=13m8s
   this.on('touchleave', noTap);
   this.on('touchcancel', noTap);
 
@@ -3799,7 +3799,7 @@ vjs.Player.prototype.getTagSettings = function(tag){
 
     for (i=0,j=children.length; i<j; i++) {
       child = children[i];
-      // Change case needed: http://ejohn.org/blog/nodename-case-sensitivity/
+      // Change case needed: https://ejohn.org/blog/nodename-case-sensitivity/
       childName = child.nodeName.toLowerCase();
       if (childName === 'source') {
         options['sources'].push(vjs.getElementAttributes(child));
@@ -3850,7 +3850,7 @@ vjs.Player.prototype.createEl = function(){
   attrs = vjs.getElementAttributes(tag);
   vjs.obj.each(attrs, function(attr) {
     // workaround so we don't totally break IE7
-    // http://stackoverflow.com/questions/3653444/css-styles-not-applied-on-dynamic-elements-in-internet-explorer-7
+    // https://stackoverflow.com/questions/3653444/css-styles-not-applied-on-dynamic-elements-in-internet-explorer-7
     if (attr == 'class') {
       el.className = attrs[attr];
     } else {
@@ -4349,7 +4349,7 @@ vjs.Player.prototype.remainingTime = function(){
   return this.duration() - this.currentTime();
 };
 
-// http://dev.w3.org/html5/spec/video.html#dom-media-buffered
+// https://dev.w3.org/html5/spec/video.html#dom-media-buffered
 // Buffered returns a timerange object.
 // Kind of like an array of portions of the video that have been downloaded.
 
@@ -4715,13 +4715,13 @@ vjs.Player.prototype.selectSource = function(sources){
  * the current playback technology (HTML5/Flash) can support the source you
  * provide. Currently only MP4 files can be used in both HTML5 and Flash.
  *
- *     myPlayer.src("http://www.example.com/path/to/video.mp4");
+ *     myPlayer.src("https://www.example.com/path/to/video.mp4");
  *
  * **Source Object (or element):** A javascript object containing information
  * about the source file. Use this method if you want the player to determine if
  * it can support the file using the type information.
  *
- *     myPlayer.src({ type: "video/mp4", src: "http://www.example.com/path/to/video.mp4" });
+ *     myPlayer.src({ type: "video/mp4", src: "https://www.example.com/path/to/video.mp4" });
  *
  * **Array of Source Objects:** To provide multiple versions of the source so
  * that it can be played using HTML5 across browsers you can use an array of
@@ -4729,9 +4729,9 @@ vjs.Player.prototype.selectSource = function(sources){
  * file.
  *
  *     myPlayer.src([
- *       { type: "video/mp4", src: "http://www.example.com/path/to/video.mp4" },
- *       { type: "video/webm", src: "http://www.example.com/path/to/video.webm" },
- *       { type: "video/ogg", src: "http://www.example.com/path/to/video.ogv" }
+ *       { type: "video/mp4", src: "https://www.example.com/path/to/video.mp4" },
+ *       { type: "video/webm", src: "https://www.example.com/path/to/video.webm" },
+ *       { type: "video/ogg", src: "https://www.example.com/path/to/video.ogv" }
  *     ]);
  *
  * @param  {String|Object|Array=} source The source URL, object, or array of sources
@@ -4747,7 +4747,7 @@ vjs.Player.prototype.src = function(source){
   if (vjs.obj.isArray(source)) {
     this.sourceList_(source);
 
-  // case: URL String (http://myvideo...)
+  // case: URL String (https://myvideo...)
   } else if (typeof source === 'string') {
     // create a source object from the string
     this.src({ src: source });
@@ -4829,7 +4829,7 @@ vjs.Player.prototype.load = function(){
 };
 
 /**
- * Returns the fully qualified URL of the current source value e.g. http://mysite.com/video.mp4
+ * Returns the fully qualified URL of the current source value e.g. https://mysite.com/video.mp4
  * Can be used in conjuction with `currentType` to assist in rebuilding the current source object.
  * @return {String} The current source
  */
@@ -4905,7 +4905,7 @@ vjs.Player.prototype.poster_;
  *     var currentPoster = myPlayer.poster();
  *
  *     // setting
- *     myPlayer.poster('http://example.com/myImage.jpg');
+ *     myPlayer.poster('https://example.com/myImage.jpg');
  *
  * @param  {String=} [src] Poster image source URL
  * @return {String} poster URL when getting
@@ -5173,7 +5173,7 @@ vjs.Player.prototype.listenForUserActivity = function(){
   // the mousemove/touchmove function itself, to prevent performance degradation.
   // `this.reportUserActivity` simply sets this.userActivity_ to true, which
   // then gets picked up by this loop
-  // http://ejohn.org/blog/learning-from-twitter/
+  // https://ejohn.org/blog/learning-from-twitter/
   activityCheck = this.setInterval(function() {
     // Check to see if mouse/touch activity has happened
     if (this.userActivity_) {
@@ -6290,7 +6290,7 @@ vjs.LoadingSpinner = vjs.Component.extend({
     // player.on('ended', vjs.bind(this, this.hide));
 
     // Not showing spinner on stalled any more. Browsers may stall and then not trigger any events that would remove the spinner.
-    // Checked in Chrome 16 and Safari 5.1.2. http://help.videojs.com/discussions/problems/883-why-is-the-download-progress-showing
+    // Checked in Chrome 16 and Safari 5.1.2. https://help.videojs.com/discussions/problems/883-why-is-the-download-progress-showing
     // player.on('stalled', vjs.bind(this, this.show));
 
     // player.on('waiting', vjs.bind(this, this.show));
@@ -6444,7 +6444,7 @@ vjs.MediaTechController.prototype.addControlsListeners = function(){
 
   // Some browsers (Chrome & IE) don't trigger a click on a flash swf, but do
   // trigger mousedown/up.
-  // http://stackoverflow.com/questions/1444562/javascript-onclick-event-over-flash-object
+  // https://stackoverflow.com/questions/1444562/javascript-onclick-event-over-flash-object
   // Any touch events are set to block the mousedown event from happening
   this.on('mousedown', this.onClick);
 
@@ -7790,7 +7790,7 @@ vjs.Player.prototype.textTracks_;
 
 /**
  * Get an array of associated text tracks. captions, subtitles, chapters, descriptions
- * http://www.w3.org/html/wg/drafts/html/master/embedded-content-0.html#dom-media-texttracks
+ * https://www.w3.org/html/wg/drafts/html/master/embedded-content-0.html#dom-media-texttracks
  * @return {Array}           Array of track objects
  * @private
  */
@@ -7802,7 +7802,7 @@ vjs.Player.prototype.textTracks = function(){
 /**
  * Add a text track
  * In addition to the W3C settings we allow adding additional info through options.
- * http://www.w3.org/html/wg/drafts/html/master/embedded-content-0.html#dom-media-addtexttrack
+ * https://www.w3.org/html/wg/drafts/html/master/embedded-content-0.html#dom-media-addtexttrack
  * @param {String}  kind        Captions, subtitles, chapters, descriptions, or metadata
  * @param {String=} label       Optional label
  * @param {String=} language    Optional language

@@ -1,6 +1,6 @@
 /*
 
-To get this list of colors inject jQuery at http://www.google.com/design/spec/style/color.html#color-color-palette
+To get this list of colors inject jQuery at https://www.google.com/design/spec/style/color.html#color-color-palette
 
 Then, run this script to get the list.
 
@@ -61250,7 +61250,7 @@ icon-material-blue-grey-A700 {
   color: #455a64;
 }
 .card {
-  /***** Make height equal to width (http://stackoverflow.com/a/6615994) ****/
+  /***** Make height equal to width (https://stackoverflow.com/a/6615994) ****/
   display: inline-block;
   position: relative;
   width: 100%;

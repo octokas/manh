@@ -1,6 +1,6 @@
 /**
  * @license AngularJS v1.2.16
- * (c) 2010-2014 Google, Inc. http://angularjs.org
+ * (c) 2010-2014 Google, Inc. https://angularjs.org
  * License: MIT
  */
 (function(window, angular, undefined) {'use strict';
@@ -26,7 +26,7 @@ var $sanitizeMinErr = angular.$$minErr('$sanitize');
  * HTML Parser By Misko Hevery (misko@hevery.com)
  * based on:  HTML Parser By John Resig (ejohn.org)
  * Original code by Erik Arvidsson, Mozilla Public License
- * http://erik.eae.net/simplehtmlparser/simplehtmlparser.js
+ * https://erik.eae.net/simplehtmlparser/simplehtmlparser.js
  *
  * // Use like so:
  * htmlParser(htmlString, {
@@ -171,15 +171,15 @@ var START_TAG_REGEXP =
 
 
 // Good source of info about elements and attributes
-// http://dev.w3.org/html5/spec/Overview.html#semantics
-// http://simon.html5.org/html-elements
+// https://dev.w3.org/html5/spec/Overview.html#semantics
+// https://simon.html5.org/html-elements
 
 // Safe Void Elements - HTML5
-// http://dev.w3.org/html5/spec/Overview.html#void-elements
+// https://dev.w3.org/html5/spec/Overview.html#void-elements
 var voidElements = makeMap("area,br,col,hr,img,wbr");
 
 // Elements that you can, intentionally, leave open (and which close themselves)
-// http://dev.w3.org/html5/spec/Overview.html#optional-tags
+// https://dev.w3.org/html5/spec/Overview.html#optional-tags
 var optionalEndTagBlockElements = makeMap("colgroup,dd,dt,li,p,tbody,td,tfoot,th,thead,tr"),
     optionalEndTagInlineElements = makeMap("rp,rt"),
     optionalEndTagElements = angular.extend({},
@@ -498,11 +498,11 @@ angular.module('ngSanitize', []).provider('$sanitize', $SanitizeProvider);
          function Ctrl($scope) {
            $scope.snippet =
              'Pretty text with some links:\n'+
-             'http://angularjs.org/,\n'+
+             'https://angularjs.org/,\n'+
              'mailto:us@somewhere.org,\n'+
              'another@somewhere.org,\n'+
              'and one more: ftp://127.0.0.1/.';
-           $scope.snippetWithTarget = 'http://angularjs.org/';
+           $scope.snippetWithTarget = 'https://angularjs.org/';
          }
        </script>
        <div ng-controller="Ctrl">
@@ -541,32 +541,32 @@ angular.module('ngSanitize', []).provider('$sanitize', $SanitizeProvider);
      <file name="protractor.js" type="protractor">
        it('should linkify the snippet with urls', function() {
          expect(element(by.id('linky-filter')).element(by.binding('snippet | linky')).getText()).
-             toBe('Pretty text with some links: http://angularjs.org/, us@somewhere.org, ' +
+             toBe('Pretty text with some links: https://angularjs.org/, us@somewhere.org, ' +
                   'another@somewhere.org, and one more: ftp://127.0.0.1/.');
          expect(element.all(by.css('#linky-filter a')).count()).toEqual(4);
        });
 
        it('should not linkify snippet without the linky filter', function() {
          expect(element(by.id('escaped-html')).element(by.binding('snippet')).getText()).
-             toBe('Pretty text with some links: http://angularjs.org/, mailto:us@somewhere.org, ' +
+             toBe('Pretty text with some links: https://angularjs.org/, mailto:us@somewhere.org, ' +
                   'another@somewhere.org, and one more: ftp://127.0.0.1/.');
          expect(element.all(by.css('#escaped-html a')).count()).toEqual(0);
        });
 
        it('should update', function() {
          element(by.model('snippet')).clear();
-         element(by.model('snippet')).sendKeys('new http://link.');
+         element(by.model('snippet')).sendKeys('new https://link.');
          expect(element(by.id('linky-filter')).element(by.binding('snippet | linky')).getText()).
-             toBe('new http://link.');
+             toBe('new https://link.');
          expect(element.all(by.css('#linky-filter a')).count()).toEqual(1);
          expect(element(by.id('escaped-html')).element(by.binding('snippet')).getText())
-             .toBe('new http://link.');
+             .toBe('new https://link.');
        });
 
        it('should work with the target property', function() {
         expect(element(by.id('linky-target')).
             element(by.binding("snippetWithTarget | linky:'_blank'")).getText()).
-            toBe('http://angularjs.org/');
+            toBe('https://angularjs.org/');
         expect(element(by.css('#linky-target a')).getAttribute('target')).toEqual('_blank');
        });
      </file>

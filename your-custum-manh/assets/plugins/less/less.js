@@ -1,6 +1,6 @@
 /*!
  * Less - Leaner CSS v2.4.0
- * http://lesscss.org
+ * https://lesscss.org
  *
  * Copyright (c) 2009-2015, Alexis Sellier <self@cloudhead.net>
  * Licensed under the Apache v2 License.
@@ -133,7 +133,7 @@ module.exports = {
 
         // For IE.
         // This needs to happen *after* the style element is added to the DOM, otherwise IE 7 and 8 may crash.
-        // See http://social.msdn.microsoft.com/Forums/en-US/7e081b65-878a-4c22-8e68-c10d39c2ed32/internet-explorer-crashes-appending-style-element-to-head
+        // See https://social.msdn.microsoft.com/Forums/en-US/7e081b65-878a-4c22-8e68-c10d39c2ed32/internet-explorer-crashes-appending-style-element-to-head
         if (styleNode.styleSheet) {
             try {
                 styleNode.styleSheet.cssText = styles;
@@ -1280,7 +1280,7 @@ var Color = require("../tree/color"),
     functionRegistry = require("./function-registry");
 
 // Color Blending
-// ref: http://www.w3.org/TR/compositing-1
+// ref: https://www.w3.org/TR/compositing-1
 
 function colorBlend(mode, color1, color2) {
     var ab = color1.alpha, cb, // backdrop
@@ -1559,7 +1559,7 @@ colorFunctions = {
     },
     //
     // Copyright (c) 2006-2009 Hampton Catlin, Nathan Weizenbaum, and Chris Eppstein
-    // http://sass-lang.com
+    // https://sass-lang.com
     //
     mix: function (color1, color2, weight) {
         if (!weight) {
@@ -2025,7 +2025,7 @@ module.exports = function(environment) {
                     " 'to bottom right', 'to top right' or 'ellipse at center'" };
         }
         returner = '<?xml version="1.0" ?>' +
-            '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none">' +
+            '<svg xmlns="https://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none">' +
             '<' + gradientType + 'Gradient id="gradient" gradientUnits="userSpaceOnUse" ' + gradientDirectionSvg + '>';
 
         for (i = 0; i < stops.length; i+= 1) {
@@ -5309,7 +5309,7 @@ Color.prototype.toHSL = function () {
     }
     return { h: h * 360, s: s, l: l, a: a };
 };
-//Adapted from http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript
+//Adapted from https://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript
 Color.prototype.toHSV = function () {
     var r = this.rgb[0] / 255,
         g = this.rgb[1] / 255,
@@ -9789,7 +9789,7 @@ if (typeof process !== "undefined" && process.nextTick) {
 
 } else if (typeof MessageChannel !== "undefined") {
     // modern browsers
-    // http://www.nonblocking.io/2011/06/windownexttick.html
+    // https://www.nonblocking.io/2011/06/windownexttick.html
     var channel = new MessageChannel();
     channel.port1.onmessage = flush;
     requestFlush = function () {

@@ -7,7 +7,7 @@ var parts = document.location.search.slice( 1 ).split( "&" ),
 	i = 0,
 	current,
 	version = "1.9.1",
-	file = "http://code.jquery.com/jquery-git.js";
+	file = "https://code.jquery.com/jquery-git.js";
 
 for ( ; i < length; i++ ) {
 	current = parts[ i ].split( "=" );

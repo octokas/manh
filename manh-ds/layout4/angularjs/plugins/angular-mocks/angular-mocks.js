@@ -1,6 +1,6 @@
 /**
  * @license AngularJS v1.2.16
- * (c) 2010-2014 Google, Inc. http://angularjs.org
+ * (c) 2010-2014 Google, Inc. https://angularjs.org
  * License: MIT
  */
 (function(window, angular, undefined) {
@@ -39,7 +39,7 @@ angular.mock.$Browser = function() {
   var self = this;
 
   this.isMock = true;
-  self.$$url = "http://server/";
+  self.$$url = "https://server/";
   self.$$lastUrl = self.$$url; // used by url polling fn
   self.pollFns = [];
 
@@ -889,7 +889,7 @@ angular.mock.dump = function(object) {
  *
  * During unit testing, we want our unit tests to run quickly and have no external dependencies so
  * we don’t want to send [XHR](https://developer.mozilla.org/en/xmlhttprequest) or
- * [JSONP](http://en.wikipedia.org/wiki/JSONP) requests to a real server. All we really need is
+ * [JSONP](https://en.wikipedia.org/wiki/JSONP) requests to a real server. All we really need is
  * to verify whether a certain request has been sent or not, or alternatively just let the
  * application make requests, respond with pre-trained responses and assert that the end result is
  * what we expect it to be.

@@ -6,7 +6,7 @@
  * MIT license
  
  * adapted from YUI idle timer by nzakas:
- *   http://github.com/nzakas/yui-misc/
+ *   https://github.com/nzakas/yui-misc/
  
  
  * Copyright (c) 2009 Nicholas C. Zakas

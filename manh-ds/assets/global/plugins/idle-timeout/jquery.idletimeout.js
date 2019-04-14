@@ -2,15 +2,15 @@
  * jQuery Idle Timeout 1.2
  * Copyright (c) 2011 Eric Hynds
  *
- * http://www.erichynds.com/jquery/a-new-and-improved-jquery-idle-timeout-plugin/
+ * https://www.erichynds.com/jquery/a-new-and-improved-jquery-idle-timeout-plugin/
  *
  * Depends:
  *  - jQuery 1.4.2+
- *  - jQuery Idle Timer (by Paul Irish, http://paulirish.com/2009/jquery-idletimer-plugin/)
+ *  - jQuery Idle Timer (by Paul Irish, https://paulirish.com/2009/jquery-idletimer-plugin/)
  *
  * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
+ *   https://www.opensource.org/licenses/mit-license.php
+ *   https://www.gnu.org/licenses/gpl.html
  *
 */
 

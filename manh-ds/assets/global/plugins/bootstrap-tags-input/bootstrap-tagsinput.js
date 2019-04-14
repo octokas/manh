@@ -563,7 +563,7 @@
 
   /**
    * Returns the position of the caret in the given input field
-   * http://flightschool.acylt.com/devnotes/caret-position-woes/
+   * https://flightschool.acylt.com/devnotes/caret-position-woes/
    */
   function doGetCaretPosition(oField) {
     var iCaretPos = 0;
@@ -581,7 +581,7 @@
   /**
     * Returns boolean indicates whether user has pressed an expected key combination. 
     * @param object keyPressEvent: JavaScript event object, refer
-    *     http://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
+    *     https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
     * @param object lookupList: expected key combinations, as in:
     *     [13, {which: 188, shiftKey: true}]
     */

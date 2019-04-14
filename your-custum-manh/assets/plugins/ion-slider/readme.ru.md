@@ -7,8 +7,8 @@
 ***
 
 * Версия: 2.1.2
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/index.html">Страница проекта и демо</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.1.2.zip">Загрузить ZIP-архив</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/index.html">Страница проекта и демо</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.1.2.zip">Загрузить ZIP-архив</a>
 
 ## Описание
 * Ion.RangeSlider — классный, удобный, отзывчивый и легко настраиваемый слайдер диапазонов
@@ -16,10 +16,10 @@
 * Кроссбраузерная поддержка: Google Chrome, Mozilla Firefox 3.6+, Opera 12+, Safari 5+, Internet Explorer 8+
 * Плагин поддерживает устройства с touch-экраном (iPhone, iPad, Nexus, etc.)
 * <a href="https://github.com/IonDen/ion.rangeSlider">Репозиторий на GitHub</a>
-* Плагин свободно распространяется на условиях <a href="http://ionden.com/a/plugins/licence.html" target="_blank">лицензии MIT</a>
+* Плагин свободно распространяется на условиях <a href="https://ionden.com/a/plugins/licence.html" target="_blank">лицензии MIT</a>
 * Используюя этот плагин, вы сможете создавать крутейшие слайдеры диапазонов, такие как этот:
 
-![ion.rangeSlider](http://ionden.com/a/plugins/ion.rangeSlider/static/img/ion-range-slider.png)
+![ion.rangeSlider](https://ionden.com/a/plugins/ion.rangeSlider/static/img/ion-range-slider.png)
 
 ## Ключевые особенности
 * Поддержка скинов. (5 скина в комплекте и PSD для изготовления собственных)
@@ -43,14 +43,14 @@
 
 ## Демо
 
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Базовые настройки</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Расширенные настройки</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Взаимодействия</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Базовые настройки</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Расширенные настройки</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Взаимодействия</a>
 
 
 ## Зависимости
 
-* <a href="http://jquery.com/" target="_blank">jQuery 1.8.x+</a>
+* <a href="https://jquery.com/" target="_blank">jQuery 1.8.x+</a>
 
 
 ## Использование
@@ -60,7 +60,7 @@
 * ion.rangeSlider.min.js
 
 Подключаем стили:
-* <a href="http://necolas.github.io/normalize.css/" target="_blank">normalize.css</a> (желательно, если он у вас еще не подключен)
+* <a href="https://necolas.github.io/normalize.css/" target="_blank">normalize.css</a> (желательно, если он у вас еще не подключен)
 * ion.rangeSlider.css
 
 Не забываем про скин. 5 скинов включены в архив. Выберите один:
@@ -83,7 +83,7 @@
 * npm install ion-rangeslider
 
 
-## Устанавливаем с помощью spm [![](http://spmjs.io/badge/ion-rangeslider)](http://spmjs.io/package/ion-rangeslider)
+## Устанавливаем с помощью spm [![](https://spmjs.io/badge/ion-rangeslider)](https://spmjs.io/package/ion-rangeslider)
 
 * spm install ion-rangeslider
 
@@ -102,7 +102,7 @@ $("#example_id").ionRangeSlider();
 
 ## Демо для новичков
 Если вы новичок в веб разработке и не уверены как правильно подключить этот плагин на вашу страницу, то скачайте вот
-<a href="http://ionden.com/a/plugins/ion.rangeSlider/ionRangeSliderDemo.zip" class="button">этот демо пример</a>
+<a href="https://ionden.com/a/plugins/ion.rangeSlider/ionRangeSliderDemo.zip" class="button">этот демо пример</a>
 
 
 ## Миграция с версии 1.x на 2.x
@@ -112,7 +112,7 @@ $("#example_id").ionRangeSlider();
 * Слайдер теперь постоянно записывает свои значения в поле value и в атрибуты data-from и data-to
 
 
-## <a href="http://jsfiddle.net/IonDen/qv6yrjrv/" target="_blank">Площадка для эксперементов с плагином</a>
+## <a href="https://jsfiddle.net/IonDen/qv6yrjrv/" target="_blank">Площадка для эксперементов с плагином</a>
 
 
 ## Настройка
@@ -475,9 +475,9 @@ slider.destroy();
 
 ## Еще раз взглянем на демо
 
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Базовые настройки</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Расширенные настройки</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Взаимодействия</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo.html" class="switch__item">Базовые настройки</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" class="switch__item">Расширенные настройки</a>
+* <a href="https://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html" class="switch__item">Взаимодействия</a>
 
 В демках есть примеры использования всех опций слайдера
 
@@ -492,4 +492,4 @@ slider.destroy();
 
 * Пожертвовать напрямую через Paypal: https://www.paypal.me/IonDen
 
-* Пожертвовать напрямую через Яндекс.Деньги: http://yasobe.ru/na/razrabotku
+* Пожертвовать напрямую через Яндекс.Деньги: https://yasobe.ru/na/razrabotku

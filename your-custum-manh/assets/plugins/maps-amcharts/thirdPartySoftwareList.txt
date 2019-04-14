@@ -2,9 +2,9 @@
 Third party software used:
 
 Code optimization made using Closure Compiling service:
-http://closure-compiler.appspot.com/home
+https://closure-compiler.appspot.com/home
 
-some icons from: http://raphaeljs.com/icons/
+some icons from: https://raphaeljs.com/icons/
 
 Libraries used for exporting:
 

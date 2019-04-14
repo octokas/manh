@@ -3,15 +3,15 @@
  *
  * Version:  1.4.0
  * Released: 2011-02-04
- * Source:   http://github.com/appendto/jquery-mockjax
- * Docs:     http://enterprisejquery.com/2010/07/mock-your-ajax-requests-with-mockjax-for-rapid-development
+ * Source:   https://github.com/appendto/jquery-mockjax
+ * Docs:     https://enterprisejquery.com/2010/07/mock-your-ajax-requests-with-mockjax-for-rapid-development
  * Plugin:   mockjax
- * Author:   Jonathan Sharp (http://jdsharp.com)
+ * Author:   Jonathan Sharp (https://jdsharp.com)
  * License:  MIT,GPL
  * 
  * Copyright (c) 2010 appendTo LLC.
  * Dual licensed under the MIT or GPL licenses.
- * http://appendto.com/open-source-licenses
+ * https://appendto.com/open-source-licenses
  */
 (function($) {
 	var _ajax = $.ajax,

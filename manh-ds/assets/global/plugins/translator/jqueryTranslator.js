@@ -2,7 +2,7 @@
 	Name: jqueryTranslator
 	Author: Antonio Laguna
 	Twitter: @Belelros
-	Website: http://www.funcion13.com
+	Website: https://www.funcion13.com
 	Version: 1.1.1
 */
 (function($, window, document, undefined){

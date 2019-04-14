@@ -1,6 +1,6 @@
 /*
  * MultiDatesPicker v1.6.4
- * http://multidatespickr.sourceforge.net/
+ * https://multidatespickr.sourceforge.net/
  * 
  * Copyright 2014, Luca Lauretta
  * Dual licensed under the MIT or GPL version 2 licenses.
@@ -224,7 +224,7 @@
           $.error('Date format "'+ desired_format +'" not supported!');
         
         if(!dateFormat) {
-          // thanks to bibendus83 -> http://sourceforge.net/tracker/index.php?func=detail&aid=3213174&group_id=358205&atid=1495382
+          // thanks to bibendus83 -> https://sourceforge.net/tracker/index.php?func=detail&aid=3213174&group_id=358205&atid=1495382
           var dp_dateFormat = $this.datepicker('option', 'dateFormat');
           if (dp_dateFormat) {
             dateFormat = dp_dateFormat;

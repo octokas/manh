@@ -1,9 +1,9 @@
 /*! jQuery-QuickSearch - v2.0.2 - 2013-11-15
-* Copyright (c) 2013 Deux Huit Huit (http://deuxhuithuit.com/);
-* Licensed MIT http://deuxhuithuit.mit-license.org */
+* Copyright (c) 2013 Deux Huit Huit (https://deuxhuithuit.com/);
+* Licensed MIT https://deuxhuithuit.mit-license.org */
 /**
  * Copyrights: Deux Huit Huit, Rik Lomas.
- * Licensed MIT: http://deuxhuithuit.mit-license.org
+ * Licensed MIT: https://deuxhuithuit.mit-license.org
  */
 
 (function($, window, document, undefined) {

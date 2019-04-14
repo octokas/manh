@@ -211,7 +211,7 @@ $(function() {
 
     AmCharts.makeChart("flight-map", {
         type: "map",
-        pathToImages: "http://www.amcharts.com/lib/3/images/",
+        pathToImages: "https://www.amcharts.com/lib/3/images/",
         addClassNames: true,
         zoomControl: {
             top: 90,

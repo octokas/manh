@@ -24,13 +24,13 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "http://ionden.com/a/plugins/licence-en.html"
+            "url": "https://ionden.com/a/plugins/licence-en.html"
         }
     ],
     "homepage": "https://github.com/IonDen/ion.rangeSlider",
     "docs": "https://github.com/IonDen/ion.rangeSlider/blob/master/readme.md",
-    "demo": "http://ionden.com/a/plugins/ion.rangeSlider/en.html",
-    "download": "http://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.1.2.zip",
+    "demo": "https://ionden.com/a/plugins/ion.rangeSlider/en.html",
+    "download": "https://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.1.2.zip",
     "dependencies": {
         "jquery": ">=1.8"
     }

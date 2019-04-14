@@ -1,6 +1,6 @@
 /*
  * angular-ui-bootstrap
- * http://angular-ui.github.io/bootstrap/
+ * https://angular-ui.github.io/bootstrap/
 
  * Version: 0.12.1 - 2015-02-20
  * License: MIT
@@ -604,13 +604,13 @@ angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
   <file name="index.html">
     <carousel>
       <slide>
-        <img src="http://placekitten.com/150/150" style="margin:auto;">
+        <img src="https://placekitten.com/150/150" style="margin:auto;">
         <div class="carousel-caption">
           <p>Beautiful!</p>
         </div>
       </slide>
       <slide>
-        <img src="http://placekitten.com/100/150" style="margin:auto;">
+        <img src="https://placekitten.com/100/150" style="margin:auto;">
         <div class="carousel-caption">
           <p>D'aww!</p>
         </div>
@@ -879,7 +879,7 @@ angular.module('ui.bootstrap.position', [])
     return {
       /**
        * Provides read-only equivalent of jQuery's position function:
-       * http://api.jquery.com/position/
+       * https://api.jquery.com/position/
        */
       position: function (element) {
         var elBCR = this.offset(element);
@@ -902,7 +902,7 @@ angular.module('ui.bootstrap.position', [])
 
       /**
        * Provides read-only equivalent of jQuery's offset function:
-       * http://api.jquery.com/offset/
+       * https://api.jquery.com/offset/
        */
       offset: function (element) {
         var boundingClientRect = element[0].getBoundingClientRect();

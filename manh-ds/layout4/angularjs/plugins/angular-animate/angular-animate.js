@@ -1,6 +1,6 @@
 /**
  * @license AngularJS v1.2.16
- * (c) 2010-2014 Google, Inc. http://angularjs.org
+ * (c) 2010-2014 Google, Inc. https://angularjs.org
  * License: MIT
  */
 (function(window, angular, undefined) {'use strict';
@@ -1055,7 +1055,7 @@ angular.module('ngAnimate', ['ng'])
       // Register both events in case `window.onanimationend` is not supported because of that,
       // do the same for `transitionend` as Safari is likely to exhibit similar behavior.
       // Also, the only modern browser that uses vendor prefixes for transitions/keyframes is webkit
-      // therefore there is no reason to test anymore for other vendor prefixes: http://caniuse.com/#search=transition
+      // therefore there is no reason to test anymore for other vendor prefixes: https://caniuse.com/#search=transition
       if (window.ontransitionend === undefined && window.onwebkittransitionend !== undefined) {
         CSS_PREFIX = '-webkit-';
         TRANSITION_PROP = 'WebkitTransition';
@@ -1515,7 +1515,7 @@ angular.module('ngAnimate', ['ng'])
             /* when classes are removed from an element then the transition style
              * that is applied is the transition defined on the element without the
              * CSS class being there. This is how CSS3 functions outside of ngAnimate.
-             * http://plnkr.co/edit/j8OzgTNxHTb4n3zLyjGW?p=preview */
+             * https://plnkr.co/edit/j8OzgTNxHTb4n3zLyjGW?p=preview */
             var klass = element.attr('class');
             element.removeClass(remove);
             element.addClass(add);
@@ -1575,7 +1575,7 @@ angular.module('ngAnimate', ['ng'])
             /* when classes are removed from an element then the transition style
              * that is applied is the transition defined on the element without the
              * CSS class being there. This is how CSS3 functions outside of ngAnimate.
-             * http://plnkr.co/edit/j8OzgTNxHTb4n3zLyjGW?p=preview */
+             * https://plnkr.co/edit/j8OzgTNxHTb4n3zLyjGW?p=preview */
             var klass = element.attr('class');
             element.removeClass(className);
             var timings = fn();

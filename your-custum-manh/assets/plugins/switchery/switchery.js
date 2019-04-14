@@ -149,7 +149,7 @@ require.register("abpetkov~transitionize@0.0.3", function (exports, module) {
  *
  * Copyright 2013, Alexander Petkov
  * License: The MIT License (MIT)
- * http://opensource.org/licenses/MIT
+ * https://opensource.org/licenses/MIT
  *
  */
 
@@ -703,7 +703,7 @@ FastClick.prototype.findControl = function(labelElement) {
 	}
 
 	// If no for attribute exists, attempt to retrieve the first labellable descendant element
-	// the list of which is defined here: http://www.w3.org/TR/html5/forms.html#category-label
+	// the list of which is defined here: https://www.w3.org/TR/html5/forms.html#category-label
 	return labelElement.querySelector('button, input:not([type=hidden]), keygen, meter, output, progress, select, textarea');
 };
 
@@ -1198,14 +1198,14 @@ ClassList.prototype.contains = function(name){
 require.register("switchery", function (exports, module) {
 /**
  * Switchery 0.6.3
- * http://abpetkov.github.io/switchery/
+ * https://abpetkov.github.io/switchery/
  *
  * Authored by Alexander Petkov
  * https://github.com/abpetkov
  *
  * Copyright 2013-2014, Alexander Petkov
  * License: The MIT License (MIT)
- * http://opensource.org/licenses/MIT
+ * https://opensource.org/licenses/MIT
  *
  */
 

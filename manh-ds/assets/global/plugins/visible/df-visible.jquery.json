@@ -5,7 +5,7 @@
 	"author"		: {
 		"name"	: "Team DF",
 		"email"	: "plugins@teamdf.com",
-		"url"	: "http://opensource.teamdf.com/"
+		"url"	: "https://opensource.teamdf.com/"
 	},
 	"maintainers"	: [
 		{
@@ -24,8 +24,8 @@
 		"ui"
 	],
 	"homepage"		: "https://github.com/teamdf/jquery-visible/",
-	"docs"			: "http://www.teamdf.com/web/jquery-element-onscreen-visibility/194/",
-	"demo"			: "http://opensource.teamdf.com/visible/examples/demo-basic.html",
+	"docs"			: "https://www.teamdf.com/web/jquery-element-onscreen-visibility/194/",
+	"demo"			: "https://opensource.teamdf.com/visible/examples/demo-basic.html",
 	"files"			: [
 		"jquery.visible.js",
 		"jquery.visible.min.js"
@@ -36,7 +36,7 @@
 	"licenses"		: [
 		{
 		    "type": "MIT",
-		    "url": "http://opensource.teamdf.com/license/"
+		    "url": "https://opensource.teamdf.com/license/"
 		}
 	]
 }

@@ -3,11 +3,11 @@
  * version: 3.20 (20-NOV-2012)
  * @requires jQuery v1.5 or later
  *
- * Examples and documentation at: http://malsup.com/jquery/form/
+ * Examples and documentation at: https://malsup.com/jquery/form/
  * Project repository: https://github.com/malsup/form
  * Dual licensed under the MIT and GPL licenses:
- *    http://malsup.github.com/mit-license.txt
- *    http://malsup.github.com/gpl-license-v2.txt
+ *    https://malsup.github.com/mit-license.txt
+ *    https://malsup.github.com/gpl-license-v2.txt
  */
 /*global ActiveXObject alert */
 ;(function($) {
@@ -64,7 +64,7 @@ feature.formdata = window.FormData !== undefined;
 $.fn.ajaxSubmit = function(options) {
     /*jshint scripturl:true */
 
-    // fast fail if nothing selected (http://dev.jquery.com/ticket/2752)
+    // fast fail if nothing selected (https://dev.jquery.com/ticket/2752)
     if (!this.length) {
         log('ajaxSubmit: skipping submit process - no element selected');
         return this;
@@ -191,7 +191,7 @@ $.fn.ajaxSubmit = function(options) {
     // 06-NOV-09: now defaulting to iframe mode if file input is detected
     if (options.iframe !== false && (options.iframe || shouldUseFrame)) {
         // hack to fix Safari hang (thanks to Tim Molendijk for this)
-        // see:  http://groups.google.com/group/jquery-dev/browse_thread/thread/36395b7ab510dd5d
+        // see:  https://groups.google.com/group/jquery-dev/browse_thread/thread/36395b7ab510dd5d
         if (options.closeKeepAlive) {
             $.get(options.closeKeepAlive, function() {
                 jqxhr = fileUploadIframe(a);
@@ -735,7 +735,7 @@ $.fn.ajaxForm = function(options) {
             });
             return this;
         }
-        // is your DOM ready?  http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+        // is your DOM ready?  https://docs.jquery.com/Tutorials:Introducing_$(document).ready()
         log('terminating; zero elements found by selector' + ($.isReady ? '' : ' (DOM not ready)'));
         return this;
     }
@@ -947,7 +947,7 @@ $.fn.fieldSerialize = function(successful) {
  *  v == ['C1']
  *
  * The successful argument controls whether or not the field element must be 'successful'
- * (per http://www.w3.org/TR/html4/interact/forms.html#successful-controls).
+ * (per https://www.w3.org/TR/html4/interact/forms.html#successful-controls).
  * The default value of the successful argument is true.  If this value is false the value(s)
  * for each element is returned.
  *

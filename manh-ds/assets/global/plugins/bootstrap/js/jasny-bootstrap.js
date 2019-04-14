@@ -1,5 +1,5 @@
 /*!
- * Jasny Bootstrap v3.1.3 (http://jasny.github.io/bootstrap)
+ * Jasny Bootstrap v3.1.3 (https://jasny.github.io/bootstrap)
  * Copyright 2012-2014 Arnold Daniels
  * Licensed under Apache-2.0 (https://github.com/jasny/bootstrap/blob/master/LICENSE)
  */
@@ -18,7 +18,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
 +function ($) {
   'use strict';
 
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+  // CSS TRANSITION SUPPORT (Shoutout: https://www.modernizr.com/)
   // ============================================================
 
   function transitionEnd() {
@@ -42,7 +42,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
 
   if ($.support.transition !== undefined) return  // Prevent conflict with Twitter Bootstrap
 
-  // http://blog.alexmaccaw.com/css-transitions
+  // https://blog.alexmaccaw.com/css-transitions
   $.fn.emulateTransitionEnd = function (duration) {
     var called = false, $el = this
     $(this).one($.support.transition.end, function () { called = true })
@@ -59,7 +59,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
 
 /* ========================================================================
  * Bootstrap: offcanvas.js v3.1.3
- * http://jasny.github.io/bootstrap/javascript/#offcanvas
+ * https://jasny.github.io/bootstrap/javascript/#offcanvas
  * ========================================================================
  * Copyright 2013-2014 Arnold Daniels
  *
@@ -67,7 +67,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -378,7 +378,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
 
 /* ============================================================
  * Bootstrap: rowlink.js v3.1.3
- * http://jasny.github.io/bootstrap/javascript/#rowlink
+ * https://jasny.github.io/bootstrap/javascript/#rowlink
  * ============================================================
  * Copyright 2012-2014 Arnold Daniels
  *
@@ -386,7 +386,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -465,7 +465,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
 
 /* ===========================================================
  * Bootstrap: inputmask.js v3.1.0
- * http://jasny.github.io/bootstrap/javascript/#inputmask
+ * https://jasny.github.io/bootstrap/javascript/#inputmask
  * 
  * Based on Masked Input plugin by Josh Bush (digitalbush.com)
  * ===========================================================
@@ -475,7 +475,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -826,7 +826,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
 
 /* ===========================================================
  * Bootstrap: fileinput.js v3.1.3
- * http://jasny.github.com/bootstrap/javascript/#fileinput
+ * https://jasny.github.com/bootstrap/javascript/#fileinput
  * ===========================================================
  * Copyright 2012-2014 Arnold Daniels
  *
@@ -834,7 +834,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,

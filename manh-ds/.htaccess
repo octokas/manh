@@ -3,8 +3,8 @@ AddDefaultCharset UTF-8
 RewriteEngine On
 
 RewriteBase /
-RewriteRule ^$ http://themes-lab.com/make/start.html [L]
-RewriteRule ^layout1/$ http://themes-lab.com/make/manh-ds/layout1/dashboard.html [L]
-RewriteRule ^layout2/$ http://themes-lab.com/make/manh-ds/layout2/dashboard.html [L]
-RewriteRule ^layout3/$ http://themes-lab.com/make/manh-ds/layout3/dashboard.html [L]
-RewriteRule ^layout4/$ http://themes-lab.com/make/manh-ds/layout4/dashboard.html [L]
+RewriteRule ^$ https://themes-lab.com/make/start.html [L]
+RewriteRule ^layout1/$ https://themes-lab.com/make/manh-ds/layout1/dashboard.html [L]
+RewriteRule ^layout2/$ https://themes-lab.com/make/manh-ds/layout2/dashboard.html [L]
+RewriteRule ^layout3/$ https://themes-lab.com/make/manh-ds/layout3/dashboard.html [L]
+RewriteRule ^layout4/$ https://themes-lab.com/make/manh-ds/layout4/dashboard.html [L]

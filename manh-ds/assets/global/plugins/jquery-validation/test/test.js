@@ -1613,7 +1613,7 @@ test("Min and Max range set by attributes valid", function() {
 	// When the element is suffering from an underflow,
 	// the user agent must set the element"s value to a valid
 	// floating-point number that represents the minimum.
-	// http://www.w3.org/TR/html5/forms.html#range-state-%28type=range%29
+	// https://www.w3.org/TR/html5/forms.html#range-state-%28type=range%29
 	//
 	var form = $("#ranges"),
 		name = $("#rangeRangeValid"),

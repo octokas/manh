@@ -1,5 +1,5 @@
 ﻿/*! RateIt | v1.0.22 / 05/27/2014 | https://rateit.codeplex.com/license
-    http://rateit.codeplex.com | Twitter: @gjunge
+    https://rateit.codeplex.com | Twitter: @gjunge
 */
 (function ($) {
     $.rateit = {
@@ -124,7 +124,7 @@
                     var fld = $(itemdata('backingfld')).hide();
 
                     if (fld.attr('disabled') || fld.attr('readonly')) {
-                        itemdata('readonly', true); //http://rateit.codeplex.com/discussions/362055 , if a backing field is disabled or readonly at instantiation, make rateit readonly.
+                        itemdata('readonly', true); //https://rateit.codeplex.com/discussions/362055 , if a backing field is disabled or readonly at instantiation, make rateit readonly.
                     }
 
                     if (fld[0].nodeName == 'INPUT') {
@@ -308,7 +308,7 @@
         });
     };
 
-    //touch converter http://ross.posterous.com/2008/08/19/iphone-touch-events-in-javascript/
+    //touch converter https://ross.posterous.com/2008/08/19/iphone-touch-events-in-javascript/
     function touchHandler(event) {
 
         var touches = event.originalEvent.changedTouches,

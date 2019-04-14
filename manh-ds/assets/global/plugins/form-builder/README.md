@@ -4,11 +4,11 @@
 
 ##What's this?
 
-A Drag-and-drop form builder for [twitter bootstrap](http://twitter.github.com/bootstrap/). 
+A Drag-and-drop form builder for [twitter bootstrap](https://twitter.github.com/bootstrap/). 
 
 ##Where can I see it in action?
 
-It's hosted on github pages [here](http://minikomi.github.io/Bootstrap-Form-Builder/).
+It's hosted on github pages [here](https://minikomi.github.io/Bootstrap-Form-Builder/).
 
 ###Notes
 

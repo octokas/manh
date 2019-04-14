@@ -1,11 +1,11 @@
-# [iCheck plugin](http://fronteed.com/iCheck/) <sup>[1.0.2](#march-03-2014)</sup>
+# [iCheck plugin](https://fronteed.com/iCheck/) <sup>[1.0.2](#march-03-2014)</sup>
 #### Highly customizable checkboxes and radio buttons for jQuery and Zepto.
 
-Refer to the [iCheck website](http://fronteed.com/iCheck/) for examples.
+Refer to the [iCheck website](https://fronteed.com/iCheck/) for examples.
 
 **Note: [iCheck v2.0](https://github.com/fronteed/iCheck/tree/2.x-beta) is on the way**, it got a huge performance boost, many new options and methods. It's in a release candidate state, so you may try to use it. Feel free to submit an issue if you find something not working.
 
-![Skins](http://fronteed.com/iCheck/examples.png)
+![Skins](https://fronteed.com/iCheck/examples.png)
 
 
 Features
@@ -14,7 +14,7 @@ Features
 * **Identical inputs across different browsers and devices** — both [desktop and mobile](#browser-support)
 * **Touch devices support** — iOS, Android, BlackBerry, Windows Phone, Amazon Kindle
 * **Keyboard accessible inputs** — `Tab`, `Spacebar`, `Arrow up/down` and other shortcuts
-* **Customization freedom** — use any HTML and CSS to style inputs (try [6 Retina-ready skins](http://fronteed.com/iCheck/))
+* **Customization freedom** — use any HTML and CSS to style inputs (try [6 Retina-ready skins](https://fronteed.com/iCheck/))
 * **jQuery and Zepto** JavaScript libraries support from single file
 * **Screenreader accessible inputs** &mdash; [ARIA](https://developer.mozilla.org/en-US/docs/Accessibility/ARIA) attributes for VoiceOver and others
 * **Lightweight size** — 1 kb gzipped
@@ -30,7 +30,7 @@ Features
 How it works
 ------------
 
-iCheck works with checkboxes and radio buttons like a constructor. **It wraps each input with a div**, which may be customized by you or using one of the [available skins](http://fronteed.com/iCheck/). You may also place inside that div some HTML code or text using `insert` option.
+iCheck works with checkboxes and radio buttons like a constructor. **It wraps each input with a div**, which may be customized by you or using one of the [available skins](https://fronteed.com/iCheck/). You may also place inside that div some HTML code or text using `insert` option.
 
 For this HTML:
 
@@ -68,7 +68,7 @@ With default options you'll get nearly this:
 </div>
 ```
 
-**By default, iCheck doesn't provide any CSS styles for wrapper divs** (if you don't use [skins](http://fronteed.com/iCheck/)).
+**By default, iCheck doesn't provide any CSS styles for wrapper divs** (if you don't use [skins](https://fronteed.com/iCheck/)).
 
 
 Options
@@ -179,7 +179,7 @@ You can choose any class names and style them as you want.
 Initialize
 ----------
 
-Just include `icheck.js` after [jQuery v1.7+](http://jquery.com) (or [Zepto](http://github.com/madrobby/zepto#zepto-modules) [polyfill, event, data]).
+Just include `icheck.js` after [jQuery v1.7+](https://jquery.com) (or [Zepto](https://github.com/madrobby/zepto#zepto-modules) [polyfill, event, data]).
 
 iCheck supports any selectors, but handles only checkboxes and radio buttons:
 
@@ -207,7 +207,7 @@ $('input.some').iCheck({
 Indeterminate
 ---------
 
-HTML5 allows specifying [indeterminate](http://css-tricks.com/indeterminate-checkboxes/) ("partially" checked) state for checkboxes. iCheck supports this for both checkboxes and radio buttons.
+HTML5 allows specifying [indeterminate](https://css-tricks.com/indeterminate-checkboxes/) ("partially" checked) state for checkboxes. iCheck supports this for both checkboxes and radio buttons.
 
 You can make an input indeterminate through HTML using additional attributes (supported by iCheck). Both do the same job, but `indeterminate="true"` may not work in some browsers (like IE7):
 
@@ -344,7 +344,7 @@ Comparison
 
 iCheck is created to avoid routine of reinventing the wheel when working with checkboxes and radio buttons. It provides an expected identical result for the huge number of browsers, devices and their versions. Callbacks and methods can be used to easily handle and make changes at customized inputs.
 
-There are some CSS3 ways available to style checkboxes and radio buttons, like [this one](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/). You have to know about some of the disadvantages of similar methods:
+There are some CSS3 ways available to style checkboxes and radio buttons, like [this one](https://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/). You have to know about some of the disadvantages of similar methods:
 
 * inputs are keyboard inaccessible, since `display: none` or `visibility: hidden` used to hide them
 * poor browser support
@@ -421,4 +421,4 @@ Note: extended docs and usage examples will be available later.
 
 License
 -------
-iCheck plugin is released under the [MIT License](http://en.wikipedia.org/wiki/MIT_License). Feel free to use it in personal and commercial projects.
+iCheck plugin is released under the [MIT License](https://en.wikipedia.org/wiki/MIT_License). Feel free to use it in personal and commercial projects.

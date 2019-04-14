@@ -10,7 +10,7 @@
   "author": {
     "name": "Antonio Laguna Matías",
 	"email" : "a.laguna@funcion13.com",
-    "url": "http://www.funcion13.com"
+    "url": "https://www.funcion13.com"
   },
   "licenses": [
     {
@@ -19,7 +19,7 @@
     }
   ],
   "bugs": "https://github.com/Belelros/jqueryTranslator/issues",
-  "homepage": "http://belelros.github.com/jqueryTranslator/",
+  "homepage": "https://belelros.github.com/jqueryTranslator/",
   "docs": "https://github.com/Belelros/jqueryTranslator",
   "dependencies": {
     "jquery": ">=1.7"

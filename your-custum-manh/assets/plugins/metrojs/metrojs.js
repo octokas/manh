@@ -1,7 +1,7 @@
 /*!
 * Metro JS for jQuery
-* http://drewgreenwell.com/ 
-* For details and usage info see: http://drewgreenwell.com/projects/metrojs
+* https://drewgreenwell.com/ 
+* For details and usage info see: https://drewgreenwell.com/projects/metrojs
 
 Copyright (C) 2013, Drew Greenwell
 
@@ -1791,7 +1791,7 @@ var helperMethods = {
 		return this.browserPrefix;
 	},
 	//a shuffle method to provide more randomness than sort
-	//credit: http://javascript.about.com/library/blshuffle.htm
+	//credit: https://javascript.about.com/library/blshuffle.htm
 	//note: avoiding prototype for sharepoint compatability
 	shuffleArray: function (array) {
 		var s = [];
@@ -2617,7 +2617,7 @@ $.fn.metrojs.MetroModernizr = function (stgs) {
                 this.canTouch = window.MetroModernizr.canTouch;
             } else {
                 window.MetroModernizr = {};
-                /***** check for browser capabilities credit: modernizr-1.7 http://modernizr.com/ *****/
+                /***** check for browser capabilities credit: modernizr-1.7 https://modernizr.com/ *****/
                 var mod = 'metromodernizr';
                 var docElement = document.documentElement;
                 var docHead = document.head || document.getElementsByTagName('head')[0];

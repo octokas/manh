@@ -2,7 +2,7 @@
  * A saveAs() FileSaver implementation.
  * 2015-03-04
  *
- * By Eli Grey, http://eligrey.com
+ * By Eli Grey, https://eligrey.com
  * License: X11/MIT
  *   See https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md
  */
@@ -10,7 +10,7 @@
 /*global self */
 /*jslint bitwise: true, indent: 4, laxbreak: true, laxcomma: true, smarttabs: true, plusplus: true */
 
-/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
+/*! @source https://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
 
 var saveAs = saveAs
   // IE 10+ (native saveAs)
@@ -30,7 +30,7 @@ var saveAs = saveAs
 		, get_URL = function() {
 			return view.URL || view.webkitURL || view;
 		}
-		, save_link = doc.createElementNS("http://www.w3.org/1999/xhtml", "a")
+		, save_link = doc.createElementNS("https://www.w3.org/1999/xhtml", "a")
 		, can_use_save_link = "download" in save_link
 		, click = function(node) {
 			var event = doc.createEvent("MouseEvents");
@@ -103,7 +103,7 @@ var saveAs = saveAs
 					} else {
 						var new_tab = view.open(object_url, "_blank");
 						if (new_tab == undefined && typeof safari !== "undefined") {
-							//Apple do not allow window.open, see http://bit.ly/1kZffRI
+							//Apple do not allow window.open, see https://bit.ly/1kZffRI
 							view.location.href = object_url
 						}
 					}
@@ -141,7 +141,7 @@ var saveAs = saveAs
 			}
 			// Object and web filesystem URLs have a problem saving in Google Chrome when
 			// viewed in a tab, so I force save with application/octet-stream
-			// http://code.google.com/p/chromium/issues/detail?id=91158
+			// https://code.google.com/p/chromium/issues/detail?id=91158
 			// Update: Google errantly closed 91158, I submitted it again:
 			// https://code.google.com/p/chromium/issues/detail?id=389642
 			if (view.chrome && type && type !== force_saveable_type) {

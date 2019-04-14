@@ -1,5 +1,5 @@
 /*globals jQuery, define, exports, require, window, document */
-/*http://www.jstree.com/ */
+/*https://www.jstree.com/ */
 (function (factory) {
 
 
@@ -17,12 +17,12 @@
 		"use strict";
 	/*!
 	 * jsTree 3.0.0
-	 * http://jstree.com/
+	 * https://jstree.com/
 	 *
-	 * Copyright (c) 2013 Ivan Bozhanov (http://vakata.com)
+	 * Copyright (c) 2013 Ivan Bozhanov (https://vakata.com)
 	 *
 	 * Licensed same as jquery - under the terms of the MIT License
-	 *   http://www.opensource.org/licenses/mit-license.php
+	 *   https://www.opensource.org/licenses/mit-license.php
 	 */
 	/*!
 	 * if using jslint please allow for the jQuery global and use following options: 
@@ -5171,7 +5171,7 @@
 
 		// helpers
 		(function ($) {
-			// from http://kiro.me/projects/fuse.html
+			// from https://kiro.me/projects/fuse.html
 			$.vakata.search = function(pattern, txt, options) {
 				options = options || {};
 				if(options.fuzzy !== false) {

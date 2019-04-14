@@ -1,6 +1,6 @@
 /**
  * @license AngularJS v1.0.4
- * (c) 2010-2012 Google, Inc. http://angularjs.org
+ * (c) 2010-2012 Google, Inc. https://angularjs.org
  * License: MIT
  */
 (function(window) {
@@ -11,7 +11,7 @@
  *
  * Example of jsTestDriver.conf for running scenario tests with JSTD:
   <pre>
-    server: http://localhost:9877
+    server: https://localhost:9877
 
     load:
       - lib/angular-scenario.js
@@ -20,10 +20,10 @@
       # your test files go here #
 
     proxy:
-     - {matcher: "/your-prefix/*", server: "http://localhost:8000/"}
+     - {matcher: "/your-prefix/*", server: "https://localhost:8000/"}
   </pre>
  *
- * For more information on how to configure jstd proxy, see {@link http://code.google.com/p/js-test-driver/wiki/Proxy}
+ * For more information on how to configure jstd proxy, see {@link https://code.google.com/p/js-test-driver/wiki/Proxy}
  * Note the order of files - it's important !
  *
  * Example of jstd-scenario-adapter-config.js
@@ -38,7 +38,7 @@
  *
  * Let's assume you are using the above configuration (jsTestDriver.conf and jstd-scenario-adapter-config.js):
  * Now, when you call <code>browser().navigateTo('index.html')</code> in your scenario test, the browser will open /your-prefix/index.html.
- * That matches the proxy, so JSTD will proxy this request to http://localhost:8000/index.html.
+ * That matches the proxy, so JSTD will proxy this request to https://localhost:8000/index.html.
  */
 
 /**
@@ -123,7 +123,7 @@ function initScenarioAdapter(jstestdriver, initScenarioAndRun, config) {
      *
      * We need to navigate to relative urls when running from browser (without JSTD),
      * because we want to allow running scenario tests without creating its own virtual host.
-     * For example: http://angular.local/build/docs/docs-scenario.html
+     * For example: https://angular.local/build/docs/docs-scenario.html
      *
      * On the other hand, when running with JSTD, we need to navigate to absolute urls,
      * because of JSTD proxy. (proxy, because of same domain policy)

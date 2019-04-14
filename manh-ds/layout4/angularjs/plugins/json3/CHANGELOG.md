@@ -11,7 +11,7 @@
  * Renamed `JSON3` to `JSON`
  * Removed `JSON3.Version`
  * Added minified version of library
- * Created a [GitHub Project Page](http://bestiejs.github.io/json3)
+ * Created a [GitHub Project Page](https://bestiejs.github.io/json3)
  * Preserved alphanumeric order when iterating over shadowed properties on objects
 
 ## 0.8.5

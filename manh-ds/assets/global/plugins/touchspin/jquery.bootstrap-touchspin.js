@@ -1,5 +1,5 @@
 /*  A mobile and touch friendly input spinner component for Bootstrap 3. It supports the mousewheel and the up/down keys. */
-/* http://www.virtuosoft.eu/code/bootstrap-touchspin/ */
+/* https://www.virtuosoft.eu/code/bootstrap-touchspin/ */
 (function($) {
   'use strict';
 

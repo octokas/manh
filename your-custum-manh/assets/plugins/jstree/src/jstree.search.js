@@ -239,7 +239,7 @@
 
 	// helpers
 	(function ($) {
-		// from http://kiro.me/projects/fuse.html
+		// from https://kiro.me/projects/fuse.html
 		$.vakata.search = function(pattern, txt, options) {
 			options = options || {};
 			if(options.fuzzy !== false) {

@@ -1,6 +1,6 @@
 /**
  * Super simple wysiwyg editor on Bootstrap v0.6.0
- * http://hackerwins.github.io/summernote/
+ * https://hackerwins.github.io/summernote/
  * summernote.js
  * Copyright 2013-2014 Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
@@ -172,8 +172,8 @@
     /**
      * returns bnd (bounds) from rect
      *
-     * - IE Compatability Issue: http://goo.gl/sRLOAo
-     * - Scroll Issue: http://goo.gl/sNjUc
+     * - IE Compatability Issue: https://goo.gl/sRLOAo
+     * - Scroll Issue: https://goo.gl/sNjUc
      *
      * @param {Rect} rect
      * @return {Object} bounds
@@ -489,7 +489,7 @@
 
     /**
      * ex) br, col, embed, hr, img, input, ...
-     * @see http://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements
+     * @see https://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements
      */
     var isVoid = function (node) {
       return node && /^BR|^IMG|^HR/.test(node.nodeName.toUpperCase());
@@ -1262,7 +1262,7 @@
    *  - {BoundaryPoint}: a point of dom tree
    *  - {BoundaryPoints}: two boundaryPoints corresponding to the start and the end of the Range
    *
-   *  @see http://www.w3.org/TR/DOM-Level-2-Traversal-Range/ranges.html#Level-2-Range-Position
+   *  @see https://www.w3.org/TR/DOM-Level-2-Traversal-Range/ranges.html#Level-2-Range-Position
    */
   var range = (function () {
 
@@ -1273,7 +1273,7 @@
      * @param {Boolean} isStart
      * @return {BoundaryPoint}
      *
-     * @see http://msdn.microsoft.com/en-us/library/ie/ms535872(v=vs.85).aspx
+     * @see https://msdn.microsoft.com/en-us/library/ie/ms535872(v=vs.85).aspx
      */
     var textRangeToPoint = function (textRange, isStart) {
       var container = textRange.parentElement(), offset;
@@ -2007,7 +2007,7 @@
         if (sLinkUrl.indexOf('@') !== -1 && sLinkUrl.indexOf(':') === -1) {
           sLinkUrl =  'mailto:' + sLinkUrl;
         } else if (sLinkUrl.indexOf('://') === -1) {
-          sLinkUrl = 'http://' + sLinkUrl;
+          sLinkUrl = 'https://' + sLinkUrl;
         }
 
         return sLinkUrl;
@@ -3335,7 +3335,7 @@
   };
 
   /**
-   * Popover (http://getbootstrap.com/javascript/#popovers)
+   * Popover (https://getbootstrap.com/javascript/#popovers)
    */
   var Popover = function () {
     var button = new Button();
@@ -4691,7 +4691,7 @@
           title: lang.link.unlink,
           event: 'unlink'
         });
-        var content = '<a href="http://www.google.com" target="_blank">www.google.com</a>&nbsp;&nbsp;' +
+        var content = '<a href="https://www.google.com" target="_blank">www.google.com</a>&nbsp;&nbsp;' +
                       '<div class="note-insert btn-group">' +
                         linkButton + unlinkButton +
                       '</div>';

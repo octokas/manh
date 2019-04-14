@@ -1,9 +1,9 @@
 /*!
  * Ladda 0.8.0
- * http://lab.hakim.se/ladda
+ * https://lab.hakim.se/ladda
  * MIT licensed
  *
- * Copyright (C) 2013 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2013 Hakim El Hattab, https://hakim.se
  */
 (function( root, factory ) {
 

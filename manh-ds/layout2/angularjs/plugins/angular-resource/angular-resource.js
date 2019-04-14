@@ -1,6 +1,6 @@
 /**
  * @license AngularJS v1.2.16
- * (c) 2010-2014 Google, Inc. http://angularjs.org
+ * (c) 2010-2014 Google, Inc. https://angularjs.org
  * License: MIT
  */
 (function(window, angular, undefined) {'use strict';
@@ -71,7 +71,7 @@ function shallowClearAndCopy(src, dst) {
  *
  * @description
  * A factory which creates a resource object that lets you interact with
- * [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer) server-side data sources.
+ * [RESTful](https://en.wikipedia.org/wiki/Representational_State_Transfer) server-side data sources.
  *
  * The returned resource object has action methods which provide high-level behaviors without
  * the need to interact with the low level {@link ng.$http $http} service.
@@ -80,11 +80,11 @@ function shallowClearAndCopy(src, dst) {
  *
  * @param {string} url A parametrized URL template with parameters prefixed by `:` as in
  *   `/user/:username`. If you are using a URL with a port number (e.g.
- *   `http://example.com:8080/api`), it will be respected.
+ *   `https://example.com:8080/api`), it will be respected.
  *
  *   If you are using a url with a suffix, just add the suffix, like this:
- *   `$resource('http://example.com/resource.json')` or `$resource('http://example.com/:id.json')`
- *   or even `$resource('http://example.com/resource/:resource_id.:format')`
+ *   `$resource('https://example.com/resource.json')` or `$resource('https://example.com/:id.json')`
+ *   or even `$resource('https://example.com/resource/:resource_id.:format')`
  *   If the parameter before the suffix is empty, :resource_id in this case, then the `/.` will be
  *   collapsed down to a single `.`.  If you need this sequence to appear and not collapse then you
  *   can escape it with `/\.`.
@@ -339,7 +339,7 @@ angular.module('ngResource', ['ng']).
 
     /**
      * We need our custom method because encodeURIComponent is too aggressive and doesn't follow
-     * http://www.ietf.org/rfc/rfc3986.txt with regards to the character set (pchar) allowed in path
+     * https://www.ietf.org/rfc/rfc3986.txt with regards to the character set (pchar) allowed in path
      * segments:
      *    segment       = *pchar
      *    pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
@@ -359,7 +359,7 @@ angular.module('ngResource', ['ng']).
     /**
      * This method is intended for encoding *key* or *value* parts of query component. We need a
      * custom method because encodeURIComponent is too aggressive and encodes stuff that doesn't
-     * have to be encoded per http://tools.ietf.org/html/rfc3986:
+     * have to be encoded per https://tools.ietf.org/html/rfc3986:
      *    query       = *( pchar / "/" / "?" )
      *    pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
      *    unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
@@ -424,7 +424,7 @@ angular.module('ngResource', ['ng']).
         // strip trailing slashes and set the url
         url = url.replace(/\/+$/, '') || '/';
         // then replace collapse `/.` if found in the last URL path segment before the query
-        // E.g. `http://url.com/id./format?q=x` becomes `http://url.com/id.format?q=x`
+        // E.g. `https://url.com/id./format?q=x` becomes `https://url.com/id.format?q=x`
         url = url.replace(/\/\.(?=\w+($|\?))/, '.');
         // replace escaped `/\.` with `/.`
         config.url = url.replace(/\/\\\./, '/.');

@@ -1,8 +1,8 @@
 # jQuery.appear
 
-This is a total revamp of original jquery.appear plugin hosted on http://code.google.com/p/jquery-appear/
+This is a total revamp of original jquery.appear plugin hosted on https://code.google.com/p/jquery-appear/
 
-Check <a href="http://morr.github.com/appear.html">demo page</a>!
+Check <a href="https://morr.github.com/appear.html">demo page</a>!
 
 This plugin can be used to prevent unnecessary processeing for content that is hidden or is outside of the browser viewport.
 
@@ -31,7 +31,7 @@ Also this plugin provides custom jQuery filter for manual checking element appea
 
 # License
 
-> Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+> Licensed under <a href="https://opensource.org/licenses/MIT">MIT license</a>.
 >
 > Permission is hereby granted, free of charge, to any person
 > obtaining a copy of this software and associated documentation

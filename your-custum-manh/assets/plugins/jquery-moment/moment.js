@@ -39,7 +39,7 @@
         aspNetJsonRegex = /^\/?Date\((\-?\d+)/i,
         aspNetTimeSpanJsonRegex = /(\-)?(?:(\d*)\.)?(\d+)\:(\d+)(?:\:(\d+)\.?(\d{3})?)?/,
 
-        // from http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html
+        // from https://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html
         // somewhat more in line with 4.4.3.2 2004 spec, but allows decimal anywhere
         isoDurationRegex = /^(-)?P(?:(?:([0-9,.]*)Y)?(?:([0-9,.]*)M)?(?:([0-9,.]*)D)?(?:T(?:([0-9,.]*)H)?(?:([0-9,.]*)M)?(?:([0-9,.]*)S)?)?|([0-9,.]*)W)$/,
 
@@ -496,7 +496,7 @@
     }
 
     // left zero fill a number
-    // see http://jsperf.com/left-zero-filling for performance comparison
+    // see https://jsperf.com/left-zero-filling for performance comparison
     function leftZeroFill(number, targetLength, forceSign) {
         var output = '' + Math.abs(number),
             sign = number >= 0;
@@ -1527,7 +1527,7 @@
         });
     }
 
-    // Code from http://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript
+    // Code from https://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript
     function regexpEscape(s) {
         return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
     }
@@ -1652,7 +1652,7 @@
 
     function makeDate(y, m, d, h, M, s, ms) {
         //can't just apply() to create a date:
-        //http://stackoverflow.com/questions/181348/instantiating-a-javascript-object-by-calling-prototype-constructor-apply
+        //https://stackoverflow.com/questions/181348/instantiating-a-javascript-object-by-calling-prototype-constructor-apply
         var date = new Date(y, m, d, h, M, s, ms);
 
         //the date constructor doesn't accept years < 1970
@@ -1755,7 +1755,7 @@
         };
     }
 
-    //http://en.wikipedia.org/wiki/ISO_week_date#Calculating_a_date_given_the_year.2C_week_number_and_weekday
+    //https://en.wikipedia.org/wiki/ISO_week_date#Calculating_a_date_given_the_year.2C_week_number_and_weekday
     function dayOfYearFromWeeks(year, week, weekday, firstDayOfWeekOfYear, firstDayOfWeek) {
         var d = makeUTCDate(year, 0, 1).getUTCDay(), daysToAdd, dayOfYear;
 
@@ -3321,7 +3321,7 @@
 // moment.js locale configuration
 // locale : belarusian (be)
 // author : Dmitry Demidov : https://github.com/demidov91
-// author: Praleska: http://praleska.pro/
+// author: Praleska: https://praleska.pro/
 // Author : Menelion Elensúle : https://github.com/Oire
 
 (function (factory) {
@@ -5975,7 +5975,7 @@
 // moment.js locale configuration
 // locale : Bahasa Indonesia (id)
 // author : Mohammad Satrio Utomo : https://github.com/tyok
-// reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
+// reference: https://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 (function (factory) {
     factory(moment);
@@ -8587,7 +8587,7 @@
         },
 
 
-        // refer http://ta.wikipedia.org/s/1er1
+        // refer https://ta.wikipedia.org/s/1er1
 
         meridiem : function (hour, minute, isLower) {
             if (hour >= 6 && hour <= 10) {

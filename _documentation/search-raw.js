@@ -1,5 +1,5 @@
 if ('querySelector' in document && 'addEventListener' in window && 'classList' in document.createElement('_')) {
-    /*! gmt v1.19.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/go-make-things */
+    /*! gmt v1.19.0 | (c) 2019 Chris Ferdinandi | MIT License | https://github.com/cferdinandi/go-make-things */
     Element.prototype.matches || (Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector), (function(e, t, i) {
         "use strict";
         0 < t.querySelectorAll(".edd-buy-now-button").length && t.addEventListener("click", (function(e) {
@@ -85,7 +85,7 @@ if ('querySelector' in document && 'addEventListener' in window && 'classList' i
     }), document.querySelector("#mailchimp-form") && mailchimp((function(e) {
         200 === e.code && (window.location.href = "https://gomakethings.com/newsletter-success")
     })), (document.body.matches(".type-articles.page-single") || document.body.matches("#page-54a32daa7699b0585cab71188bd8c152")) && addHeadingLinks("h2, h3, h4, h5, h6", "#", "link-no-underline");
-    /*! gmt v1.19.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/go-make-things */
+    /*! gmt v1.19.0 | (c) 2019 Chris Ferdinandi | MIT License | https://github.com/cferdinandi/go-make-things */
     var crowsNest = function() {
         "use strict";
         var e = document.querySelector("#form-search"),
@@ -117,7 +117,7 @@ if ('querySelector' in document && 'addEventListener' in window && 'classList' i
     };
     crowsNest();
 
-    /*! gmt v1.19.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/go-make-things */
+    /*! gmt v1.19.0 | (c) 2019 Chris Ferdinandi | MIT License | https://github.com/cferdinandi/go-make-things */
     function loadJS(e, t) {
         "use strict";
         var n = window.document.getElementsByTagName("script")[0],

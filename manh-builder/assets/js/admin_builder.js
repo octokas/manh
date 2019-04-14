@@ -1062,7 +1062,7 @@ $(function() {
                           '  <meta name="author" content="themes-lab">\n'+
                           '  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">\n'+
                           '  <title>Make Admin Template - Themes Lab</title>\n'+
-                          '  <link href="http://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css">\n'+
+                          '  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css">\n'+
                           '  <link href="assets/plugins/datatables/dataTables.min.css" rel="stylesheet">\n'+
                           '  <link href="page-builder/plugins/slider-pips/jquery-ui-slider-pips.css" rel="stylesheet">\n'+
                           '  <link href="assets/css/style.css" rel="stylesheet"> <!-- MANDATORY -->\n'+
@@ -1227,7 +1227,7 @@ $(function() {
                           '  <meta name="author" content="themes-lab">\n'+
                           '  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">\n'+
                           '  <title>Make Admin Template - Themes Lab</title>\n'+
-                          '  <link href="http://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css">\n'+
+                          '  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css">\n'+
                           '  <link href="assets/css/style.css" rel="stylesheet"> <!-- MANDATORY -->\n'+
                           '  <link href="assets/css/theme.css" rel="stylesheet"> <!-- MANDATORY -->\n'+
                           '  <link href="assets/css/ui.css" rel="stylesheet"> <!-- MANDATORY -->\n'+

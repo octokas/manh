@@ -2,7 +2,7 @@
  * A Blob implementation.
  * 2014-07-24
  *
- * By Eli Grey, http://eligrey.com
+ * By Eli Grey, https://eligrey.com
  * By Devin Samarin, https://github.com/dsamarin
  * License: X11/MIT
  *   See https://github.com/eligrey/Blob.js/blob/master/LICENSE.md
@@ -12,7 +12,7 @@
 /*jslint bitwise: true, regexp: true, confusion: true, es5: true, vars: true, white: true,
   plusplus: true */
 
-/*! @source http://purl.eligrey.com/github/Blob.js/blob/master/Blob.js */
+/*! @source https://purl.eligrey.com/github/Blob.js/blob/master/Blob.js */
 
 (function (view) {
   "use strict";
@@ -73,7 +73,7 @@
     if (!real_URL.createObjectURL) {
       URL = view.URL = function(uri) {
         var
-            uri_info = document.createElementNS("http://www.w3.org/1999/xhtml", "a")
+            uri_info = document.createElementNS("https://www.w3.org/1999/xhtml", "a")
           , uri_origin
         ;
         uri_info.href = uri;

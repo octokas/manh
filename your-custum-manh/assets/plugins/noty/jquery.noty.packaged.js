@@ -13,9 +13,9 @@
  @version version: 2.3.8
  @contributors https://github.com/needim/noty/graphs/contributors
 
- @documentation Examples and Documentation - http://needim.github.com/noty/
+ @documentation Examples and Documentation - https://needim.github.com/noty/
 
- @license Licensed under the MIT licenses: http://www.opensource.org/licenses/mit-license.php
+ @license Licensed under the MIT licenses: https://www.opensource.org/licenses/mit-license.php
  */
 
     if(typeof Object.create !== 'function') {

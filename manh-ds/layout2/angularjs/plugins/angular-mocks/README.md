@@ -15,13 +15,13 @@ bower install angular-mocks
 ## Documentation
 
 Documentation is available on the
-[AngularJS docs site](http://docs.angularjs.org/guide/dev_guide.unit-testing).
+[AngularJS docs site](https://docs.angularjs.org/guide/dev_guide.unit-testing).
 
 ## License
 
 The MIT License
 
-Copyright (c) 2010-2012 Google, Inc. http://angularjs.org
+Copyright (c) 2010-2012 Google, Inc. https://angularjs.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

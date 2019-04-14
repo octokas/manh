@@ -31,7 +31,7 @@
                 finishBtn: $('<a class="finish-btn sf-right sf-btn" href="#">DONE</a>'),
                 onFinish: function(i, wizard) {
                     var form = $('form', wizard).serialize();
-                    $.getJSON('http://echo.jsontest.com/text/Done', form, function(data) {
+                    $.getJSON('https://echo.jsontest.com/text/Done', form, function(data) {
                         wizard.html('<h1>' + data.text + '</h1>');
                     });
                     return false;
@@ -240,7 +240,7 @@
         finishBtn: $('&lt;a class="finish-btn sf-right sf-btn" href="#">DONE&lt;/a>'),
         onFinish: function(i, wizard) {
             var form = $('form', wizard).serialize();
-            $.getJSON('http://echo.jsontest.com/text/Done', form, function(data) {
+            $.getJSON('https://echo.jsontest.com/text/Done', form, function(data) {
                 wizard.html(data.text);
             });
             return false;

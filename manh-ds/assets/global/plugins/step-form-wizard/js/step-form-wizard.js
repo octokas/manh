@@ -1,4 +1,4 @@
-/* http://ajoke.cz/wizard/ */
+/* https://ajoke.cz/wizard/ */
 /* Copyright ajoke.cz */
 
 (function($) {

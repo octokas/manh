@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>Manhattan & Associates Custom SVG Images & Icons</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            /* darker blue desired: #00426f*/
+            .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+            body {font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;font-size: 14px;line-height: 1.6;}
+            h1 {width:100%;max-width:41rem;}
+            pre {width:100%;max-width:36rem;}
+            table {width: 100%; max-width: 1100px; border-collapse: collapse;}
+            th, td {text-align: left;padding: 8px;}
+            tr:nth-child(even) {background-color: #f4f4f4;}
+            img {width: 100%; max-width: 200px;}
+            a:hover {font-weight:bold; color:#0070bb;}
+            aside {margin-bottom:0px;}
+            .searchResults {margin-top:0px;margin-bottom:0px;}
+            button#showTable {display: inline-block;border-radius: 4px;background-color:#00426f;border: none;color:#FFFFFF;text-align:center;font-size:18px;padding:18px;width:30rem;transition: all 0.5s;cursor:pointer;margin:5px;}
+            a button#showTable {text-decoration:none;}
+            button#showTable:hover, button#showTable:focus, button#showTable:active {color:#f4f4f4!important;font-size:1.1rem;box-shadow: 1px 1px 6px 1px #00426f;}
+            .libraryTable {display: block;}
+            .results {width:100%; max-width:270px; float:left; display:grid;}
+            .secretSVG {display:none;}
+            #input-search:hover, #input-search:focus, #input-search:active {box-shadow: 1px 1px 4px 1px #0070bb;}
+            .searchButton {font-size: 1rem;background-color: #00426f;color: whitesmoke;padding: 5px;border-radius: 3px;border:0px;padding-left: 24px;padding-right: 24px;}
+            .iconButton:hover, .iconButton:focus, .iconButton:active, .searchButton:hover, .searchButton:focus, .searchButton:active {box-shadow: 1px 1px 6px 1px #393939;}
+            .iconButton {display: inline-block;border-radius: 4px;background-color:#00426f;border: none;color:#FFFFFF;text-align:center;font-size:18px;padding:18px;width:12rem;transition: all 0.5s;cursor:pointer;margin:5px;}
+            .iconButton span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;}
+            .iconButton span:after {content: '\00bb';position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;}
+            .iconButton:hover span {padding-right: 25px;}
+            .iconButton:hover span:after {opacity: 1;right: 0;}
+            i.fa.fa-copy {font-size: 36px;}
+            div.results:nth-child(3n+1){clear:left}
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <h1 id="manhattan--associates-custom-svg-images--icons">Manhattan &amp; Associates Custom SVG Images &amp; Icons</h1>
+        <p><em>Please read through the notes here regarding any special colors, and where to find what you need</em></p>
+        <h2 id="notes-for-the-general-purpose-svgs">Notes for the General Purpose SVGs</h2>
+        <ul>
+            <li><a href="EPS_MA_Logo_WEB 1C_Stack.svg">Manhattan Logo - Standard Colors</a></li>
+            <li><a href="MA_Logo_WHITE_Stack.svg">Manhattan Logo - White</a></li>
+        </ul>
+        <em><p><strong><u>Please note</u></strong> the white version of the M&amp;A logo has a grey background for easier viewing.<br>Please ensure the SVG code at the top of the file, has been modified as show below,<br>in order to remove the background.</p></em>
+        <p><b>BEFORE</b></p>
+        <pre><code class="language-svg"><div>&lt;svg id=&quot;white&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 444.32 87.98&quot; style=&quot;background-color: grey;&quot;&gt;&lt;title&gt;MA_Logo_WHITE_Stack&lt;/title&gt;&lt;polygon&gt;...
+		///SVG POLYGON CONTENTS
+	&lt;/polygon&gt;
+&lt;/svg&gt;
+</div></code></pre>
+        <p><b>AFTER</b></p>
+        <pre><code class="language-svg"><div>&lt;svg id=&quot;white&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 444.32 87.98&quot;&gt;&lt;title&gt;MA_Logo_WHITE_Stack&lt;/title&gt;&lt;polygon&gt;...
+		///SVG POLYGON CONTENTS
+	&lt;/polygon&gt;
+&lt;/svg&gt;
+</div></code></pre><br>
+        <h2 id="converted-icons-list">Converted Icons Library</h2>
+        <p><em>Please note the <u><code>'Alt.'</code></u> next to an entry, indicates it's an alternate design</em></p>
+        <a onclick="showTable()" href="#libraryTable"><button id="showTable"><i><b><i class="fa fa-arrow-down"></i>&nbsp;&nbsp;Click here to toggle entire library table&nbsp;&nbsp;<i class="fa fa-arrow-down"></i></b></i></button></a><br><br><br>
+        <table id="libraryTable" class="libraryTable" name="libraryTable">
+            <thead>
+                <tr>
+                    <th>Icon Name</th>
+                    <th>Icon Thumbnail</th>
+                    <th>SVG Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="listedIcons/noun_account_2339802.svg" target="_blank">Account</a></td>
+                    <td><a href="listedIcons/noun_Share_1956783.svg" target="_blank"><img src="listedIcons/noun_account_2339802.svg" alt="Account"/></a></td>
+                    <td>
+                        <span class="secretSVG" id="account"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#000000"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"><title>account</title><path d="M30.9,27c-0.5,2.3-2.5,4-4.9,4H6c-2.4,0-4.4-1.7-4.9-4c1.3,1.3,3.1,2,4.9,2h20C27.8,29,29.6,28.3,30.9,27z M7,24v3h18v-3  c0-2.4-1.8-4.5-4.2-4.9c-2.7,2.5-6.9,2.5-9.6,0C8.8,19.5,7,21.6,7,24z M16,19c2.8,0,5-2.2,5-5v-1c0-2.8-2.2-5-5-5s-5,2.2-5,5v1  C11,16.8,13.2,19,16,19z M26,1H6C3.2,1,1,3.2,1,6v16c0,2.4,1.7,4.4,4,4.9V24c0-3,2-5.7,4.9-6.6C9.3,16.3,9,15.2,9,14v-1  c0-3.9,3.1-7,7-7s7,3.1,7,7v1c0,1.2-0.3,2.3-0.9,3.4C25,18.3,27,21,27,24v2.9c2.3-0.5,4-2.5,4-4.9V6C31,3.2,28.8,1,26,1z"></path></svg></g></g></svg></span>
+                        <button onclick="copyToClipboard('account')" class="iconButton"><i class="fa fa-copy"></i><br><span>click to copy</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="listedIcons/noun_Share_1956783.svg">Action</a></td>
+                    <td><a href="listedIcons/noun_Share_1956783.svg"><img src="listedIcons/noun_Share_1956783.svg" alt="Action"></a></td>
+                    <td>
+                        <span class="secretSVG" id="action"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#000000"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 1024 1024" x="0px" y="0px"><title>icon-01</title><path fill="#000000" d="M992 512a32 32 0 0 0-32 32v416H64V64h412.48a32 32 0 0 0 0-64H64a64 64 0 0 0-64 64v896a64 64 0 0 0 64 64h896a64 64 0 0 0 64-64V544a32 32 0 0 0-32-32z"></path><path fill="#000000" d="M378.56 748.8a32 32 0 0 0 64 0A480 480 0 0 1 912 271.36l-118.4 118.4a32 32 0 1 0 45.12 45.12l173.44-173.44a32 32 0 0 0 0-45.12l-173.12-173.44a32 32 0 0 0-45.44 45.44l119.04 119.04A544 544 0 0 0 378.56 748.8z"></path></svg></g></g></svg></span>
+                        <button onclick="copyToClipboard('action')" class="iconButton"><i class="fa fa-copy"></i><br><span>click to copy</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="listedIcons/noun_Share_3132.svg">Action Alt.</a></td>
+                    <td><a href="listedIcons/noun_Share_3132.svg"><img src="listedIcons/noun_Share_3132.svg" alt="Action Alt."></a></td>
+                    <td>
+                        <span class="secretSVG" id="action-alt"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#000000"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95.421 90.213" enable-background="new 0 0 95.421 90.213" xml:space="preserve"><path d="M6.301,90.211C2.818,90.209,0.002,87.394,0,83.913l0,0V18.394c0.002-3.481,2.818-6.297,6.301-6.299l0,0h33.782l-9.003,9H9  v60.117l57.469,0.002V69.125l9.002-9l-0.002,23.788c-0.003,3.479-2.818,6.296-6.3,6.3l0,0L6.301,90.211L6.301,90.211z"></path><path d="M66.171,11.301V0l29.25,29.25L66.046,58.625v-11.75c0,0-14.586-2.894-29.583,6.458  c-8.209,5.084-13.752,11.773-17.167,17.042c0,0,1.11-18.25,11.61-34.875C44.033,14.716,66.171,11.301,66.171,11.301z"></path><path fill="#000000" d="M225.3,90.211c-3.482-0.002-6.299-2.817-6.301-6.298l0,0V18.394c0.002-3.481,2.818-6.297,6.301-6.299l0,0  h33.783l-9.004,9H228v60.117l57.47,0.002V69.125l9.002-9l-0.002,23.788c-0.003,3.479-2.818,6.296-6.3,6.3l0,0L225.3,90.211  L225.3,90.211z"></path><path fill="#000000" d="M285.171,11.301V0l29.25,29.25l-29.375,29.375v-11.75c0,0-17.23-1.192-29.584,6.458  c-8.209,5.084-13.104,10.167-17.166,17.042c0,0,1.109-18.25,11.609-34.875C263.033,14.716,285.171,11.301,285.171,11.301z"></path></svg></g></g></svg></span>
+                        <button onclick="copyToClipboard('action-alt')" class="iconButton"><i class="fa fa-copy"></i><br><span>click to copy</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="listedIcons/noun_Add-Location_1545839.svg">Add Location</a></td>
+                    <td><a href="listedIcons/noun_Add-Location_1545839.svg"><img src="listedIcons/noun_Add-Location_1545839.svg" alt="Add Location"></a></td>
+                    <td>
+                        <span class="secretSVG" id="action-alt2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#000000"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M6,16c-0.128,0-0.256-0.049-0.354-0.146C5.416,15.623,0,10.159,0,6c0-3.309,2.691-6,6-6s6,2.691,6,6   c0,0.197-0.012,0.405-0.047,0.613c-0.045,0.273-0.307,0.453-0.576,0.41c-0.272-0.046-0.456-0.304-0.41-0.576   C10.992,6.295,11,6.143,11,6c0-2.757-2.243-5-5-5S1,3.243,1,6c0,3.178,3.807,7.5,5,8.777c0.173-0.186,0.401-0.436,0.663-0.735   c0.183-0.208,0.498-0.23,0.706-0.049c0.208,0.182,0.23,0.497,0.048,0.705c-0.624,0.716-1.063,1.155-1.063,1.155   C6.256,15.951,6.128,16,6,16z"></path><path d="M6,9C4.346,9,3,7.654,3,6s1.346-3,3-3s3,1.346,3,3S7.654,9,6,9z M6,4C4.897,4,4,4.897,4,6s0.897,2,2,2s2-0.897,2-2   S7.103,4,6,4z"></path><path d="M12,16c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S14.206,16,12,16z M12,9c-1.654,0-3,1.346-3,3s1.346,3,3,3   s3-1.346,3-3S13.654,9,12,9z"></path><path d="M13.5,12.5h-3c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h3c0.276,0,0.5,0.224,0.5,0.5S13.776,12.5,13.5,12.5z"></path><path d="M12,14c-0.276,0-0.5-0.224-0.5-0.5v-3c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v3C12.5,13.776,12.276,14,12,14z"></path></g></svg></g></g></svg></span>
+                        <button onclick="copyToClipboard('action-alt2')" class="iconButton"><i class="fa fa-copy"></i><br><span>click to copy</span></button>
+                </tr>
+                <tr>
+                    <td><a href="listedIcons/noun_controls_2348827.svg">Adjust <em>Controls</em></a></td>
+                    <td><a href="listedIcons/noun_controls_2348827.svg"><img src="listedIcons/noun_controls_2348827.svg" alt="Adjust (Controls)"></a></td>
+                    <td>
+                        <span class="secretSVG" id="adjust"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g transform="translate(50 50) scale(-0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#000000"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M93,48H60v-6c0-1.1-0.9-2-2-2H42c-1.1,0-2,0.9-2,2v6H7c-1.1,0-2,0.9-2,2s0.9,2,2,2h33v6c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2  v-6h33c1.1,0,2-0.9,2-2S94.1,48,93,48z M56,56H44V44h12V56z M7,25h6v6c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2v-6h60c1.1,0,2-0.9,2-2  s-0.9-2-2-2H33v-6c0-1.1-0.9-2-2-2H15c-1.1,0-2,0.9-2,2v6H7c-1.1,0-2,0.9-2,2S5.9,25,7,25z M17,17h12v12H17V17z M93,75h-6v-6  c0-1.1-0.9-2-2-2H69c-1.1,0-2,0.9-2,2v6H7c-1.1,0-2,0.9-2,2s0.9,2,2,2h60v6c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2v-6h6  c1.1,0,2-0.9,2-2S94.1,75,93,75z M83,83H71V71h12V83z"></path></svg></g></g></svg></span>
+                        <button onclick="copyToClipboard('adjust')" class="iconButton"><i class="fa fa-copy"></i><br><span>click to copy</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Alternate <em>Paths</em></a></td>
+                    <td><a href="#"><img src="#" alt="Alternate (Path)"></a></td>
+                </tr>
+                <tr>
+                    <td>Alternate <em>Paths</em> Alt.</td>
+                    <td><a href="#"><img src="#" alt="Alternate (Path) Alt."></a></td>
+                </tr>
+                <tr>
+                    <td>Anchor</td>
+                    <td><a href="listedIcons/noun_Ship_1277861.svg"><img src="listedIcons/noun_Ship_1277861.svg" alt="Anchor"></a></td>
+                </tr>
+                <tr>
+                    <td>Attribute</td>
+                    <td><a href="listedIcons/noun_Sliders_69478.svg"><img src="listedIcons/noun_Sliders_69478.svg" alt="Attribute"></a></td>
+                </tr>
+                <tr>
+                    <td>Attribute Alt.</td>
+                    <td><a href="listedIcons/noun_Checklist_794359.svg"><img src="listedIcons/noun_Checklist_794359.svg" alt="Attritube Alt."></a></td>
+                </tr>
+                <tr>
+                    <td>Ballot</td>
+                    <td><a href="listedIcons/noun_Checklist_486343.svg"><img src="listedIcons/noun_Checklist_486343.svg" alt="Ballot"></a></td>
+                </tr>
+                <tr>
+                    <td>Barcode Scan</td>
+                    <td><a href="listedIcons/noun_Barcode_2011116.svg"><img src="listedIcons/noun_Barcode_2011116.svg" alt="Barcode Scan"></a></td>
+                </tr>
+                <tr>
+                    <td>Barcode</td>
+                    <td><a href="listedIcons/noun_Barcode_975329.svg"><img src="listedIcons/noun_Barcode_975329.svg" alt="Barcode"></a></td>
+                </tr>
+                <tr>
+                    <td>Barcode Check</td>
+                    <td><a href="listedIcons/noun_Check-Barcode_113512.svg"><img src="listedIcons/noun_Check-Barcode_113512.svg" alt="Barcode Check"></a></td>
+                </tr>
+                <tr>
+                    <td>Barcode Inquiry</td>
+                    <td><a href="listedIcons/noun_find-product_2089618.svg"><img src="listedIcons/noun_find-product_2089618.svg" alt="Barcode Inquiry"></a></td>
+                </tr>
+                <tr>
+                    <td>Basket Fill</td>
+                    <td><a href="listedIcons/noun_Arrow_2597594.svg"><img src="listedIcons/noun_Arrow_2597594.svg" alt="Basket Fill"></a></td>
+                </tr>
+                <tr>
+                    <td>Basket Unfill/Remove</td>
+                    <td><a href="listedIcons/noun_Arrow_2597594-o.svg"><img src="listedIcons/noun_Arrow_2597594-o.svg" alt="Basket Unfill/Remove"></a></td>
+                </tr>
+                <tr>
+                    <td>Basket</td>
+                    <td><a href="listedIcons/noun_shopping-basket_61548.svg"><img src="listedIcons/noun_shopping-basket_61548.svg" alt="Basket"></a></td>
+                </tr>
+                <tr>
+                    <td>Box Send</td>
+                    <td><a href="listedIcons/noun_Shipping_2409353.svg"><img src="listedIcons/noun_Shipping_2409353.svg" alt="Box Send"></a></td>
+                </tr>
+                <tr>
+                    <td>Box</td>
+                    <td><a href="listedIcons/noun_corrugated-box_2595838.svg"><img src="listedIcons/noun_corrugated-box_2595838.svg" alt="Box"></a></td>
+                </tr>
+                <tr>
+                    <td>Box Close</td>
+                    <td><a href="listedIcons/noun_Box_2595835.svg"><img src="listedIcons/noun_Box_2595835.svg" alt="Box Closed"></a></td>
+                </tr>
+                <tr>
+                    <td>Boxes</td>
+                    <td><a href="listedIcons/noun_boxes_2194464.svg"><img src="listedIcons/noun_boxes_2194464.svg" alt="Boxes"></a></td>
+                </tr>
+                <tr>
+                    <td>Boxes Alt.</td>
+                    <td><a href="listedIcons/noun_boxes_1675883.svg"><img src="listedIcons/noun_boxes_1675883.svg" alt="Boxes Alt."></a></td>
+                </tr>
+                <tr>
+                    <td>Boxes Opened</td>
+                    <td><a href="listedIcons/noun_boxes_100150.svg"><img src="listedIcons/noun_boxes_100150.svg" alt="Boxes Opened"></a></td>
+                </tr>
+                <tr>
+                    <td>Boxes Opened Alt.</td>
+                    <td><a href="listedIcons/noun_open-box_1321000.svg"><img src="listedIcons/noun_open-box_1321000.svg" alt="Boxes Opened Alt."></a></td>
+                </tr>
+                <tr>
+                    <td>Box Pallet</td>
+                    <td><a href="listedIcons/noun_pallet-box_1675914.svg"><img src="listedIcons/noun_pallet-box_1675914.svg" alt="Box Pallet"></a></td>
+                </tr>
+                <tr>
+                    <td>Box Plus</td>
+                    <td><a href="listedIcons/noun_Box_541384.svg"><img src="listedIcons/noun_Box_541384.svg" alt="Box Plus"></a></td>
+                </tr>
+                <tr>
+                    <td>Box Upwards</td>
+                    <td><a href="listedIcons/noun_Add-Box_1550818.svg"><img src="listedIcons/noun_Add-Box_1550818.svg" alt="Box Up"></a></td>
+                </tr>
+                <tr>
+                    <td>Box Upwards Alt.</td>
+                    <td><a href="listedIcons/noun_package-side_1654679.svg"><img src="listedIcons/noun_package-side_1654679.svg" alt="Box Up Alt."></a></td>
+                </tr>
+                <tr>
+                    <td>Box Upwards - Locked</td>
+                    <td><a href="listedIcons/noun_Shipping_740921-lock.svg"><img src="listedIcons/noun_Shipping_740921-lock.svg" alt="Box Up Locked"></a></td>
+                </tr>
+                <tr>
+                    <td>Building</td>
+                    <td><a href="listedIcons/noun_building_1010138.svg"><img src="listedIcons/noun_building_1010138.svg" alt="Building"></a></td>
+                </tr>
+                <tr>
+                    <td>Building Alt.</td>
+                    <td><a href="listedIcons/noun_building_2594263.svg"><img src="listedIcons/noun_building_2594263.svg" alt="Building Alt."></a></td>
+                </tr>
+                <tr>
+                    <td>Bullet Shapes</td>
+                    <td><a href="listedIcons/"><img src="listedIcons/" alt="Bulleted Shapes"></a></td>
+                </tr>
+                <tr>
+                    <td>Business Unit</td>
+                    <td><a href="listedIcons/noun_City_1112597.svg"><img src="listedIcons/noun_City_1112597.svg" alt="Business Unit"></a></td>
+                </tr>
+                <tr>
+                    <td>Cancel</td>
+                    <td><a href="listedIcons/noun_cancel_576741.svg"><img src="listedIcons/noun_cancel_576741.svg" alt="Cancel"></a></td>
+                </tr>
+                <tr>
+                    <td>Cancel Alt.</td>
+                    <td><a href="listedIcons/noun_cancel_2135268.svg"><img src="listedIcons/noun_cancel_2135268.svg" alt="Cancel Alt."></a></td>
+                </tr>
+                <tr>
+                    <td>Cart Plus</td>
+                    <td><a href="listedIcons/noun_Cart%20down_1153298.svg"><img src="listedIcons/noun_Cart%20down_1153298.svg" alt="Cart Plus"></a></td>
+                </tr>
+            </tbody>
+        </table><br><br>
+        <form action="https://www.google.com/search" id="form-search">
+            <!-- <label for="input-search" style="font-size:1rem;">Search here:</label> -->
+            <input type="text" name="q" id="input-search" value="options/" style="font-size:1rem;border-radius:3px;" placeholder="Start search here...">
+            <button id="submit-search" class="searchButton">Search</button>
+            <button onclick="document.getElementById('input-search').value = ''" class="searchButton">Reset or Show-All</button>
+        </form>
+        <div id="search-results"></div><br><br>
+        <!--//search functionality-->
+        <script src="searchIcons.js"></script>
+        <script src="tablePagination.js"></script>
+        <script>
+        //show and hide table in vanilla javascript
+        function showTable() {
+            //let toggle = document.getElementById("libraryTable");
+            let toggle = document.querySelector(".libraryTable");
+            if (toggle.style.display === "none") {
+                toggle.style.display = "block";
+            } else {
+                toggle.style.display = "none";
+            }
+        }
+        //click to copy vanilla javascript functionality
+        function copyToClipboard(elementId) {
+            var aux = document.createElement("input");
+            aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+            document.body.appendChild(aux);
+            aux.select();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+
+            }
+
+        // $(document).ready(function(){
+        //     $('.iconTxt').tooltip({title:"copied!", trigger: "click"}); 
+        //     $('.ion-icon').on('mouseleave', function(){
+        //         $('.iconTxt').tooltip('hide');
+        //     });  
+        // });
+    </script>
+        </script>
+    </body>
+</html>

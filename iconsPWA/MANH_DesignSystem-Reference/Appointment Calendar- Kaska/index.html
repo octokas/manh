@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointment Calendar</title>
+        <meta content="" name="description" />
+        <meta content="L3 Screen" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- DataTables -->
+        <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Responsive datatable examples -->
+        <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../plugins/jquery-datatables-editable/dataTables.bootstrap4.min.css" />
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+
+        <!-- your custom css -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom-table.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Main Header Start -->
+            <header class="hHeight">
+                <div class="titleWraper">
+                    <h1 class="mainTitleTxt whiteTxt"><span><img src="assets/images/Menu.svg" class="mr-3"></span> APPLICATION TITLE | <span class="mainTitleTxtSmall">APPOINTMENTS CALENDAR</span></h1>
+                </div>
+
+                <div>
+                    <a href="javascript:;"><img src="assets/images/Refresh.svg" class="refresherSymbol bLeft"></a>
+                </div>
+            </header>
+            <!-- Main Header End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <span class="nav-label whiteTxt">Appointment Day</span><span class="menu-arrow whiteTxt"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li class="navActiveLink"><a href="index.html"></a></li>
+                                    <li class="px">
+                                        <!---<div class="input-group mb-1">
+                                              <input class="form-control inputHeight" type="search" value="{Value}" id="example-search-input">
+                                              <span class="input-group-append">
+                                                <button class="btn2 searchBttn" type="button">
+                                                    <i class="ion ion-ios-search"></i>
+                                                </button>
+                                              </span>
+                                        </div>-->
+
+                                        <div class="calendarWrapper">
+                                            <div class="calendarHeader">
+                                                <button class="calBttns"><i class="fas fa-angle-left"></i></button>
+                                                <p>May 2019</p>
+                                                <button class="calBttns"><i class="fas fa-angle-right"></i></button>
+                                            </div><!-- end header -->
+                                                <div class="calendar-body">
+                                                    <div class="weekdays">
+                                                        <div><p class="normal">Su</p></div><!-- end col-xs-1 -->
+                                                        <div><p class="normal">Mo</p></div><!-- end col-xs-1 -->
+                                                        <div><p class="normal">Tu</p></div><!-- end col-xs-1 -->
+                                                        <div><p class="normal">We</p></div><!-- end col-xs-1 -->
+                                                        <div><p class="normal">Th</p></div><!-- end col-xs-1 -->
+                                                        <div><p class="normal">Fr</p></div><!-- end col-xs-1 -->
+                                                        <div><p class="normal">Sa</p></div><!-- end col-xs-1 -->
+                                                    </div><!-- end row -->
+                                             
+                                                    <div class="dates">
+                                                        <div><a href="#"><p class="inactive">28</p></a></div>
+                                                        <div><a href="#"><p class="inactive">29</p></a></div>
+                                                        <div><a href="#"><p class="inactive">30</p></a></div>
+                                                        <div><a href="#"><p class="normal">1</p></a></div>
+                                                        <div><a href="#"><p class="normal">2</p></a></div>
+                                                        <div><a href="#"><p class="normal">3</p></a></div>
+                                                        <div><a href="#"><p class="normal">4</p></a></div>
+                                                        </div><!-- end row -->
+                                             
+                                                    <div class="dates">
+                                                        <div><a href="#"><p class="normal">5</p></a></div>
+                                                        <div><a href="#"><p class="normal">6</p></a></div>
+                                                        <div><a href="#"><p class="normal">7</p></a></div>
+                                                        <div><a href="#"><p class="normal">8</p></a></div>
+                                                        <div><a href="#"><p class="normal">9</p></a></div>
+                                                        <div><a href="#"><p class="normal">10</p></a></div>
+                                                        <div><a href="#"><p class="normal">11</p></a></div>
+                                                    </div><!-- end row -->
+                                             
+                                                    <div class="dates">
+                                                        <div><a href="#"><p class="normal">12</p></a></div>
+                                                        <div><a href="#"><p class="normal">13</p></a></div>
+                                                        <div><a href="#"><p class="normal">14</p></a></div>
+                                                        <div><a href="#"><p class="normal">15</p></a></div>
+                                                        <div><a href="#"><p class="normal">16</p></a></div>
+                                                        <div><a href="#"><p class="normal">17</p></a></div>
+                                                        <div><a href="#"><p class="normal">18</p></a></div>
+                                                    </div><!-- end row -->
+                                             
+                                                    <div class="dates">
+                                                        <div><a href="#"><p class="normal">19</p></a></div>
+                                                        <div><a href="#"><p class="normal">20</p></a></div>
+                                                        <div><a href="#"><p class="normal">21</p></a></div>
+                                                        <div><a href="#"><p class="normal active">22</p></a></div>
+                                                        <div><a href="#"><p class="normal">23</p></a></div>
+                                                        <div><a href="#"><p class="normal">24</p></a></div>
+                                                        <div><a href="#"><p class="normal">25</p></a></div>
+                                                    </div><!-- end row --> 
+                                             
+                                                    <div class="dates">
+                                                        <div><a href="#"><p class="normal">26</p></a></div>
+                                                        <div><a href="#"><p class="normal">27</p></a></div>
+                                                        <div><a href="#"><p class="normal">28</p></a></div>
+                                                        <div><a href="#"><p class="normal">29</p></a></div>
+                                                        <div><a href="#"><p class="normal">30</p></a></div>
+                                                        <div><a href="#"><p class="normal">31</p></a></div>
+                                                        <div><a href="#"><p class="normal">1</p></a></div>
+                                                    </div><!-- end row -->
+                                             
+                                                    <div class="line"></div>
+                                             
+                                                    <div><button class="todayBttn">Today</button></div>
+                                                </div><!-- end calendar-body -->
+                                            </div><!-- end wrapper -->
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label whiteTxt">Resource Group 1 <button type="button" class="btn btn-rounded waves-effect waves-light clearBttn">Clear</button></span><span class="menu-arrow whiteTxt"></span>
+                                </a>
+                                <ul class="nav-second-level py-1" aria-expanded="false">
+                                    <li class="navActiveLink"><a href="index.html"></a></li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="resource1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel" for="resource1">Resource 1</span>
+                                    </li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="resource1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel">Resource 2</span>
+                                    </li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="resource1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel">Resource 3</span>
+                                    </li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="resource1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel">Resource 4</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label whiteTxt">Resource Group 2 <button type="button" class="btn btn-rounded waves-effect waves-light clearBttn">Clear</button></span> <span class="menu-arrow whiteTxt"></span>
+                                </a>
+                                <ul class="nav-second-level py-1" aria-expanded="false">
+                                    <li class="navActiveLink"><a href="index.html"></a></li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="checkbox1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel">Resource 1</span>
+                                    </li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="checkbox1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel">Resource 2</span>
+                                    </li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="checkbox1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel">Resource 3</span>
+                                    </li>
+                                    <li class="mb">
+                                        <input type="checkbox" id="checkbox1" name="checkbox" class="customChckBx" checked> 
+                                        <span class="customChckBxLabel">Resource 4</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="openSpace"></div>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->å
+                <!-- Header -->
+                <header class="top-head">
+                    <div class="breadCrumbs">
+                        <a href="#" class="whiteTxt">Home</a> <span class="whiteTxt linkBreak"> > </span> <a href="#" class="whiteTxt">Appointments Calendar</a> 
+                    </div> 
+                </header>
+
+                <section class="headerBgColor">
+                    <div class="borderLeft">
+                        <button type="button" class="navbar-toggle whiteTxt bgTransparent">
+                            <i class="ion ion-ios-arrow-back mr-1 ml-2"></i> <i class="fa fa-filter"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="headerBgColor2">
+                    <div class="createBttnWrapper">
+                        <button class="bttn waves-effect waves-light createBttn">Create Appointment</button>
+                    </div>
+                </section>
+
+                <main>
+                    <section class="tableHeaderBar">
+                        <div class="legendWrapper">
+                            <div class="infoWrapper1">
+                                <div class="legendContainers belowFifty"></div>
+                                <div><50%</div>
+                            </div>
+                            <div class="infoWrapper">
+                                <div class="legendContainers fiftySeventyFive"></div>
+                                <div>50% - 75%</div>
+                            </div>
+                            <div class="infoWrapper">
+                                <div class="legendContainers seventyfiveHundred"></div>
+                                <div>75% - 100%</div>
+                            </div>
+                            <div class="infoWrapper">
+                                <div class="legendContainers aboveOneHundred"></div>
+                                <div>>100%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="labelWrapper1">
+                            <label class="inputTxt">Locate Appointment:</label>
+                            <div class="calendarSearchWrapper1">
+                                <input type="search" placeholder="Locate Appointment" class="calendarSearch">
+                                <button class="lookUpBttn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="labelWrapper">
+                            <label class="inputTxt2">Facility:</label>
+                            <div class="calendarSearchWrapper mr-0">
+                                <input type="search" placeholder="Select a Facility" class="calendarSearch">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mainCalendarWrapper">
+                        <div class="timeColumn">
+                            <!-- Resource Group 1 Start-->
+                            <div class="timeBttn">Resource Group 1</div>
+                            <div class="timeBttn2">Resource 1</div>
+                            <div class="timeBttn2">Resource 2</div>
+                            <div class="timeBttn2">Resource 3</div>
+                            <div class="timeBttn2">Resource 4</div>
+                            <!-- Resource Group 1 End -->
+
+                            <!-- Resource Group 2 Start-->
+                            <div class="timeBttn">Resource Group 2</div>
+                            <div class="timeBttn2">Resource 1</div>
+                            <div class="timeBttn2">Resource 2</div>
+                            <div class="timeBttn2">Resource 3</div>
+                            <div class="timeBttn2">Resource 4</div>
+                            <!-- Resource Group 2 End -->
+                        </div>
+                        
+                        <div class="tableContainer borderLeft">
+                            <div class="dateHeader">
+                                <div class="tableBttnContainer">
+                                    <div class="tableBttnWrapper">
+                                        <button class="calBttns2"><i class="fas fa-angle-left"></i></button>
+                                        <div><h2 class="dateTitle">Tuesday, January 2</h2></div>
+                                        <button class="calBttns2"><i class="fas fa-angle-right"></i></button>
+                                    </div>
+                                    <div class="totalAppmntTxt"><h2 class="dateTitle2">Total Appointments: 98</h2></div>
+                                    <div><h2 class="dateTitle">UoM: Capacity</h2></div>
+                                </div>
+                            </div>
+                            <div class="horizontalScroll">
+                            <div class="timeHeader">
+                                <div class="timeCell">12:00 AM</div>
+                                <div class="timeCell">1:00 AM</div>
+                                <div class="timeCell">2:00 AM</div>
+                                <div class="timeCell">3:00 AM</div>
+                                <div class="timeCell">4:00 AM</div>
+                                <div class="timeCell">5:00 AM</div>
+                                <div class="timeCell">6:00 AM</div>
+                                <div class="timeCell">7:00 AM</div>
+                                <div class="timeCell">8:00 AM</div>
+                                <div class="timeCell">9:00 AM</div>
+                                <div class="timeCell">10:00 AM</div>
+                                <div class="timeCell">11:00 AM</div>
+                                <div class="timeCell">12:00 PM</div>
+                                <div class="timeCell">1:00 PM</div>
+                                <div class="timeCell">2:00 PM</div>
+                                <div class="timeCell">3:00 PM</div>
+                                <div class="timeCell">4:00 PM</div>
+                                <div class="timeCell">5:00 PM</div>
+                                <div class="timeCell">6:00 PM</div>
+                                <div class="timeCell">7:00 PM</div>
+                                <div class="timeCell">8:00 PM</div>
+                                <div class="timeCell">9:00 PM</div>
+                                <div class="timeCell">10:00 PM</div>
+                                <div class="timeCell">11:00 PM</div>
+                                <div class="timeCell">12:00 PM</div>
+                            </div>
+
+                            <div class="shiftWrapper">
+                                <div class="shiftContainer">Shift 1</div>
+                                <div class="shiftContainer">Shift 2</div>
+                                <div class="shiftContainer">Shift 3</div>
+                            </div>
+
+                            <!--====== RESOURCE GROUP 1 START ======-->
+                            <div class="resourceBreak"></div>
+
+                            <!-- Row 1 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell resource1">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 1 End -->
+
+                            <!-- Row 2 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 2 End -->
+
+                            <!-- Row 3 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 3 End -->
+
+                            <!-- Row 4 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 4 End -->
+                            <!--====== RESOURCE GROUP 1 END ======-->
+
+                            <!--====== RESOURCE GROUP 1 START ======-->
+                            <div class="resourceBreak2"></div>
+
+                            <!-- Row 1 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 1 End -->
+
+                            <!-- Row 2 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 2 End -->
+
+                            <!-- Row 3 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 3 End -->
+
+                            <!-- Row 4 Start -->
+                            <div class="apmntHeader">
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">5/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar fiftySeventyFiveProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/5</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">0/10</span>
+                                    <div class="progressBarContainer"></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">8/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar seventyfiveHundredProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">1/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar belowFiftyProg"></div></div>
+                                </div>
+                                <div class="apmntCell">
+                                    <span class="percentageTxt">10/10</span>
+                                    <div class="progressBarContainer"><div class="progressBar aboveOneHundredProg"></div></div>
+                                </div>
+                            </div>
+                            <!-- Row 4 End -->
+                            <!--====== RESOURCE GROUP 1 END ======-->
+                        </div>
+                        </div>
+                    </section>
+                </main>
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+
+        <!-- Required datatable js -->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+
+        <!-- Filterable Tech -->
+        <script>
+        $('#resource1').change(function() {
+            if(this.checked != true){
+                NodeList.prototype.forEach = Array.prototype.forEach;
+                var resource1 = document.querySelectorAll('.resource1').forEach(function(hide) {
+                    hide.style.visibility = "hidden";
+                    })
+            }
+            else {
+                NodeList.prototype.forEach = Array.prototype.forEach;
+                var resource1 = document.querySelectorAll('.resource1').forEach(function(show) {
+                    show.style.visibility = "visible";
+                    })
+            }
+        });
+        </script>
+    </body>
+</html>

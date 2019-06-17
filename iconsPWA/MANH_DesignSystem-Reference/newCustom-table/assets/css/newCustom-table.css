@@ -1,0 +1,97 @@
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css');
+@import url('../css/originalCustom-table.css');
+
+.appointmentBlock {
+  display: block;
+  float: left;
+  background-color: #4F93E4;
+  border: 1px solid #3D7DCA;
+  margin: 0 5px;
+  width: 30px;
+  height: 35px;
+  -webkit-transition: width 0.3s;
+   transition: width 0.3s;
+}
+
+/* DEMO USE ONLY, FOR JAMES APPROVAL/TESTING */
+/* #second {
+  background-color: pink;
+  float: left;
+  margin-left: 5px;
+} */
+
+.appmntDetails {
+  width: 100%;
+  max-width: 300px;
+}
+
+.appmntPopover {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.3); */
+}
+
+.inputSelectWrapper {
+  margin-bottom: 20px;
+}
+
+.close {
+  /* float: right; */
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+.popColumn {
+    margin-top: -10px;
+}
+
+.TxtInputs {
+    background-color: lightgray;
+}
+
+#calChanges {
+    margin: 0px 0px 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Adjustments to compensate for original CSS conflicts */
+/* THESE ARE REMOVALS MADE TO ORIGINAL CSS CUSTOM-TABLE FILE */
+
+/* .appmntPopover {
+- width: 630px;
+- height: 270px;
+- display: none;
+- border-radius: 4px;
+- border: 1px solid var(--table-border-color);
+- -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+- -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+- box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.contentWrapper {
+- display: flex;
+}
+.popColumn {
+- display: flex;
+- flex-direction: column;
+}
+.inputSelectWraper {
+- width: 280px;
+- display: flex;
+- margin-top: 10px;
+} 
+
+.TxtInputs {
+- width: 100%;
+- background: transparent;
+}*/

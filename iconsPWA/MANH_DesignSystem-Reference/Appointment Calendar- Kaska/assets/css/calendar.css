@@ -1,0 +1,108 @@
+a{       
+  text-decoration:none !important;   
+  color: black;          
+}
+button:focus { 
+    outline: none;
+}
+.calendarWrapper {
+    width: 300px;
+    border: 1px solid #ccc;
+}
+.calendarHeader {
+    padding: 0 15px;
+    height: 4em;                    
+    background-color: #4F93E4;      
+    color: white;                 
+    text-align: center;             
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calBttns {
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.calBttns:hover {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, .1);
+}
+.calendar-body { 
+    margin: 15px 15px 0 15px;               
+    text-align: center; 
+    display: flex;
+    flex-direction: column;          
+}
+.header p {
+    padding-top: 1.2em;            
+    text-transform: uppercase;      
+} 
+.header span {
+    padding: 1.3em;        
+}
+.inactive {
+    margin: 5px 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;                 
+    color: #ccc;
+}
+.inactive:hover {
+    cursor: not-allowed;
+}
+.normal {
+    margin: 5px 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.normal:hover {
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0,0,0, .1);
+}
+.weekdays { 
+    margin: 0 auto;  
+    width: 100%;       
+    display: flex;
+    justify-content: space-between;
+}
+.weekdays p {
+    margin: 0;
+}
+.dates { 
+    margin: 0 auto;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+}
+.line {
+    border: 1px solid #eee;
+}
+.current-date {                
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.7em;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,221 @@
+:root {
+  --mup-ion-background-color: #21252C;
+  --mup-ion-font-color: #4A4A4A;
+  --mup-header-background-color: #2D2F3B;
+  --mup-secondaryHeader-background-color: #3C4051;
+  --mup-breadCurmbsBar-background-color: #494E5E;
+  --mup-body-background-color: #5C6476;
+  --mup-facet-panel-primary-background-color: #282C34;
+  --mup-facet-panel-secondary-background-color: #494E5D;
+  --mup-table-body-background-color: #F4F4F8;
+  --mup-table-row-background-color: #EBEBF1;
+  --mup-active-table-row-background-color: #91BFF3;
+  --mup-body-font-color: #4A4A4A;
+  --mup-primary-border-color: #6F6F6F;
+  --mup-borderRight-border-right: 1px solid #5B6474;
+  --mup-infoCardHeader-background-color: #406590;
+  --mup-badge-background-color: #FB404B;
+  --mup-selected-row-background-color: #91BFF3;
+  --mup-selected-row-border-bottom: 1px solid #fff;
+  --mup-login-font-color: grey;
+  --mup-action-button-background-color: #4F93E4;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--mup-ion-font-color);
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	  font-family: 'Source Sans Pro', sans-serif;
+	  font-weight: 400;
+    color: var(--mup-login-font-color);
+    background-color: #eee;
+    overflow: hidden;
+}
+a {
+    color: var(--mup-login-font-color);
+    text-decoration: underline;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+small {
+    margin-bottom: 2rem;
+    font-size: 12px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: var(--mup-login-font-color);
+}
+input {
+    width: 100%;
+    background-color: transparent;
+}
+.errortxt {
+    color: red;
+}
+.topSection {
+    display: flex;
+}
+.skewRight {
+    width: 100%;
+    height: 450px;
+    background-color: var(--mup-ion-background-color);
+    -moz-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    -o-transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    transform: skew(0deg, 5deg);
+    position: relative;
+    z-index: 2;
+}
+.skewLeft {
+    width: 100%;
+    height: 450px;
+    background-color: var(--mup-ion-background-color);
+    -moz-transform: skew(0deg, -5deg);
+    -webkit-transform: skew(0deg, -5deg);
+    -o-transform: skew(0deg, -5deg);
+    -ms-transform: skew(0deg, -5deg);
+    transform: skew(0deg, -5deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.loginFormWraper {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+}
+.formContentWraper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    text-align: center;
+}
+.mainLogo {
+    width: 244px;
+}
+.secondaryLogo {
+    margin: 1.5rem auto 2rem auto;
+    width: 244px;
+}
+.loginBttn {
+    margin-top: 1rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: var( --mup-header-background-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.loginBttn:hover {
+    cursor: pointer;
+    background-color: var(--mup-secondaryHeader-background-color);
+}
+
+/* Textarea Input Effects Begin */
+.animated-input-block {
+    position: relative;
+    overflow: hidden;
+}
+.animated-input_slide-line {
+    -webkit-transform: translateZ(0px) translate(0, 0);
+    transform: translateZ(0px) translate(0, 0);
+}
+.animated-input-block:hover .animated-input-block__line {
+    -webkit-transform: translateZ(0px) translate(0, 0);
+    transform: translateZ(0px) translate(0, 0);
+}
+.animated-input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid var(--mup-login-font-color);
+    border-radius: 0;
+    box-shadow: none;
+}
+.animated-input:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.animated-input[disabled] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.animated-input[disabled] + .animated-input-block__line {
+    display: none;
+}
+.animated-input-block__line {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateZ(0px) translate(-110%, 0);
+    transform: translateZ(0px) translate(-110%, 0);
+}
+.animated-input_slide-line {
+    -webkit-transform: translateZ(0px) translate(0, 0);
+    transform: translateZ(0px) translate(0, 0);
+}
+.animated-input_slide-line:hover .animated-input-block__line {
+    -webkit-transition: transform 0.4s cubic-bezier(0.5, -0.01, 0.59, 0.04) 0s;
+    transition: transform 0.4s cubic-bezier(0.5, -0.01, 0.59, 0.04) 0s;
+}
+.animated-textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+}
+.animated-input-block_primary .animated-input-block__line {
+    background-color: var(--mup-action-button-background-color);
+}
+.animated-input-block_primary .animated-input:focus {
+    border-bottom-color: var(--mup-action-button-background-color);
+}
+/* Textarea Input Effects End */
+
+#bgPic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+}
+.profile {
+    margin: 0 auto .25rem auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: var(--mup-secondaryHeader-background-color);
+}
+.loggedOutTxt {
+    font-size: 22px;
+    font-weight: 100 !important;
+}
+
+
+
+
+

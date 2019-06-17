@@ -1,0 +1,209 @@
+:root {
+	--table-border-color: #dee2e6;
+	--table-background-color: #fbfbfc;
+	--mup-ion-font-color: #4A4A4A;
+	--mup-selected-row-background-color: #91BFF3;
+	--belowFifty-background-color: #0CA97A;
+	--appointment-block-background-color: #4F93E4;
+	--appointment-block-border-color: #3D7DCA;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+input:focus,
+button:focus {
+	outline: none;
+}
+.tableContainer {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--table-background-color);
+	color: var(--mup-ion-font-color);
+	border-right: 1px solid var(--table-border-color);
+	border-left: 1px solid var(--table-border-color);
+	border-bottom: 1px solid var(--table-border-color);
+}
+.tableHeader {
+	width: 100%;
+	height: 46px;
+	display: flex;
+	font-weight: 700;
+	border-bottom: 2px solid var(--table-border-color);
+}
+.tableColumnsHeader {
+	padding: 0 10px;
+	width: 100%;
+	min-width: 260px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+}
+.tableColumns {
+	width: 100%;
+	min-width: 260px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid var(--table-border-color);
+	border-bottom: 1px solid var(--table-border-color);
+}
+.tableColumns:hover {
+	cursor: pointer;
+}
+.tentative {
+	background: repeating-linear-gradient(
+	  -55deg,
+	  #eee,
+	  #eee 2px,
+	  #fff 1px,
+	  #fff 10px
+	);
+}
+.bRight {
+	border-right: 1px solid var(--table-border-color);
+}
+.tableBody {
+	width: 100%;
+	max-height: 450px;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+}
+.tableRow {
+	display: flex;
+}
+.selectedRow {
+    background-color: var(--mup-selected-row-background-color);
+}
+.belowFifty {
+    background-color: var(--belowFifty-background-color);
+}
+.appointmentBlock {
+	margin: 0 5px;
+	width: 30px;
+	height: 35px;
+	position: relative;
+	background-color: var(--appointment-block-background-color);
+	border-right: 1px solid var(--appointment-block-border-color);
+	-webkit-transition: width .3s;
+	transition: width .3s;
+}
+.appointmentBlock:hover {
+	width: 60px;
+	background-color: var(--appointment-block-border-color);
+	border: 1px solid var(--appointment-block-border-color);
+}
+.appmntPopover {
+	/* width: 630px;
+	height: 270px;
+	display: none; */
+	position: absolute;
+	top: 45px;
+	left: 0;
+	z-index: 999;
+	/* border-radius: 4px; */
+	/* border: 1px solid var(--table-border-color); */
+	background-color: #fff;
+	/* -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3); */
+	box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.appointmentBlock:hover > .appmntPopover {
+	display: block;
+}
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	position: relative;
+	top: -10px;
+	left: 5px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+.contentWrapper {
+	padding: 10px 15px;
+	/* display: flex; */
+	justify-content: space-between;
+}
+.popColumn {
+	/* display: flex; */
+	/* flex-direction: column; */
+}
+.popColumn li {
+	list-style: none;
+}
+.popColumn ul {
+	padding-left: 0px;
+}
+
+/*==== Input Styles Start ====*/
+.inputSelectWraper {
+	/* margin-top: 10px; */
+	/* width: 280px; */
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #CAD3DF;
+    border-radius: 4px;
+    /* display: flex; */
+    align-items: center;
+}
+.TxtInputs {
+    padding: 0 15px;
+    /* width: 100%; */
+    height: 39.38px;
+    background-color: transparent;
+    border: none;
+}
+.editViewBttn {
+    margin-left: 5px;
+    height: 40px;
+    width: 50px;
+    border-left: 1px solid #CAD3E0;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 1rem;
+    color: var(--mup-ion-font-color);
+}
+.editViewBttn:hover, .editViewBttn:focus {
+    cursor: pointer;
+    background-color: #d4d7db;
+}
+.popBttnWrapper {
+	float: right;
+}
+.primaryFooter {
+    margin: 5px 15px;
+    min-width: 108px;
+    height: 40px;
+    background-color: #4F93E4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.primaryFooter:hover, 
+.primaryFooter:focus {
+    background-color: #3D7DCA;
+    cursor: pointer;
+}
+
+
+
+
+

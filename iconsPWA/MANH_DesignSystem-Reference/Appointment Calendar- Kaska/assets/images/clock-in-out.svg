@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>64B6ACFD-8D39-402C-892B-840284A1C12F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Swipe-Menu-Buttons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-280.000000, -524.000000)" id="Group-5-Copy-10" stroke="#FFFFFF">
+            <g transform="translate(244.000000, 514.000000)">
+                <g id="clock-in-out" transform="translate(36.000000, 10.000000)">
+                    <g id="On-Time-Orders" transform="translate(1.000000, 1.000000)">
+                        <g id="Group-44">
+                            <circle id="Oval-5" cx="14" cy="14" r="14"></circle>
+                            <path d="M14,12.4090909 L14,2.86363636" id="Line" stroke-linecap="square"></path>
+                            <path d="M12.7272727,15.5909091 L8.90909091,19.4090909" id="Line-2" stroke-linecap="square"></path>
+                            <circle id="Oval-7" fill="#FFFFFF" cx="14" cy="14" r="1.90909091"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

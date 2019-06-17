@@ -20,7 +20,6 @@
             img {width: 100%; max-width: 200px;}
             a:hover {font-weight:bold; color:#0070bb;}
             aside {margin-bottom:0px;}
-            .searchResults {margin-top:0px;margin-bottom:0px;}
             button#showTable {display: inline-block;border-radius: 4px;background-color:#00426f;border: none;color:#FFFFFF;text-align:center;font-size:18px;padding:18px;width:30rem;transition: all 0.5s;cursor:pointer;margin:5px;}
             a button#showTable {text-decoration:none;}
             button#showTable:hover, button#showTable:focus, button#showTable:active {color:#f4f4f4!important;font-size:1.1rem;box-shadow: 1px 1px 6px 1px #00426f;}
@@ -241,16 +240,7 @@
                     <td><a href="listedIcons/noun_Cart%20down_1153298.svg"><img src="listedIcons/noun_Cart%20down_1153298.svg" alt="Cart Plus"></a></td>
                 </tr>
             </tbody>
-        </table><br><br>
-        <form action="https://www.google.com/search" id="form-search">
-            <!-- <label for="input-search" style="font-size:1rem;">Search here:</label> -->
-            <input type="text" name="q" id="input-search" value="options/" style="font-size:1rem;border-radius:3px;" placeholder="Start search here...">
-            <button id="submit-search" class="searchButton">Search</button>
-            <button onclick="document.getElementById('input-search').value = ''" class="searchButton">Reset or Show-All</button>
-        </form>
-        <div id="search-results"></div><br><br>
-        <!--//search functionality-->
-        <script src="searchIcons.js"></script>
+        </table><br>
         <script src="tablePagination.js"></script>
         <script>
         //show and hide table in vanilla javascript
@@ -273,14 +263,6 @@
             document.body.removeChild(aux);
 
             }
-
-        // $(document).ready(function(){
-        //     $('.iconTxt').tooltip({title:"copied!", trigger: "click"}); 
-        //     $('.ion-icon').on('mouseleave', function(){
-        //         $('.iconTxt').tooltip('hide');
-        //     });  
-        // });
-    </script>
         </script>
     </body>
 </html>
